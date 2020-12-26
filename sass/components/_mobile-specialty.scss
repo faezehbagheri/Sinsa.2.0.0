@@ -1,0 +1,57 @@
+.mobile-specialty{
+    box-shadow: 0 4px 7px -2px #dbd9d9;
+
+    @include respond(iphone){
+        height: 120rem;   
+    }
+    
+    &__item{
+        background-color: rgba($color-primary , .5);
+        height: 18rem;
+        width:  17rem;
+        border-radius: 2rem;
+        margin: 1.5rem;
+        text-decoration: none;
+
+        @include respond(phone-small){
+            height: 15rem;
+            width:  13rem;
+        }
+
+        @include respond(iphone){
+            height: 14rem;
+            width: 12rem;
+        }
+    }
+
+
+    &__icon{
+        font-size: 7rem;
+        color: #fff;
+
+        @include respond(phone-small){
+            font-size: 6rem;
+        }
+    }
+
+    &__span{
+        font-size: 2.5rem;
+        color: #fff;
+
+        @include respond(phone-small){
+            font-size: 2rem;
+        }
+    }
+
+    &__text{
+        font-size: 2.5rem;
+        color: $color-primary;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+
+    &__arrow{
+        padding-right: 2rem;
+        font-size: 2.5rem;
+    }
+}

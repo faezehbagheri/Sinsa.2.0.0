@@ -1,0 +1,381 @@
+.visit{
+    width: 100%;    
+    height: 70rem;
+    background-color: #B4D3D1;
+    position: relative;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+
+    &__container{
+        width: 96%;
+        height: 94%;
+        background-color: #fff;
+        border-radius: 2rem;
+        box-shadow: 0 0 6px $color-gray-light;
+        @include centerABS();
+        overflow-y: scroll;
+                
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+        
+    }
+
+    &__header{
+        width: 90%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+        border-bottom: 2px solid $color-gray-light;
+
+        @include respond(phone-port){font-size: 1.8rem;}
+
+        @include respond(phone){font-size: 2rem;}
+    }
+
+    &__main{
+        width: 90%;
+        // height: 45rem;
+        margin: 3rem 0;
+        padding: 0 3.5rem;
+
+        @include respond(phone-port){margin-bottom: 5rem;}
+
+        @include respond(phone){
+            flex-direction: column;
+            // height: 65rem;
+        }
+    }
+
+    &__search-box{
+        position: relative;
+    }
+
+    &__search{
+        width: 30rem;
+        height: 4rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0 1px 5px $color-gray-light;
+        padding: 0 5px;
+
+        @include respond(phone-port){
+            height: 5.5rem;
+        }
+
+        @include respond(phone){
+            width: 50rem;
+            height: 8rem;
+
+            i{
+                font-size: 3rem !important;
+            }
+        }
+
+        @include respond(iphone){
+            width: 35rem;
+            height: 6rem;
+        }
+
+        input{
+            height: 3rem;
+            width: 90%;
+            border: none;
+            outline: none;
+            text-align: right;
+            direction: rtl;
+
+            @include respond(phone-port){height: 5rem;}
+
+            @include respond(phone){
+                height: 100%;
+                font-size: 2.8rem !important;
+
+                &::placeholder{
+                    font-size: 2.3rem;
+                }
+            }
+
+            &::placeholder{
+                color: $color-gray-light;
+            }
+        }
+
+        i{
+            font-size: 2rem;
+            color: $color-primary;
+            margin: 1rem;
+        }
+    }
+
+    &__option{
+        width: 30rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+        background-color: white;
+        overflow-y: scroll;
+        position: absolute;
+        top: 16%;
+        transition: all .6s ease;
+        z-index: 99;
+        // height: 30rem;
+
+        @include respond(phone){
+            width: 50rem;
+        }
+
+        @include respond(iphone){
+            width: 35rem;
+        }
+    
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
+        }
+    }
+
+    &__option-list{
+        list-style-type: none;
+        text-align: right;
+        height: 30rem;
+
+        @include respond(phone-port){height: 35rem;}
+
+        @include respond(phone){
+            height: 40rem;
+        }
+
+        @include respond(iphone){
+            height: 30rem;
+        }
+
+
+        li{
+            // margin: 6px;
+            width: 100%;
+            padding: 0 1.5rem;
+            height: 5rem;
+            transition: all .3s;
+            font-size: 1.4rem;
+            color: $color-gray;
+            background-color: white;
+            cursor: pointer;
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid $color-secondary-light;
+            }
+
+            @include respond(phone-port){
+                font-size: 1.8rem;
+                height: 8rem;
+            }
+
+            @include respond(phone){
+                font-size: 2.3rem;
+                height: 9rem;
+            }
+
+            @include respond(iphone){
+                height: 7.5rem;
+            }
+
+            &:hover{
+                background-color: $color-secondary;
+                box-shadow: 1px 1px 5px $color-gray-light;
+                color: white;
+                font-size: 1.6rem;
+
+                @include respond(phone-port){font-size: 2rem;}
+
+                @include respond(phone){ font-size: 2.4rem;}
+            }
+        }
+    }
+
+    &__selected{
+        height: 25rem;
+        margin-top: 1rem;
+
+        @include respond(phone-port){height: 30rem;}
+
+        @include respond(phone){height: 40rem;}
+
+        @include respond(iphone){height: 30rem;}
+    }
+
+    &__item-selected{
+        font-size: 1.8rem;
+        color: $color-secondary;
+        margin-right: 1rem;
+        cursor: pointer;
+
+        @include respond(phone){
+            font-size: 2.5rem;
+            line-height: 5.5rem;
+        }
+        
+        i{
+            margin-left: 1rem;
+        }
+    }
+
+    &__circle{
+        width:  16rem;
+        height: 16rem;
+        border-radius: 100%;
+        background-color: white;
+        box-shadow: 0 1px 5px $color-gray-light;
+
+        @include respond(phone-port){
+            height: 12rem;
+            width:  12rem;
+        }
+
+        @include respond(phone){
+            width: 16rem;
+            height:16rem;
+
+            a{font-size: 2rem !important;}
+        }
+
+        @include respond(iphone){
+            height: 12rem;
+            width:  12rem;
+        }
+        
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: $color-gray;
+        }
+        
+        i{
+            font-size: 4rem;
+            color: $color-primary;
+        }
+    }
+
+    &_buttons{
+        width: 80%;
+        margin-top: 3rem;
+
+        button{
+            width: 14rem;
+            height: 5rem;
+            border-radius: 3rem;
+            border: none;
+            font-size: 1.5rem;
+
+            @include respond(phone-port){
+                width: 18rem;
+                height: 6rem;
+                font-size: 2rem;
+            }
+
+            @include respond(phone){
+                width: 18rem;
+                height: 6.5rem;
+                font-size: 2.2rem;
+            }
+
+            @include respond(iphone){
+                width: 14rem;
+                height: 5.3rem;
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__nxt-btn{
+        background-color: $color-primary-light;
+        color: white;
+        box-shadow: 1px 2px 5px $color-primary-light;
+
+        i{
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__prev-btn{
+        background-color: $color-gray-lighter;
+        color: $color-gray;
+        box-shadow: 1px 2px 5px $color-gray-light;
+
+        i{
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__svg{
+        color: $color-primary;
+
+        @include respond(phone){
+            width:  20rem;
+            height: 20rem;
+            margin-top: 5rem;
+        }
+
+        @include respond(iphone){
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
+}
+
+.radialProgressBar {
+    border-radius: 50%;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    width: 12rem;
+    height: 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ddd;
+    // margin: 20px;
+    // float:left;
+    @include centerABS();
+  }
+  .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top: 30%;
+    font-size: 2.2rem;
+  }
+  
+  .progress-25 {
+    background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, $color-primary-light 50%, #ddd 50%);
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(180deg, $color-primary-light 50%, #ddd 50%);
+  }
+  
+  .progress-50 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, $color-yellow 50%, #ddd 50%);
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, $color-yellow 50%, #ddd 50%);
+  }
+  
+  .progress-75 {
+    background-image: -webkit-linear-gradient(right, $color-pink 50%, transparent 50%), -webkit-linear-gradient(108deg, $color-pink 50%, #ddd 50%);
+    background-image: linear-gradient(0deg, $color-pink 50%, transparent 50%), linear-gradient(-90deg, $color-pink 50%, #ddd 50%);
+  }

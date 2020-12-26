@@ -1,0 +1,354 @@
+.personal-card{
+    width: 100%;
+    
+    @include respond(phone){
+        // display: none;
+    }
+
+
+    &__main{
+        height: 28rem;
+        width: 22rem;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        margin-top: 17rem;
+        position: relative;
+        box-shadow: 0 0 1rem #d9d9d9;
+
+            
+        @include respond(big-desktop){
+            height: 28rem;
+            width: 26rem;          
+        }
+
+        @include respond(phone-port){
+            width: 27rem;
+            height: 35rem;
+            justify-content: center;
+            margin-top: 18rem !important;
+        }
+    
+        @include respond(phone){
+            flex-direction: row-reverse;
+            width: 95%;
+            align-items: flex-end;
+            box-shadow: 0 0 5px #cccccc;
+            margin-top: 8rem !important;
+            // height: 33rem;
+        }
+    
+        @include respond(iphone){
+            height: 23rem;
+        }
+    }
+    
+    &__section-1{
+        @include respond(phone){
+            width: 45%;
+            height: 100%;
+        }
+    }
+
+    &__section-2{
+        @include respond(phone){
+            height: 100%;        
+            width: 45%;
+            padding-top: 3rem;
+        }
+    
+        @include respond(iphone){
+            width: 50%;
+        }
+    }
+
+    &__photo-box{        
+        height: 11rem;
+        width: 11rem;
+        border-radius: 100%;
+        position: relative;
+        top: -32%;
+        transform: translateY(-50%);
+        shape-outside: circle(50% at 50% 50%);
+        margin-bottom: -10rem;
+        background-color: #ffffff;
+        box-shadow: 0 -1px 5px #d9d9d9;
+
+        @include respond(big-desktop){
+            height: 13rem;
+            width: 13rem;          
+        }       
+
+        @include respond(phone-port){
+            top: -20%;
+            height: 15rem;
+            width: 15rem;
+        }
+    
+        @include respond(phone){
+            // left: 30%;
+            height:23rem;
+            width:23rem;
+            top: 10%;
+        }
+    
+        @include respond(iphone){
+            height: 15rem;
+            width:  15rem;
+            top: -15%;
+        }
+    }
+
+    &__photo{        
+        height: 9rem;
+        width: 9rem !important;
+        border-radius: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-gray;
+
+        @include respond(big-desktop){
+            height: 11rem;
+            width: 11rem !important;          
+        }
+
+        @include respond(phone-port){
+            height: 13rem;
+            width: 13rem !important;
+        }
+    
+        @include respond(phone){
+            height: 20rem;
+            width: 20rem !important;   
+        }
+    
+        @include respond(iphone){
+            height: 13rem;
+            width:  13rem !important;
+        }
+    }
+
+    &__name{
+        font-size: 1.8rem;
+        color: $color-pink;
+        margin-top: 1rem;
+
+        @include respond(phone-port){font-size: 2.2rem;}
+    
+        @include respond(phone){
+            font-size: 3rem;
+        }
+    }
+
+    &__specialty{
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $color-primary;
+
+        @include respond(phone-port){font-size: 1.6rem;}
+    
+        @include respond(phone){
+            font-size: 2rem;
+        }
+
+        i{
+            font-size: 3rem;
+            color: $color-primary-light;
+            position: absolute;
+            left: 15%;
+        }
+    }
+
+    &__percentage{
+        display: inline-block;
+        background-color: $color-primary-dark;
+        // width: 4rem;
+        // height: 2rem;
+        padding: 2px 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.1rem;
+
+        @include respond(phone-port){
+            font-size: 1.5rem;
+            padding: 3px 1.2rem;
+            border-radius: 1.5rem;
+        }
+    
+        @include respond(phone){
+            font-size: 1.8rem;   
+            padding: 2px 1rem;
+            border-radius: 2rem;
+        }
+    }
+
+    &__comment{
+        font-size: 1rem;
+        margin-right: 1rem;
+        color: $color-gray;
+
+        @include respond(phone-port){
+            font-size: 1.3rem;
+            padding: 3px;
+        }
+    
+        @include respond(phone){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__consulting{
+        color: $color-gray;
+        font-size: 1rem;
+
+        @include respond(phone-port){
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+        }
+    
+        @include respond(phone){
+            font-size: 1.8rem;   
+        }
+    }
+
+    &__star{
+        font-size: 1.5rem;
+        color: $color-yellow;
+        margin-top: 1rem;
+
+        @include respond(phone-port){font-size: 2rem;}
+
+        @include respond(phone){
+            font-size: 2.5rem;
+        }
+    }
+
+    &__link{
+        padding: .8rem 1.5em;
+        background-color: $color-primary-light;
+        color: #ffffff;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        position: relative;
+        top: 7%;
+        box-shadow: 0 2px 4px $color-primary-light;
+        font-family: 'irsans';
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+
+        @include respond(phone-port){
+            top: 10%;
+            font-size: 1.8rem;
+            padding: 1.3rem 2.5rem;
+        }
+    
+        @include respond(phone){
+            // position: absolute;
+            // left: 10%;
+            // top: 86%;
+            padding: 1.2rem 3rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__address{
+        margin: 1rem;
+    
+        @include respond(phone){
+            flex-direction: row-reverse !important;   
+        }
+        
+        i{
+            font-size: 1.8rem;
+            color:  $color-primary-dark;
+            margin-left: 1rem;
+    
+            @include respond(phone){
+                font-size: 2.8rem;
+            }
+        }
+        span{
+            font-size: 1.8rem;
+            font-weight: 100;
+            color: $color-gray;
+    
+            @include respond(phone){
+                font-size: 2.2rem; 
+                margin-left: 1rem;  
+            }
+        }
+
+        p{
+            font-size: 1.3rem;
+            font-weight: 100;
+            color: $color-gray;
+    
+            @include respond(phone){
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
+
+
+.owl-item > div {
+    cursor: pointer;
+    margin: 6% 4%;
+    transition: margin 0.4s ease;
+  }
+.owl-item.center  .personal-card__main {
+    height: 28rem;
+    width: 25rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    position: relative;
+    box-shadow: 0 0 1rem #d9d9d9;
+    margin-bottom: 5rem;
+    // margin-right: 10rem;
+
+    @include respond(big-desktop){
+        height: 30rem;
+        width: 30rem;          
+    }  
+}
+
+.owl-item.center  .personal-card__photo {
+    height: 14rem;
+    width: 14rem !important;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+
+    
+    @include respond(big-desktop){
+        height: 16rem;
+        width: 16rem !important;          
+    }  
+}
+
+.owl-item.center .personal-card__photo-box{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 100%;
+    position: relative;
+    top: -25%;
+    transform: translateY(-50%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-bottom: -13rem;
+    background-color: #ffffff;
+
+    
+    @include respond(big-desktop){
+        height: 19rem;
+        width: 19rem;          
+    }  
+}

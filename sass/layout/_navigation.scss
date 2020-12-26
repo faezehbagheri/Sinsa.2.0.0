@@ -1,0 +1,133 @@
+.navigation{
+    height: 14rem;
+    width: 100%;
+    background-image: url(../../assets/img/artboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 2.8rem;
+    position: absolute;
+    top: 0%;
+    z-index: 99;
+
+    @include respond(phone){
+        display: none;
+    }
+
+    &__logo{
+        height: 7rem;
+        width: 7rem;
+        margin-top: -1.5rem;
+    }
+
+    &__list{
+        flex: 0 0 50%;
+        position: relative;
+        // margin-left: 20rem;
+    }
+
+    &__item{
+        list-style-type: none;
+        height: 3rem;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
+        transition: all .2s;
+        text-decoration: none;
+        color:black;
+        
+
+        &:hover{
+            transform: scale(1.1);
+            color: $color-primary-light;
+            z-index: -10;
+            cursor: pointer;
+
+        }
+        
+    }
+
+    &__item:hover + &__submenu{
+        height: 40rem;
+        top: -1%;
+        z-index: -10;
+    }
+
+    &__btn{
+        height: 4.5rem;
+        width: 14rem;
+        font-family: 'irsans';
+        margin-top: -1rem;
+        border-radius: 1rem;
+        border: 2px solid $color-primary;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+    
+
+    &__submenu{
+        height: 0;
+        width: 120rem;
+        position: absolute;
+        left: -50%;
+        top: -150%;
+        z-index: -9;
+        transition: all .5s ease;
+        border-right: 2px solid #dbdbdb;
+        border-left: 2px solid #dbdbdb;
+        background-color: #f8f8f8;
+        @include respond(big-desktop){
+            left: -30%;
+        }
+    
+        @include respond(phone-port){display: none;}
+    }
+
+    &__sub-list{
+        width: 90rem !important;
+        margin-bottom: -3rem;
+    }
+
+    &__sub-title{
+        font-size: 1.5rem;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        background-image: linear-gradient(to right bottom, #3FAF2C, #4f73eb);
+        -webkit-background-clip: text;
+        color: transparent;
+        cursor: pointer;
+    }
+
+    &__img{
+        width: 102.5%;
+        // height: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: 100%;
+        left: -1.9%;
+    }
+
+    &__icon{
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    &__sub-item{
+        list-style-type: none;
+        margin-top: 1.5rem;
+        text-align: right;
+    }
+
+    &__sub-link,
+    &__sub-link:link,
+    &__sub-link:visited{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-gray;
+        cursor: pointer;
+    }
+
+}

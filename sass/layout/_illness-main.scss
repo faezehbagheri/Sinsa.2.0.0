@@ -1,0 +1,27 @@
+.illness-main{
+    height: auto;
+    width: 100%;
+    margin-top: 20rem;
+    margin-bottom: 25rem;
+        
+    @include respond(phone-port){
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+
+    @include respond(phone){
+        // display: none;
+        margin-top: 2rem;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    @include respond(iphone){
+        width: 99%;
+        margin: 3rem auto;
+    }
+    
+    @include respond(big-desktop){height: auto;}
+
+    
+}

@@ -1,0 +1,398 @@
+.search{
+    // width: 70%;
+    // position: relative;
+    // margin-top: 3rem;
+    // transition: all .3s;
+    width: 100%; 
+    margin: 0 -2rem 0 0; 
+    padding: 0%;
+
+
+    @include respond(phone){ 
+        width: 100%;
+        margin: 0;
+    }
+
+    &.result-page{
+        @include respond(phone){ 
+            display: none;
+        }
+    }
+
+    &__form{
+        position: relative;
+    }
+
+    &__box{
+        background-color: rgba($color: $color-black, $alpha: .3);
+        height: 8rem;
+        width: 100%;
+        border-radius: 4rem;
+        padding: 0 2rem;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+        
+        @include respond(phone-port){
+            height: 10rem;
+            border-radius: 6rem;
+        }
+        
+        @include respond(iphone-port){
+            height: 8rem;
+            border-radius: 4rem;
+        }
+
+        @include respond(phone){
+            width: 99%;
+            padding: 0;
+            height: 10rem;
+            margin: 0 auto;
+            // margin: 2rem 1rem 1rem;
+            // margin: 0 1rem 1rem;
+            border-radius: 2rem;
+        }
+
+        @include respond(iphone){
+            height: 7rem;
+        }
+    }
+
+    &__link-btn{
+        background-color: transparent;
+        border: none;        
+
+        @include respond(phone){
+            background-color: $color-gray-lighter;
+            height: 100%;
+            width: 7rem;
+            text-align: center;
+        }
+
+        @include respond(iphone){width: 5rem;}
+        
+    }
+
+    &__btn{
+        width: 15rem;
+        height: 6rem;
+        border-radius: 3rem;
+        margin: 2rem 1rem;
+        // margin-left: 5px;
+        border: none;
+        outline: none;
+        background-color: $color-primary-light;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2rem;
+        cursor: pointer;
+        
+        i{
+            font-size: 2.5rem;
+            margin-left: 1rem;
+        }
+        
+        @include respond(phone-port){
+            height: 7.5rem;
+            width: 18%;
+            border-radius: 5rem;
+        }
+        
+        @include respond(iphone-port){
+            height: 6rem;
+            width: 18%;
+            border-radius: 3rem;
+        }
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+
+    &__close-btn{
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem 1rem;
+        padding-top: 3px;
+        border-radius: 100%;
+        border: 4px solid white;
+        background-color: $color-pink;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .makan-yab{        
+    
+        @include respond(phone){
+            height: auto;
+            .search__close-btn{display: none;}
+
+            .search__search-container{
+                width: 80% !important;
+                flex-direction: column;
+                div.search__tadakholat{
+                    width: 95%; 
+                    justify-content: center;
+                    padding: 1rem 0;
+                    margin-top: 1rem;
+                    border: none;
+
+                    &:not(:last-child){
+                        border-bottom: 1px solid $color-primary;
+                    }
+
+                    i{
+                        font-size: 3rem;
+                        margin: 0 1rem;
+                    }
+
+                    .container{
+                        height: 7rem;
+
+                        @include respond(iphone){height: 4rem;}
+
+                        .select2{
+                            height: 100%;
+                            font-size: 2rem !important;
+                        }
+
+                        .select2-selection__rendered {
+                            line-height: 6rem;
+
+                            @include respond(iphone){line-height: 4rem;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__advance{
+        height: 104%;
+        width: 23rem;
+        border-radius: 5rem 0 0 5rem;
+        box-sizing: padding-box;
+        border: 2px solid white;
+        background-color: $color-gray;
+        font-size: 1.6rem;
+        color: white;
+        box-shadow: 0 0 5px rgba($color: $color-gray, $alpha: .5);
+        position: absolute;
+        left: 0;
+    
+        @include respond(phone){
+            border-radius: 1.5rem 0 0 1.5rem;
+            width: 17rem;
+            font-size: 1.8rem;
+            border: none;
+            height: 100%;
+
+            img{display: none;}
+        }
+
+        @include respond(iphone){width: 11rem;}
+    }
+
+    &__advanced-btn{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        background-size: cover;
+        background-image: url(../../assets/img/advanced@2x.png);
+        margin-left: 1.5rem;
+        margin-top: -2rem;
+        cursor: pointer;
+
+        @include respond(phone){
+            display: none !important;
+        }
+    }
+
+    &__advanced-label{
+        font-size: 1.7rem;
+        color: $color-white;
+        margin-top: -2rem;
+    }
+    
+    &__search-container{
+        height: 6rem;
+        // width: 80%;
+        flex: 1;
+        border-radius: 5rem;
+        position: relative;
+        margin: 2rem 1rem;
+        background-color: #fff;
+        overflow: hidden;
+        
+        @include respond(phone-port){
+            height: 7.5rem;
+        }
+        
+        @include respond(iphone-port){height: 6rem;}
+
+        @include respond(phone){
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border: 2px solid $color-primary;
+            border-radius: 2rem;
+        }
+    }
+
+    &__input{
+        width: 83%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        font-size: 2rem;
+        text-align: right;
+        direction: rtl;
+        color: $color-gray;
+        direction: rtl;
+        
+        &::placeholder{
+            font-size: 1.4rem;
+
+            @include respond(phone){font-size: 2rem;}
+            
+        }
+    }
+
+    &__right-icon{
+        font-size: 3rem;
+        color: $color-primary;
+        margin-right: 2rem;
+
+        @include respond(phone){
+            font-size: 3.5rem;
+            margin-right: 0;
+        }
+
+    }
+    &__left-icon{
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        transform: translate(-15% , -50%);
+        color: $color-primary;
+        border-right: 2px solid $color-primary;
+        padding: 1rem 2rem 1rem 0;
+        cursor: pointer;
+
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
+    }
+
+    &__hashtag{
+        margin-right: 2rem;
+        direction: rtl;
+        
+        @include respond(phone){display: none;}
+
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: white;
+            text-align: right;
+            direction: rtl;
+            padding: 1px 3rem;
+            border-radius: 2rem;
+            background-color: rgba($color: #000000, $alpha: .3);
+            margin: 1rem;
+            transition: all .3s ease;
+            box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+
+            &:hover{
+                color: $color-primary-light;
+                background-color: rgba($color: #000000, $alpha: .6);
+                transform: scale(1.07);
+            }
+        
+            @include respond(phone-port){
+                font-size: 2rem;
+            }
+        
+            @include respond(iphone-port){font-size: 1.6rem;}
+        }
+    }
+    &__tadakholat{
+        flex: 1;
+        padding: 0 1rem;
+        height: 100%;
+        &:not(:last-of-type){
+            border-left: 1px solid $color-primary-dark;
+        }
+    }
+    
+    &__tadakhol-input{
+        width: 90%;
+        text-align: right;
+        direction: rtl;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        color: $color-gray;
+
+        &::placeholder{
+            font-size: 1.4rem;
+            color: $color-gray-light;
+        }
+    }
+
+    &__drug-icon{
+        font-size: 2rem;
+        color: $color-secondary-light;
+        // margin-left: 1rem;
+    }
+
+    &__plus-btn{
+        background-color: transparent;
+        border: 3px solid $color-primary-light;
+        border-radius: 100%;
+        height: 3rem;
+        width:  3rem;
+        position: relative;
+        margin: 0 1rem;
+        cursor: pointer;
+
+        i{
+            color: $color-primary-light;
+            @include centerABS();
+        }
+    }
+
+    &__multipleTabs{
+        width: 90%;
+        height: 8rem;
+
+        a,
+        a:link,
+        a:visited{
+            padding: 1rem 0;
+            text-align: center;
+            border-radius: 2rem 2rem 0 0;
+            width: 25%;
+            font-size: 2.5rem;
+            border-left: 2px solid white;
+            background-color: rgba($color: $color-primary, $alpha: .8);
+            color: white;
+            transition: all .3s ease;
+        }
+    }
+}
+
+.active-mobile-tab{
+    background-color: rgba($color: $color-primary-light, $alpha: .8) !important;
+    color: white !important;
+    font-size: 2.2rem !important;
+    
+
+    @include respond(iphone){
+        font-size: 2rem !important;
+    }
+}

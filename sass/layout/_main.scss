@@ -1,0 +1,93 @@
+.main{
+    height: auto;
+    width: 100%;
+    position: relative;
+
+    @include respond(phone){
+        display: none;
+    }
+
+
+    &__half-circle{
+        // height: 105vh;
+        width: 100%;
+        background-color: #fff;
+        top: -9%;
+        clip-path: circle(50% at 50% 100%);
+
+        
+        @include respond(big-desktop){ top: -10%; }
+    }
+
+    &__link{
+        margin-top: -10rem;
+    }
+
+    &__icon{
+        font-size: 5rem;
+        color: rgba($color: $color-gray-lighter, $alpha: .8);
+        margin-bottom: 15rem;
+        cursor: pointer;
+        display: none;
+    }
+
+    &__main-section{
+        width: 75%;
+        z-index: 999;
+    }
+
+    &__section-specialty{
+        width: 100%;
+    }
+
+    &__description{
+        width: 25%;
+        text-align: center;
+
+        &--paraghraph{
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 4px solid #707070;
+        }
+    }
+
+    &__section-doctors{
+        // height: 60vh;
+        width: 85vw;
+        margin-top: 8rem;
+    }
+
+    &__background{
+        width: 99vw;
+        margin-top: -5rem;
+        margin-bottom: -30rem;
+    }
+
+    &__section-article{
+        // height: 80vh;
+        margin-top: 10rem;
+        // background-color: aquamarine;
+    }
+
+    &__section-database{
+        // height: 40vh;
+    }
+
+    &__section-comment{
+        // height: 60vh;
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    
+    &__section-question{
+        // height: 70vh;
+        width: 100%;
+    }
+
+    &__bg{
+        width: 99vw;
+        margin-top: -13rem;
+        margin-bottom: -25rem;
+    }
+}

@@ -1,0 +1,374 @@
+.suggestion{
+    height: 33rem;
+    width: 100%;
+    border-radius: 5rem;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: .3);
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+    margin-top: 5px;
+    z-index: 9999;
+    overflow: hidden;
+        
+    @include respond(phone-port){
+        height: 43rem;
+        margin-right: 0 !important;
+    }
+
+    @include respond(phone){
+        // width: 95%;
+        width: 100%;
+        height: 65rem;
+        margin: 0 auto;
+        border-radius: 3rem;
+    }
+
+    @include respond(iphone){
+        border-radius: 2rem;
+        height: 45rem;
+    }
+
+    &__result{
+        background-color: white;
+        width: 100%;
+        border-radius: 4rem;
+        overflow: hidden;
+
+        @include respond(iphone){border-radius: 3rem;}
+    }
+
+    &__icons{
+        width: 12%;
+        border-left: 2px solid rgba($color: $color-gray-light, $alpha: .3);
+
+        @include respond(phone-port){width: 15%;}
+
+        @include respond(phone){width: 20%;}
+        
+
+        div{
+            cursor: pointer;
+            margin-bottom: 1.2rem;
+        }
+
+        i{
+            font-size: 1.9rem;
+            // margin: .5rem 1rem;
+            color: $color-gray;
+        
+            @include respond(phone-port){font-size: 2.5rem;}
+
+            @include respond(phone){font-size: 3.3rem;}
+        }
+
+        span{
+            font-size: 1.2rem;
+            color: $color-gray;
+        
+            @include respond(phone-port){font-size: 1.5rem;}
+
+            @include respond(phone){font-size: 1.8rem;}
+        }
+    }
+
+
+    &__result-list{
+        width: 82%;
+        max-height: 28rem;
+        text-align: right;
+        overflow-y: scroll;
+
+        @include respond(phone){
+            max-height: 38rem;
+        }
+
+        @include respond(iphone){
+            max-height: 26rem;
+        }
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background-color: none;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            font-size: 1.6rem;
+            color: $color-gray;            
+            padding: 1.3rem 1.5rem;
+        
+            @include respond(phone-port){
+                font-size: 1.8rem;
+                padding: 2.5rem 1.5rem;
+            }
+
+            @include respond(phone){
+                padding: 3rem 1.5rem;
+                font-size: 2rem;
+            }
+
+            &:not(:last-of-type){
+                border-bottom: 2px solid rgba($color: $color-gray-light, $alpha: .3);
+            }
+        }
+
+        span{
+            font-size: 1.6rem;
+            color: $color-primary;
+        
+            @include respond(phone-port){font-size: 1.8rem;}
+
+            @include respond(phone){font-size: 2rem;}
+        }
+    }
+
+    &__container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 1rem 2rem;
+    }
+
+    &__box{
+        width: 100%;
+        padding: 1rem;
+        height: 30rem;
+        position: relative;
+        overflow-y: scroll;
+        // display: none;
+
+        @include respond(phone){
+            height: 50rem;
+        }
+
+        @include respond(iphone){
+            height: 30rem;
+        }
+    
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
+        }
+    }
+
+    &__close{
+        font-size:2.5rem;
+        color: $color-primary-dark;
+        position: absolute;
+        left: 5%;
+        top: 2%;
+        cursor: pointer;
+        z-index: 9999;
+        
+        @include respond(phone-port){font-size: 3rem;}
+
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
+    }
+
+    a,
+    a:link,a:visited{
+        text-decoration: none;
+    }
+
+    &__header{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 5px;
+        direction: rtl;
+        
+        @include respond(phone-port){font-size: 2rem;}
+
+        @include respond(phone){
+            font-size: 2.5rem;
+        }
+    }
+
+    &__icon{
+        padding-right: 1rem;
+    }
+
+    &__item{
+        font-size: 1.5rem;
+        text-align: right;
+        color: #fff;
+        margin: .3rem;
+        padding: 1rem 0;
+
+        @include respond(phone){
+            font-size: 2.5rem;
+            padding: 2rem 0;
+        }
+    }
+
+    &__recent-search{
+        width: 100%;
+        border-bottom: 1px solid $color-gray-lighter;
+        margin: 1rem;
+        margin-top: 0;
+
+        &--item{
+            background-color: #fff;
+            padding: 5px 1.5rem;
+            border-radius: 2rem;
+            margin-left: 1rem;
+            text-align: center;
+            font-size: 1.4rem;
+            color: $color-gray;
+            margin-bottom: 1rem;
+        
+            @include respond(phone-port){
+                font-size: 1.8rem;
+                padding: 1rem 1.5rem;
+                border-radius: 2.5rem;
+            }
+
+            @include respond(phone){
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__related-words{
+        margin: .7rem 2.5rem;
+        position: relative;
+        border-bottom: 2px solid $color-primary-dark;
+
+        &--items{
+            width: 90%;
+            margin: .5rem 10%; 
+            padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        @include respond(iphone){
+            
+        }
+    }
+
+    &__article{
+        position: relative;
+        border-bottom: 2px solid $color-primary-dark;
+        margin: .7rem 2.5rem;
+
+        &--icon{
+            font-size: 3rem;
+            color: $color-primary;
+            margin: 0  5%;
+
+            @include respond(phone){
+                font-size: 3.8rem;
+            }
+        }
+
+        &--items{
+            width: 82%;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    &__hospital{
+        position: relative;
+        border-bottom: 2px solid $color-primary-dark;
+        margin: .7rem 2.5rem;
+
+        &--icon{
+            font-size: 3rem;
+            color: $color-pink;
+            margin: 0  5%;
+
+            @include respond(phone){
+                font-size: 3.8rem;
+            }
+        }
+
+        &--items{
+            width: 82%;
+            // border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    &__chat{
+        position: relative;
+        padding-bottom: 1rem;
+        margin: .7rem 2.5rem;
+
+        &--icon{
+            font-size: 3rem;
+            color: $color-primary-light;
+            margin: 0  5%;
+        }
+
+        &--items{
+            width: 82%;
+            // border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+    }
+}
+
+.active-icon{
+
+    i{
+        font-size: 2.7rem !important;
+        color: $color-primary-light !important;
+
+        @include respond(phone-port){font-size: 3.5rem !important;}
+
+        @include respond(phone){font-size: 4.3rem !important;}
+        
+    }
+    span{
+        font-size: 1.6rem !important;
+        color: $color-primary-light !important;
+
+        @include respond(phone-port){font-size: 2rem !important;}
+        
+        @include respond(phone){font-size: 2rem !important;}
+        
+    }
+}

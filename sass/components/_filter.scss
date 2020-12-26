@@ -1,0 +1,741 @@
+.filter{
+    width: 24rem;
+    margin-left: 3rem;
+    transition: height 1s ease,
+                opacity .2s;
+
+    @include respond(phone){
+        // display: none !important;
+        height: 0;
+        opacity: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+        
+    @include respond(phone-port){width: 70%; margin-top: 10rem;}
+
+    @include respond(iphone){
+        margin: 0;
+    }
+
+    @include respond(big-desktop){
+        width: 29rem;
+    }
+
+    &__show{
+        height: 170rem;
+        opacity: 1;
+    }
+
+    &__main-box{
+        height: 17vh;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+        margin-bottom: 2rem;
+
+        @include respond(big-desktop){height: 13vh;}
+        
+        @include respond(phone-port){
+            height: 25rem;
+        }
+
+        @include respond(phone){
+            height: 25rem;
+            border-radius: 3.5rem;
+        }
+
+        @include respond(iphone){
+            height: 19rem;
+        }
+    }
+
+    &__icon-box{
+        height: 8rem;
+        width:  8rem;
+        border-radius: 100%;background-color: #fff;
+        border: 2px solid $color-primary-light;
+        position: relative;
+        
+        @include respond(phone-port){
+            height: 15rem;
+            width:  15rem;
+        }
+
+        @include respond(phone){
+            height: 16rem;
+            width:  16rem;
+        }
+
+        @include respond(iphone){
+            height: 13rem;
+            width: 13rem;
+        }
+    }
+
+    &__icon{
+        font-size: 4rem;
+        color: $color-gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @include respond(phone-port){
+            font-size: 7rem;
+        }
+
+        @include respond(phone){
+            font-size: 7rem;
+        }
+    }
+
+    &__span{
+        font-size: 1.5rem;
+
+        @include respond(phone){
+            font-size: 2.5rem;   
+        }
+        
+        @include respond(phone-port){font-size: 2rem;}
+    }
+
+    &__header{
+        
+        &:hover{
+            cursor: pointer;
+
+            & > * {
+                color: $color-pink;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__box{
+        // height: 45vh;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 0 2px 5px $color-gray-light;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+        @include respond(phone){
+            border-radius: 3.5rem;
+        }
+        
+        h2{
+            text-align: center;
+            color: $color-gray;
+            // margin: 1rem;
+            background-color: $color-secondary-light;
+            width: 100%;
+            padding: 1rem;
+            color: white;
+
+            @include respond(phone-port){
+                padding: 1.8rem;
+                font-size: 2rem;
+            }
+
+            @include respond(phone){
+                padding: 2.5rem;
+                font-size: 2.4rem;
+            }
+
+            @include respond(iphone){padding: 1.5rem;}
+        }
+
+        @include respond(0phone){
+            border-radius: 2rem;
+        }
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        color: $color-gray;
+        margin: 1rem auto;
+        width: 85%;
+    }
+
+    &__arrow-icon{
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    &__item{
+        margin: 1.5rem;
+
+        &:hover{
+            & > *{
+                color: $color-pink;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__close-icon{
+        font-size: 1.8rem;
+        color: $color-primary;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        color: $color-primary;
+        padding-right: 1rem;
+    }
+
+    &__picked{
+        // height: 10vh;
+        overflow-y: scroll;
+        border-top: 1px solid $color-gray;
+        // display: none;
+
+        
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+    }
+
+    &__optios{
+        height: 15rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        // display: none;
+
+        
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+    }
+
+    &__lable{
+        font-size: 1.5rem;
+        padding-right: .5rem;
+        color: $color-gray;
+    }
+
+    &__checkbox{
+        margin: 1rem 1.5rem;
+    }
+
+    &__search-box{
+        height: 4rem;
+        width: 90%;
+        border-radius: 5rem;
+        position: relative;
+        box-shadow: 1px 1px 4px $color-gray-light;
+        margin: 1rem auto;
+        background-color: #fff;
+
+        @include respond(phone-port){
+            height: 7rem !important;
+            margin-top: 2rem;
+        }
+
+        @include respond(iphone){
+            height: 5rem !important;
+        }
+    }
+
+    &__input{
+        height: 96%;
+        width: 72%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        font-size: 1.5rem;
+        text-align: right;
+        padding-right: 1rem;
+
+        &::placeholder{
+            font-size: 1.2rem;
+            color: rgb(196, 193, 193);
+            text-align: right;
+
+            @include respond(phone-port){
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__search-btn{
+        background-color: $color-primary;
+        width: 20%;
+        height: 100%;
+        border-radius: 0 5rem 5rem 0;
+        position: relative;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__search-icon{
+        font-size: 2rem;
+        color: $color-gray !important;
+        @include centerABS();
+        color: #fff;
+
+        @include respond(phone-port){
+            font-size: 2.8rem !important;
+        }
+    }
+
+    &__alphba-search{
+        height: 59rem;
+        width: 90%;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+        margin-bottom: 5rem;
+
+        @include respond(phone-port){
+            height: 100rem;
+        }
+
+        @include respond(iphone){
+            height: 78rem;
+        }
+
+        & h3{
+            color: $color-gray;
+            padding: 1.5rem;
+            font-size: 1.3rem;
+        
+            @include respond(phone-port){
+                font-size: 2rem;
+                padding: 2rem;
+            }
+
+            @include respond(phone){
+                padding: 2rem;   
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    &__tabs {
+        width: 100%;  
+        list-style: none;
+        position: relative;
+
+        li{
+            float: right;
+            display: block;
+            width: 50%;
+        }
+
+        input[type="radio"] {
+            position: absolute;
+            top: 0;
+            left: -9999px;
+            outline: none;
+        }
+
+        label {
+            display: block;
+            height: 4rem;
+            padding: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: normal;
+            background: #fff;
+            cursor: pointer;
+            transition: all .3s ease;
+            color: $color-gray;
+            outline: none;
+
+            @include respond(phone-port){
+                height: 6rem;
+                font-size: 2rem;
+            }
+        } 
+        
+        [id^="tab"]:checked + label { 
+            background: $color-gray-lighter;
+            font-size: 1.3rem;
+
+            @include respond(phone-port){
+                font-size: 2.2rem;
+            }
+        }
+        
+        [id^="tab"]:checked ~ [id^="tab-content"] {
+            display: flex !important;
+        }
+    }
+
+    &__tab-content{
+        z-index: 2;
+        display: none !important; 
+        overflow: hidden;
+        width: 100%;
+        height: 46rem;
+        position: absolute;
+        left: 0; 
+        background: $color-gray-lighter;
+
+        @include respond(phone-port){
+            height: 80rem;   
+        }
+
+        @include respond(iphone){
+            height: 60rem;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            width: 20%;
+            margin: 5px;
+            height: 4.3rem;
+            background-color: #fff;
+            box-shadow: 1px 3px 5px $color-gray-light;
+            border-radius: 1rem;
+            border: 1px solid $color-primary;
+            outline: none;
+            cursor: pointer;
+            font-size: 1.6rem;
+            color: $color-gray;
+            text-decoration: none;
+            text-align: center;
+            transition: all .3s ease;
+        
+            @include respond(phone-port){
+                height: 7.5rem;
+                font-size: 2.2rem;
+            }
+
+            @include respond(phone){
+                height: 8rem;
+                font-size: 2.8rem;
+            }
+
+            @include respond(iphone){
+                height: 6rem;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+                background-color: $color-primary-light;
+                color: white;
+                border: 1px solid white;
+        
+                @include respond(phone-port){transform: scale(1.05);}
+            }
+        }
+    } 
+    
+    &__buttons{
+        width: 100%;
+    }
+
+    &__filter-btn{
+        height: 4rem;
+        width: 12rem;
+        border-radius: 3rem;
+        background-color: $color-gray;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: 'irsans';
+    }
+
+    &__filter-icon{
+        font-size: 2.1rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    &__reset-btn{
+        height: 4rem;
+        width: 12rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        border: 1px solid $color-gray;
+        outline: none;
+        font-size: 1.5rem;
+        color: $color-gray;
+        font-family: 'irsans';
+    }
+
+    &__reset-icon{
+        font-size: 2.1rem;
+        color: $color-gray;
+        margin-left: 1rem;
+    }
+
+    &__btn{
+        position: absolute;
+        top: 99%;
+        transform: translateY(-40%);
+    }
+
+    &__list{
+        list-style-type: none;
+        height: 24rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        // margin-bottom: 3rem;
+
+        @include respond(phone-port){height: 35rem;}
+
+        @include respond(phone){
+            height: 50rem;   
+        }
+
+        @include respond(iphone){
+            height: 35rem;
+        }
+
+    
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
+        }
+
+        li{
+            // margin: 6px;
+            width: 100%;
+            border-bottom: 1px solid $color-secondary-light;
+            padding: 0 1.5rem;
+            height: 5rem;
+            transition: all .3s;
+
+            @include respond(phone-port){height: 9rem;}
+
+            @include respond(phone){
+                padding: 1rem 1.5rem;
+                height: 10rem;
+            }
+
+            @include respond(iphone){
+                height: 7rem;
+            }
+
+            &:hover{
+                background-color: $color-primary-light;
+                box-shadow: 1px 1px 5px $color-gray-light;
+
+                i{color: white;}
+
+                a{
+                    color: white;
+                    font-size: 1.6rem;
+
+                    @include respond(phone-port){font-size: 2rem;}
+
+                    @include respond(phone){ font-size: 2.4rem;}
+                }
+            }
+        }
+
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: $color-gray;
+            text-align: right;
+            transition: all .3s;
+
+            @include respond(phone-port){font-size: 1.8rem;}
+
+            @include respond(phone){
+                font-size: 2.2rem;
+            }
+        }
+        
+
+        i{
+            font-size: 1.4rem;
+            color: $color-primary-dark;
+
+            @include respond(phone-port){font-size: 2rem;}
+
+            @include respond(phone){
+                font-size: 2.5rem;   
+            }
+        }
+    }
+
+    .owl-nav{
+        display:block !important;
+    }
+    
+    .owl-prev{
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem;
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
+    }
+    .owl-next{
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        left:10%;
+        top:40%;
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem; 
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
+    }
+    
+}
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    // margin: auto;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 1px solid $color-gray;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: $color-primary-light;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: none;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);    
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+

@@ -1,0 +1,90 @@
+@mixin centerABS {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone-small {
+        @media only screen and (max-width : 22.5em){
+            @content
+        };
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width : 30em){
+            @content
+        };
+    }
+
+    @if $breakpoint == phone-port {
+        @media only screen and (max-width :51em){
+            @content
+        };
+    }
+
+    @if $breakpoint == iphone-port {
+        @media only screen and (max-width :51em) and (-webkit-min-device-pixel-ratio: 2){
+            @content
+        };
+    }
+
+    @if $breakpoint == iphone {
+        @media only screen and (max-width : 30em) and (-webkit-min-device-pixel-ratio: 2){
+            @content
+        };
+    }
+
+    @if $breakpoint == smallest {
+        @media only screen and (max-width : 56.25em){
+            @content
+        };
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width : 63.75em){
+            @content
+        };
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width : 78.125em){
+            @content
+        };
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width : 112.5em){
+            @content
+        };
+    }
+}
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+    .result__pie {
+      .result__half-circle {
+        border-color: $color ;
+      }
+  
+      .result__left-side {
+        transform: rotate($progress * 3.6deg);
+      }
+  
+      @if $progress <= 50 {
+        .result__right-side {
+          display: none;
+        }
+      } @else {
+        clip: rect(auto, auto, auto, auto);
+  
+        .result__right-side {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }

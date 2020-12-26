@@ -1,0 +1,46 @@
+.header{
+    &.homepage{
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)),
+        url(../../assets/img/PICc.png);
+
+        // position: absolute;
+        top:60px;
+        z-index: -10;
+    }
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond(big-desktop){height: 100vh;}
+    @include respond(phone-port ){height: 130vh;}
+    
+    @include respond(phone){
+        height: 85vh;
+        background-position: center;
+    }
+    
+    @include respond(iphone){height: 92rem;}
+    
+    
+    &__main{
+        margin: 0 3rem;
+    }
+    
+    &__label{
+        font-size: 5rem;
+        color: #ffffff;
+        margin-top: 25rem;
+        
+        @include respond(phone-port){margin-top: 15rem;}
+        
+        @include respond(iphone-port){font-size: 4rem;}
+    
+        @include respond(iphone){margin-top: 12rem;}
+    }   
+
+}
+
