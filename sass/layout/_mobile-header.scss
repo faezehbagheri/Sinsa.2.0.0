@@ -7,7 +7,7 @@
     }
 
     &__head{
-        height: 12rem;
+        height: 10rem;
         width: 100%;
         background-color: $color-primary;
         position: fixed;
@@ -15,7 +15,7 @@
         z-index: 999;
 
         @include respond(iphone){
-            height: 7rem;
+            // height: 7rem;
         }
 
         @include respond(iphone){

@@ -21,6 +21,7 @@ html {
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+    direction: rtl;
 }
 
 *{
@@ -42,6 +43,7 @@ body {
 button{
     cursor: pointer;
     outline: none;
+    font-family: Vazir !important;
 }
 
 .outline-green{

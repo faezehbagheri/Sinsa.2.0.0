@@ -5,7 +5,7 @@
     position: relative;
     background-color: rgba($color: #000000, $alpha: .3);
     box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
-    margin-top: 5px;
+    margin-top: 15px !important;
     z-index: 9999;
     overflow: hidden;
         
@@ -20,11 +20,6 @@
         height: 65rem;
         margin: 0 auto;
         border-radius: 3rem;
-    }
-
-    @include respond(iphone){
-        border-radius: 2rem;
-        height: 45rem;
     }
 
     &__result{
@@ -47,12 +42,13 @@
 
         div{
             cursor: pointer;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
+
+            @include respond(phone){margin-bottom: 3rem;}
         }
 
         i{
             font-size: 1.9rem;
-            // margin: .5rem 1rem;
             color: $color-gray;
         
             @include respond(phone-port){font-size: 2.5rem;}
@@ -78,11 +74,7 @@
         overflow-y: scroll;
 
         @include respond(phone){
-            max-height: 38rem;
-        }
-
-        @include respond(iphone){
-            max-height: 26rem;
+            max-height: 40rem;
         }
 
         &::-webkit-scrollbar{
@@ -104,10 +96,19 @@
                 font-size: 1.8rem;
                 padding: 2.5rem 1.5rem;
             }
+        
+            @include respond(iphone-port){
+                font-size: 2rem;
+                padding: 4rem 1.5rem;
+            }
 
             @include respond(phone){
                 padding: 3rem 1.5rem;
                 font-size: 2rem;
+            }
+            @include respond(iphone){
+                padding: 5rem 1.5rem;
+                font-size: 2.5rem;
             }
 
             &:not(:last-of-type){
@@ -142,10 +143,6 @@
 
         @include respond(phone){
             height: 50rem;
-        }
-
-        @include respond(iphone){
-            height: 30rem;
         }
     
         &::-webkit-scrollbar-track{

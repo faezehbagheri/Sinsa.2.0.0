@@ -79,7 +79,7 @@ function openOption(num){
         {  
             
             if(checkboxes[i].checked)  {
-                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
+                html[i]= "<div class='filter__item flex  align-center' id='item-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
                 newHtml[i] = html[i].replace('%text%' , checkboxes[i].value);
                 newHtml[i] = newHtml[i].replace('%id%' , id);
                 id++;
@@ -109,7 +109,7 @@ function openFilterOption_map(num){
             
             if(checkboxes[i].checked)  {
                 document.querySelector(".picked-" + num).innerHTML = '';
-                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%num%-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
+                html[i]= "<div class='filter__item flex  align-center' id='item-%num%-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
                 newHtml[i] = html[i].replace('%text%' , checkboxes[i].value);
                 newHtml[i] = newHtml[i].replace('%num%' , num);
                 newHtml[i] = newHtml[i].replace('%id%' , id[num]);
@@ -239,18 +239,18 @@ function initMap() {
 
         document.querySelector(".hospital-details").innerHTML= '';
         var html = `
-        <div class="hospital-details__container flex r-reverse align-center justi-around">
+        <div class="hospital-details__container flex  align-center justi-around">
                     <div class="hospital-details__col-1 flex column align-end justi-around">
                         <p class="hospital-details__name">بیمارستان %name%</p>
-                        <div class="hospital-details__full-width flex r-reverse align-center justi-between">
+                        <div class="hospital-details__full-width flex  align-center justi-between">
                             <span class="hospital-details__type">بیمارستان %type%</span>
-                            <div class=" flex r-reverse align-center ">
+                            <div class=" flex  align-center ">
                                 <i class="fas fa-clock hospital-details__clock-icon"></i>
                                 <span class="hospital-details__time">%time1%</span>
                                 <span class="hospital-details__time">%time2%</span>
                             </div>
                         </div>
-                        <div class="flex r-reverse align-start">
+                        <div class="flex  align-start">
                             <i class="fas fa-map-marker-alt hospital-details__location-icon"></i>
                             <span class="hospital-details__address">%address%</span>
                         </div>

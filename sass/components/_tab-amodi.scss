@@ -1,23 +1,24 @@
 .tab-amodi{
-    width: 52%;
+    // width: 52%;
     position: relative;
     // margin-bottom: 25rem;
         
     @include respond(phone-port){
-        width: 81%;
+        // width: 81%;
     }
 
     
     @include respond(phone){
-        width: 97%;
+        // width: 97%;
         align-items: center !important;
+        padding: 0 !important;
     }
 
     &.search-box{  
-        width: 90%;  
-        max-width: 1100px;
-        @include respond(phone-port){width: 95% !important;}    
-        @include respond(iphone){width: 100% !important;}
+        // width: 90%;  
+        // max-width: 1100px;
+        // @include respond(phone-port){width: 95% !important;}    
+        // @include respond(iphone){width: 100% !important;}
         
         // @include respond(iphone-port){width: 95% !important;}
     }
@@ -46,7 +47,7 @@
         flex-flow: row-reverse wrap;
         position: relative;
         cursor: pointer;
-        margin-right: 2rem;
+        // margin-right: 2rem;
 
         @include respond(phone-port){
             width: 100%;
@@ -56,10 +57,11 @@
     }
 
     &__buttons{
-        width: 100%;
-        position: absolute;
+        // width: 100%;
+        position: relative;
         top: 100%;
         display: none;
+        margin-bottom: 20rem;
 
         @include respond(phone){display: flex}
 
@@ -71,13 +73,8 @@
             border: 1px solid white;
             background-color: rgba($color: #000000, $alpha: .4);
             font-size: 2.5rem;
-            color: white;
+            color: white !important;
             transition: all .3s ease;
-
-            @include respond(iphone){
-                height: 7rem;
-                border-radius: 1.5rem;
-            }
         }
 
         i{
@@ -127,38 +124,38 @@
         display: inline-block;
         position: relative;
         z-index: 0;
-        color: $color-primary-dark;
+        color: $color-gray !important;
         box-shadow: 0px -2px 6px #a6a6a665;
 
         
-        // @include respond(phone-port){
-        //     font-size: 1.8rem;
-        //     padding: 1.2rem 2.5rem;
-        // }
-        
-        @include respond(iphone-port){
-            font-size: 1.5rem;
-            
+        @include respond(phone-port){
+            font-size: 1.8rem;
+            padding: 1.2rem 2.5rem;
         }
         
-        @include respond(phone){
-            font-size: 2.3rem;
-            // min-width: 15rem;
-            width: 75% !important;
-            padding: 1.2rem 3rem;
-            margin: 0;
-            box-shadow: none;     
-            &:nth-child(odd){
-                margin-right: 4rem;
-            }               
-        }  
+        // @include respond(iphone-port){
+        //     font-size: 1.5rem;
+            
+        // }
+        
+        // @include respond(phone){
+        //     font-size: 2.3rem;
+        //     // min-width: 15rem;
+        //     width: 75% !important;
+        //     padding: 1.2rem 3rem;
+        //     margin: 0;
+        //     box-shadow: none;     
+        //     &:nth-child(odd){
+        //         margin-right: 4rem;
+        //     }               
+        // }  
 
-        @include respond(iphone){
-            // width: 9rem;
-            width: 70% !important;
-            font-size: 2.2rem;
-            padding: 1rem 1px !important;
-        }     
+        // @include respond(iphone){
+        //     // width: 9rem;
+        //     width: 70% !important;
+        //     font-size: 2.2rem;
+        //     padding: 1rem 1px !important;
+        // }     
 
         &.main-search{
             
@@ -175,7 +172,7 @@
 
         &:hover{
             background-color: $color-primary-dark;
-            color: white;
+            color: white !important;
             
             &::before{
                 background-color: $color-primary-dark;

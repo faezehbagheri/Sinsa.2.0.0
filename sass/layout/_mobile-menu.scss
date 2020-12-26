@@ -1,7 +1,7 @@
 .mobile-menu{
     width: 100%;
     height: 100vh;
-    background-color: rgba($color: #000000, $alpha: .9);
+    background-color: rgba($color: #000000, $alpha: .9) !important;
     position: fixed;
     z-index: 9999999;
     opacity: 0;
@@ -18,7 +18,7 @@
 
     &:target &__content{
         visibility: visible;
-        transform: translate(18%);
+        transform: translate(120% , 0);
     }
 
     &__logo{
@@ -33,7 +33,7 @@
     &__content{
         width: 85%;
         height: 180vh;
-        transform: translate(100% , 0);
+        transform: translate(250% , 0);
         background-color: #ffffff;
         visibility: hidden;
         transition: all .6s;
@@ -68,9 +68,14 @@
         
     }
 
+    &__list{
+        list-style-type: none !important;
+    }
+
     &__item{
         margin: 4rem 2.5rem;
         direction: ltr; 
+        text-align: right;
         
         &::marker{
             content: '';
@@ -111,12 +116,13 @@
         height: 0;
         transform: translate(150%);
         transition: all .7s;
+        text-align: right !important;
     }   
 
 
     &__sub-item{
         margin: 1rem 2.5rem;
-        direction: ltr;
+        direction: rtl;
     }
 
     &__sub-link:link,
