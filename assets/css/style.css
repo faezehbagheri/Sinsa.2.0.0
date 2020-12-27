@@ -20,6 +20,9 @@ body {
   overflow-x: hidden;
   direction: rtl; }
 
+a {
+  text-decoration: none !important; }
+
 *::-webkit-scrollbar-track {
   border-radius: 10px;
   position: absolute; }
@@ -98,6 +101,12 @@ input {
   font-weight: normal; }
 
 body {
+  font-family: Vazir !important; }
+
+button {
+  font-family: Vazir !important; }
+
+input::placeholder {
   font-family: Vazir !important; }
 
 .active {
@@ -236,7 +245,8 @@ body {
       text-decoration: none; }
 
 .card {
-  width: 43%; }
+  width: 43%;
+  border: none !important; }
   @media only screen and (max-width: 51em) {
     .card {
       width: 46%; } }
@@ -382,7 +392,8 @@ body {
       margin-left: 3rem;
       font-size: 1.6rem;
       font-weight: 500;
-      color: #6DC2BE; }
+      color: #6DC2BE;
+      transition: all .3s; }
       @media only screen and (max-width: 51em) {
         .card__item p {
           font-size: 1.6rem; } }
@@ -1234,8 +1245,7 @@ body {
     color: #90C73D; }
 
 .filter {
-  width: 24rem;
-  margin-left: 3rem;
+  margin-top: 5rem;
   transition: height 1s ease, opacity .2s; }
   @media only screen and (max-width: 30em) {
     .filter {
@@ -1252,7 +1262,7 @@ body {
       margin: 0; } }
   @media only screen and (min-width: 112.5em) {
     .filter {
-      width: 29rem; } }
+      width: 30rem !important; } }
   .filter__show {
     height: 170rem;
     opacity: 1; }
@@ -1263,9 +1273,6 @@ body {
     border-radius: 2.5rem;
     box-shadow: 1px 1px 5px #A0A0A0;
     margin-bottom: 2rem; }
-    @media only screen and (min-width: 112.5em) {
-      .filter__main-box {
-        height: 13vh; } }
     @media only screen and (max-width: 51em) {
       .filter__main-box {
         height: 25rem; } }
@@ -1443,19 +1450,12 @@ body {
       .filter__search-icon {
         font-size: 2.8rem !important; } }
   .filter__alphba-search {
-    height: 59rem;
+    height: auto;
     width: 90%;
-    overflow: hidden;
     background-color: #fff;
     border-radius: 2rem;
     box-shadow: 1px 1px 5px #A0A0A0;
     margin-bottom: 5rem; }
-    @media only screen and (max-width: 51em) {
-      .filter__alphba-search {
-        height: 100rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .filter__alphba-search {
-        height: 78rem; } }
     .filter__alphba-search h3 {
       color: #707070;
       padding: 1.5rem;
@@ -1479,7 +1479,7 @@ body {
     .filter__tabs input[type="radio"] {
       position: absolute;
       top: 0;
-      left: -9999px;
+      left: 999px;
       outline: none; }
     .filter__tabs label {
       display: block;
@@ -1492,7 +1492,8 @@ body {
       cursor: pointer;
       transition: all .3s ease;
       color: #707070;
-      outline: none; }
+      outline: none;
+      margin-bottom: 0 !important; }
       @media only screen and (max-width: 51em) {
         .filter__tabs label {
           height: 6rem;
@@ -1509,22 +1510,16 @@ body {
     z-index: 2;
     display: none !important;
     overflow: hidden;
-    width: 100%;
-    height: 46rem;
-    position: absolute;
-    left: 0;
+    width: 200%;
+    padding: 1.5rem 1rem;
+    position: relative;
+    right: -100%;
     background: #EEF1EF; }
-    @media only screen and (max-width: 51em) {
-      .filter__tab-content {
-        height: 80rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .filter__tab-content {
-        height: 60rem; } }
+    .filter__tab-content--1 {
+      right: 0%; }
     .filter__tab-content a,
     .filter__tab-content a:link,
     .filter__tab-content a:visited {
-      width: 20%;
-      margin: 5px;
       height: 4.3rem;
       background-color: #fff;
       box-shadow: 1px 3px 5px #A0A0A0;
@@ -1560,7 +1555,8 @@ body {
         transform: scale(1.2);
         background-color: #90C73D;
         color: white;
-        border: 1px solid white; }
+        border: 1px solid white;
+        z-index: 99; }
         @media only screen and (max-width: 51em) {
           .filter__tab-content a:hover,
           .filter__tab-content a:link:hover,
@@ -4153,6 +4149,7 @@ body-model-widget .body-model-popover {
   height: 50vh;
   width: 15rem;
   position: fixed;
+  left: 1%;
   top: 25%; }
   @media only screen and (max-width: 51em) {
     .service {
@@ -4183,14 +4180,14 @@ body-model-widget .body-model-popover {
     border: 1px solid #A0A0A0;
     margin-top: 2rem;
     position: relative;
-    left: -50%;
+    left: -30%;
     cursor: pointer; }
     @media only screen and (min-width: 112.5em) {
       .service__logo-box {
         height: 6.5rem;
         width: 6.5rem;
         margin-top: 3rem;
-        left: -90%; } }
+        left: -20%; } }
   .service__circle {
     height: 3rem;
     width: 3rem;
@@ -4199,11 +4196,12 @@ body-model-widget .body-model-popover {
     border: 5px solid #d9d9d9;
     margin-top: 3rem;
     position: relative;
-    left: -30%; }
+    left: -60%; }
     @media only screen and (min-width: 112.5em) {
       .service__circle {
         height: 4rem;
-        width: 4rem; } }
+        width: 4rem;
+        left: -50%; } }
   .service__icon {
     font-size: 3rem;
     color: #707070;
@@ -4507,6 +4505,8 @@ body-model-widget .body-model-popover {
     .tab-amodi {
       align-items: center !important;
       padding: 0 !important; } }
+  .tab-amodi .owl-stage {
+    padding-top: 5px; }
   .tab-amodi h1 {
     margin-bottom: 5px;
     padding-bottom: 5px;

@@ -24,6 +24,8 @@ body {
     direction: rtl;
 }
 
+a{text-decoration: none !important;}
+
 *{
     &::-webkit-scrollbar-track{
         border-radius: 10px;

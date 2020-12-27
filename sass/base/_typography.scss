@@ -20,6 +20,16 @@ body{
     font-family: Vazir !important;
 }
 
+button{
+    font-family: Vazir !important;
+}
+
+input{
+    &::placeholder{
+        font-family: Vazir !important;
+    }
+}
+
 .active{
     color: $color-primary-light !important;
 }

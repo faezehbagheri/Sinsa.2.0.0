@@ -110,7 +110,8 @@ $(document).ready(function () {
         $(this).attr('data-position', index);
     });
 
-    $tabs.owlCarousel({
+    $tabs.owlCarousel({        
+        loop: false,
         rtl: true,
         responsive:{
             0:{

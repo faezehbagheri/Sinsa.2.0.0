@@ -1,6 +1,7 @@
 .filter{
-    width: 24rem;
-    margin-left: 3rem;
+    // width: 24rem;
+    // margin-left: 3rem;
+    margin-top: 5rem;
     transition: height 1s ease,
                 opacity .2s;
 
@@ -19,7 +20,7 @@
     }
 
     @include respond(big-desktop){
-        width: 29rem;
+        width: 30rem !important;
     }
 
     &__show{
@@ -34,8 +35,6 @@
         border-radius: 2.5rem;
         box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 2rem;
-
-        @include respond(big-desktop){height: 13vh;}
         
         @include respond(phone-port){
             height: 25rem;
@@ -293,21 +292,21 @@
     }
 
     &__alphba-search{
-        height: 59rem;
+        height: auto;
         width: 90%;
-        overflow: hidden;
+        // overflow: hidden;
         background-color: #fff;
         border-radius: 2rem;
         box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 5rem;
 
-        @include respond(phone-port){
-            height: 100rem;
-        }
+        // @include respond(phone-port){
+        //     height: 100rem;
+        // }
 
-        @include respond(iphone){
-            height: 78rem;
-        }
+        // @include respond(iphone){
+        //     height: 78rem;
+        // }
 
         & h3{
             color: $color-gray;
@@ -335,12 +334,13 @@
             float: right;
             display: block;
             width: 50%;
+            // height: 50rem;
         }
 
         input[type="radio"] {
             position: absolute;
             top: 0;
-            left: -9999px;
+            left: 999px;
             outline: none;
         }
 
@@ -356,6 +356,7 @@
             transition: all .3s ease;
             color: $color-gray;
             outline: none;
+            margin-bottom: 0 !important;
 
             @include respond(phone-port){
                 height: 6rem;
@@ -381,25 +382,30 @@
         z-index: 2;
         display: none !important; 
         overflow: hidden;
-        width: 100%;
-        height: 46rem;
-        position: absolute;
-        left: 0; 
+        width: 200%;
+        // min-height: 46rem;
+        padding: 1.5rem 1rem;
+        position: relative;
+        right: -100%; 
         background: $color-gray-lighter;
 
-        @include respond(phone-port){
-            height: 80rem;   
+        &--1{
+            right: 0%;
         }
 
-        @include respond(iphone){
-            height: 60rem;
-        }
+        // @include respond(phone-port){
+        //     height: 80rem;   
+        // }
+
+        // @include respond(iphone){
+        //     height: 60rem;
+        // }
 
         a,
         a:link,
         a:visited{
-            width: 20%;
-            margin: 5px;
+            // width: 20%;
+            // margin: 5px;
             height: 4.3rem;
             background-color: #fff;
             box-shadow: 1px 3px 5px $color-gray-light;
@@ -432,6 +438,7 @@
                 background-color: $color-primary-light;
                 color: white;
                 border: 1px solid white;
+                z-index: 99;
         
                 @include respond(phone-port){transform: scale(1.05);}
             }

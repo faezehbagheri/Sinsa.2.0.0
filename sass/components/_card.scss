@@ -1,5 +1,6 @@
 .card{
     width: 43%;
+    border: none !important;
 
     @include respond(phone-port){width: 46%;}
     
@@ -188,6 +189,7 @@
             font-size: 1.6rem;
             font-weight: 500;
             color: $color-primary;
+            transition: all .3s;
 
             @include respond(phone-port){font-size: 1.6rem;}
 
