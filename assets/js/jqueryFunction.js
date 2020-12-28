@@ -41,6 +41,20 @@ $(document).ready(function () {
         $('.owl-item>a').removeClass('active');
     });
 
+    $('.tab-amodi__tab').hide();
+    var activeTab = $(".o-tabs").find('a.tab-active').data('trigger');
+    $('#' + activeTab).show();
+
+    $('.o-tabs>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.tab-amodi__tab:not(#' + tabId + ')').hide();
+        $('.owl-item>a').removeClass('tab-active');
+        $(this).addClass('tab-active');
+        $(this).addClass('btn-active');
+        $(this).siblings('a').removeClass('btn-active');
+    });
+
     $('.tab-amodi__prev-control').on('click', function () {
         var tabslen = $('.tabs>a').length - 1;
         var activetablen = $('.tabs>a.active').index();
@@ -104,6 +118,31 @@ $(document).ready(function () {
     var $mobileHeaderFilter = $("#mobile-header-filter");
     var $mobileFilter = $("#mobile-filter");
     var $tabs = $("#tabs");
+    var $otabs = $("#o-tabs");
+
+    /// otabs ///
+    $otabs.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $otabs.owlCarousel({        
+        loop: false,
+        rtl: true,
+        responsive:{
+            0:{
+                items: 2,
+            },
+            600:{
+                items: 4,
+            }
+        }
+        
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $otabs.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
 
     /// tabs ///
     $tabs.children().each(function (index) {

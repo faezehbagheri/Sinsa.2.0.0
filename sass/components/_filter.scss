@@ -11,21 +11,20 @@
         opacity: 0;
         width: 95%;
         margin: 0 auto;
+        overflow: hidden;
     }
         
     @include respond(phone-port){width: 70%; margin-top: 10rem;}
 
-    @include respond(iphone){
+    @include respond(phone){
         margin: 0;
     }
 
-    @include respond(big-desktop){
-        width: 30rem !important;
-    }
-
     &__show{
-        height: 170rem;
+        height: 105rem;
+        padding: 1rem 0;
         opacity: 1;
+        margin-top: 12rem;
     }
 
     &__main-box{
@@ -43,10 +42,6 @@
         @include respond(phone){
             height: 25rem;
             border-radius: 3.5rem;
-        }
-
-        @include respond(iphone){
-            height: 19rem;
         }
     }
 
@@ -67,10 +62,6 @@
             width:  16rem;
         }
 
-        @include respond(iphone){
-            height: 13rem;
-            width: 13rem;
-        }
     }
 
     &__icon{
@@ -147,7 +138,7 @@
             @include respond(iphone){padding: 1.5rem;}
         }
 
-        @include respond(0phone){
+        @include respond(phone){
             border-radius: 2rem;
         }
     }

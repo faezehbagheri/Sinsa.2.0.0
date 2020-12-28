@@ -1,6 +1,6 @@
 .left-side{
     // height: 50vh;
-    width: 20%;
+    // width: 20%;
     position: fixed;
     top: 84%;
     left: 4%;
@@ -35,10 +35,10 @@
         color: $color-gray;
         position: relative;
 
-        @include respond(iphone){
-            height: 5rem;
-            width: 5rem;
-        }
+        // @include respond(iphone){
+        //     height: 5rem;
+        //     width: 5rem;
+        // }
         
     }
 

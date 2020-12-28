@@ -36,7 +36,7 @@ a {
 
 button {
   cursor: pointer;
-  outline: none;
+  outline: none !important;
   font-family: Vazir !important; }
 
 .outline-green {
@@ -161,6 +161,10 @@ input::placeholder {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+@media only screen and (max-width: 30em) {
+  .u-margin-sm-top {
+    margin-top: 10rem !important; } }
 
 @media only screen and (max-width: 30em) {
   .display {
@@ -1252,20 +1256,20 @@ input::placeholder {
       height: 0;
       opacity: 0;
       width: 95%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      overflow: hidden; } }
   @media only screen and (max-width: 51em) {
     .filter {
       width: 70%;
       margin-top: 10rem; } }
-  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (max-width: 30em) {
     .filter {
       margin: 0; } }
-  @media only screen and (min-width: 112.5em) {
-    .filter {
-      width: 30rem !important; } }
   .filter__show {
-    height: 170rem;
-    opacity: 1; }
+    height: 105rem;
+    padding: 1rem 0;
+    opacity: 1;
+    margin-top: 12rem; }
   .filter__main-box {
     height: 17vh;
     width: 90%;
@@ -1280,9 +1284,6 @@ input::placeholder {
       .filter__main-box {
         height: 25rem;
         border-radius: 3.5rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .filter__main-box {
-        height: 19rem; } }
   .filter__icon-box {
     height: 8rem;
     width: 8rem;
@@ -1298,10 +1299,6 @@ input::placeholder {
       .filter__icon-box {
         height: 16rem;
         width: 16rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .filter__icon-box {
-        height: 13rem;
-        width: 13rem; } }
   .filter__icon {
     font-size: 4rem;
     color: #707070;
@@ -1356,6 +1353,9 @@ input::placeholder {
       @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
         .filter__box h2 {
           padding: 1.5rem; } }
+    @media only screen and (max-width: 30em) {
+      .filter__box {
+        border-radius: 2rem; } }
   .filter__title {
     font-size: 1.5rem;
     color: #707070;
@@ -2638,7 +2638,6 @@ body-model-widget .body-model-popover {
   display: none; }
 
 .left-side {
-  width: 20%;
   position: fixed;
   top: 84%;
   left: 4%;
@@ -2668,10 +2667,6 @@ body-model-widget .body-model-popover {
     font-size: 3rem;
     color: #707070;
     position: relative; }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .left-side__btn {
-        height: 5rem;
-        width: 5rem; } }
   .left-side__icon {
     font-size: 3rem;
     color: #707070;
@@ -4542,7 +4537,6 @@ body-model-widget .body-model-popover {
       .tab-amodi__buttons {
         display: flex; } }
     .tab-amodi__buttons a, .tab-amodi__buttons a:link, .tab-amodi__buttons a:visited {
-      width: 45%;
       height: 9rem;
       margin-top: 2rem;
       border-radius: 1.8rem;
@@ -4550,6 +4544,7 @@ body-model-widget .body-model-popover {
       background-color: rgba(0, 0, 0, 0.4);
       font-size: 2.5rem;
       color: white !important;
+      text-align: center;
       transition: all .3s ease; }
     .tab-amodi__buttons i {
       font-size: 3.8rem;
@@ -4612,17 +4607,17 @@ body-model-widget .body-model-popover {
     @media only screen and (min-width: 112.5em) {
       .tab-amodi__label {
         font-size: 1.4rem; } }
-  .tab-amodi__label.active {
+  .tab-amodi__label.active, .tab-amodi__label.tab-active {
     background-color: #90C73D;
     z-index: 1;
     color: #fff !important; }
     @media only screen and (max-width: 30em) {
-      .tab-amodi__label.active {
+      .tab-amodi__label.active, .tab-amodi__label.tab-active {
         z-index: 0; } }
-    .tab-amodi__label.active::before {
+    .tab-amodi__label.active::before, .tab-amodi__label.tab-active::before {
       background-color: #90C73D;
       border-left: 1px solid #90C73D; }
-    .tab-amodi__label.active::after {
+    .tab-amodi__label.active::after, .tab-amodi__label.tab-active::after {
       background-color: #90C73D;
       border-right: 1px solid #90C73D; }
   .tab-amodi__label:before, .tab-amodi__label:after {
@@ -4780,9 +4775,6 @@ body-model-widget .body-model-popover {
       .tab-ofoghi__dropdown h3 {
         font-size: 2.4rem;
         height: 12rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .tab-ofoghi__dropdown h3 {
-        height: 8rem; } }
   .tab-ofoghi__dropdown i {
     font-size: 1.4rem;
     color: #E43F6F;
@@ -4794,7 +4786,7 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .tab-ofoghi__dropdown i {
         padding: 8px;
-        font-size: 1.6rem; } }
+        font-size: 2rem; } }
   .tab-ofoghi__dropdown i.minus {
     background-color: #90C73D;
     color: white;
@@ -4844,9 +4836,6 @@ body-model-widget .body-model-popover {
   @media only screen and (max-width: 30em) {
     .tab-ofoghi__header {
       height: 11rem; } }
-  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-    .tab-ofoghi__header {
-      height: 8rem; } }
 
 .tab-ofoghi__title {
   text-align: right;
@@ -4900,16 +4889,12 @@ body-model-widget .body-model-popover {
       width: 5rem;
       border-radius: 100%;
       background-color: #d9d9d9;
-      left: 8%;
+      left: 4%;
       position: relative;
       border: none;
       outline: none;
       cursor: pointer;
       transition: all .5s; } }
-  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-    .tab-ofoghi__btn {
-      height: 3.5rem;
-      width: 3.5rem; } }
 
 .tab-ofoghi__logo {
   position: absolute;
@@ -5011,9 +4996,6 @@ body-model-widget .body-model-popover {
       .tab-ofoghi__result p {
         font-size: 2.1rem;
         line-height: 5.5rem; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .tab-ofoghi__result p {
-        line-height: 4rem; } }
 
 .active-tab h3 {
   width: 55%;
@@ -5048,9 +5030,6 @@ body-model-widget .body-model-popover {
     .active-tab span {
       font-size: 2.2rem;
       line-height: 6rem; } }
-  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-    .active-tab span {
-      line-height: 5rem; } }
 
 .activate > :last-child {
   height: auto;
@@ -5387,7 +5366,6 @@ body-model-widget .body-model-popover {
     height: 9rem;
     width: 100%;
     margin-top: -8rem;
-    position: absolute;
     z-index: 9; }
   .footer__about-us {
     width: 30%; }

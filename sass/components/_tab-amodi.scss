@@ -70,7 +70,7 @@
         @include respond(phone){display: flex}
 
         a,a:link,a:visited{
-            width: 45%;
+            // width: 45%;
             height: 9rem;
             margin-top: 2rem;
             border-radius: 1.8rem;
@@ -78,6 +78,7 @@
             background-color: rgba($color: #000000, $alpha: .4);
             font-size: 2.5rem;
             color: white !important;
+            text-align: center;
             transition: all .3s ease;
         }
 
@@ -197,7 +198,8 @@
         
     }
 
-    &__label.active{
+    &__label.active,
+    &__label.tab-active{
         background-color: $color-primary-light;
         z-index:1;
         color: #fff !important;
@@ -311,14 +313,11 @@
 
 
     .owl-dots{display: none;}
-
-    
     .owl-nav{               
         @include respond(phone){
             display:block !important;
         }
     }
-    
     .owl-prev{
         color:$color-gray !important;
         text-align: center;

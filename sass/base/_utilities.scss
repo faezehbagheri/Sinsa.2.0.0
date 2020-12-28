@@ -7,6 +7,7 @@
 .u-margin-top-medium{ margin-top: 4rem !important;}
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
+.u-margin-sm-top { @include respond(phone){margin-top: 10rem !important;}}
 
 .display{
     @include respond(phone){display: none;}

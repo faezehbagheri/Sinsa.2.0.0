@@ -68,9 +68,9 @@
                 height: 12rem;
             }
 
-            @include respond(iphone){
-                height: 8rem;
-            }
+            // @include respond(iphone){
+            //     height: 8rem;
+            // }
         }
 
         i{
@@ -85,7 +85,7 @@
 
             @include respond(phone){
                 padding: 8px;
-                font-size: 1.6rem;
+                font-size: 2rem;
             }
         }
 
@@ -156,10 +156,6 @@
         @include respond(phone){
             height: 11rem;
         }
-
-        @include respond(iphone){
-            height: 8rem;
-        }
     }
 
     &__title{
@@ -220,7 +216,7 @@
             width:  5rem;
             border-radius: 100%;
             background-color: #d9d9d9;
-            left: 8%;
+            left: 4%;
             position: relative;
             border: none;
             outline: none;
@@ -228,10 +224,10 @@
             transition: all .5s;
         }
 
-        @include respond(iphone){
-            height: 3.5rem;
-            width:  3.5rem;
-        }
+        // @include respond(iphone){
+        //     height: 3.5rem;
+        //     width:  3.5rem;
+        // }
     }
 
     &__logo{
@@ -332,9 +328,9 @@
                 line-height: 5.5rem;
             }
 
-            @include respond(iphone){
-                line-height: 4rem;
-            }
+            // @include respond(iphone){
+            //     line-height: 4rem;
+            // }
         }
     }
 }
@@ -377,7 +373,7 @@
             line-height: 6rem;
         }
 
-        @include respond(iphone){line-height: 5rem;}
+        // @include respond(iphone){line-height: 5rem;}
     }
 }
 
