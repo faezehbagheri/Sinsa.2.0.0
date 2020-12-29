@@ -102,10 +102,11 @@
         padding: 1rem;
         border-bottom: 2px solid $color-gray-light;
 
-        @include respond(phone-port){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2.5rem;margin-top: 2rem;}
 
         @include respond(phone){
-            font-size: 2.7rem;
+            margin-top: 5rem;
+            font-size: 2.9rem;
         }
     }
 
@@ -115,10 +116,14 @@
         color: $color-primary-dark;
         text-align: justify;
 
-        @include respond(phone-port){font-size: 1.6rem;}
+        @include respond(phone-port){
+            font-size: 2rem;
+            line-height: 4rem;
+        }
 
         @include respond(phone){
-            font-size: 2rem;
+            font-size: 2.5rem;
+            line-height: 6rem;
             color: $color-gray;
         }
     }
@@ -154,7 +159,9 @@
         text-align: right;
         color: $color-gray;
 
-        @include respond(phone){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2.2rem;}
+
+        @include respond(phone){font-size: 2.6rem;}
                 
         span{
             position: absolute;
@@ -187,7 +194,9 @@
         color: $color-gray;
         padding-bottom: 2rem;
 
-        @include respond(phone){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2.2rem;}
+
+        @include respond(phone){font-size: 2.6rem;}
         
         span{
             position: absolute;

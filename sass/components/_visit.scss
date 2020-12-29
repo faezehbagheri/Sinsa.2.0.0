@@ -196,6 +196,9 @@
         @include respond(phone-port){
             font-size: 2.5rem;
             line-height: 6rem;
+            i{
+                font-size: 3.2rem !important;
+            }
         }
 
         @include respond(phone){
@@ -204,7 +207,7 @@
         }
         
         i{
-            font-size: 3.2rem;
+            font-size: 2.2rem;
             margin-left: 1rem;
         }
     }
@@ -239,12 +242,12 @@
         a:link,
         a:visited{
             text-decoration: none;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             color: $color-gray;
         }
         
         i{
-            font-size: 4rem;
+            font-size: 3rem;
             color: $color-primary;
             margin-bottom: 8px;
         }
@@ -300,15 +303,16 @@
     &__svg{
         color: $color-primary;
 
-        @include respond(phone){
-            width:  20rem;
+        @include respond(phone-port){
             height: 20rem;
+            width: 20rem;
             margin-top: 5rem;
         }
 
-        @include respond(iphone){
-            width: 15rem;
-            height: 15rem;
+        @include respond(phone){
+            width:  18rem;
+            height: 18rem;
+            margin-top: 5rem;
         }
     }
 
