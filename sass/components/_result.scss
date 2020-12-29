@@ -5,36 +5,28 @@
     &__item{
         margin: 0;
         width: 100%;
-        padding: 3rem 1rem;
+        padding: 1.5rem 1rem;
         &:not(:last-of-type){
             border-bottom: 2px solid $color-secondary-light;
         }
 
-        @include respond(iphone){
-            padding: 2rem 1rem;
+        @include respond(phone-port){
+            a{font-size: 2.2rem !important;}
         }
 
+
         @include respond(phone){
-            flex-direction: column;
-
-            & > div{
-                margin: 3rem 0 !important;
-                width: 85% !important;
-
-                &.visit-page{
-                    justify-content: center;
-                }
-            }
+            justify-content: start;
+            padding: 2.5rem 1rem;
 
             a{
-                font-size: 2.3rem !important;
-                text-align: center !important;
+                font-size: 2.5rem !important;
+                margin-right: 4rem;
             }
 
             i{display: none !important;}
         }
     }
-
 
     i{
         font-size: 2.5rem;
@@ -56,13 +48,13 @@
 
     &__tab{
         border-bottom: 2px solid $color-gray-light;
-        direction: rtl;
         margin-top: 3rem;
+        width: 100%;
 
         a{
             width: 16%;
             background-color: $color-secondary-light;
-            color: white;
+            color: white !important;
             padding:1rem 5rem;
 
             @include respond(phone-port){
@@ -113,7 +105,7 @@
         @include respond(phone-port){font-size: 2rem;}
 
         @include respond(phone){
-            font-size: 2.5rem;
+            font-size: 2.7rem;
         }
     }
 
@@ -132,27 +124,20 @@
     }
 
     &__circle{
-        width: 15rem;
-        height:15rem;
+        width: 10.5rem;
+        height:10.5rem;
         border: 2px dashed $color-gray;
         border-radius: 100%;
         position: relative;
 
-        @include respond(iphone){
-            width:  12rem;
-            height: 12rem;
+        @include respond(phone-port){
+            width: 13rem;
+            height: 13rem;
         }
 
-        .bar{
-            width:  12rem;
-            height: 12rem;
-            position: relative;
-            @include centerABS();
-
-            @include respond(iphone){
-                height: 10rem;
-                width: 10rem;
-            }
+        @include respond(phone){
+            width:  14.5rem;
+            height: 14.5rem;
         }
 
     }
@@ -177,7 +162,7 @@
             top: -40%;
         }
       }
-      #top:after {
+    #top:after {
         content: '';
         position: absolute;
         right: 0;
@@ -187,7 +172,7 @@
         transform: skew(-30deg, 0deg);
         border-left: 1px solid $color-gray;
         border-radius: 10px 0 0 0;
-      }
+    }
       
     #bottom {
         position: absolute;
@@ -210,7 +195,7 @@
             top: 15%;
         }
       }
-      #bottom:after {
+    #bottom:after {
         content: '';
         position: absolute;
         right: 0;
@@ -221,6 +206,6 @@
         border-left: 1px solid $color-gray;
         border-radius: 10px 0 0 0;
         // transform: rotate(0deg);
-      }
+    } 
 
 }
