@@ -9,22 +9,22 @@
         width: 100%;
     }
 
-    .search{
-        width: 100% !important;
-        height: auto; 
-        margin-top: 1rem;
-        margin: 0;
-        @include respond(phone){ display: none; }
-    }
+    // .search{
+    //     width: 100% !important;
+    //     height: auto; 
+    //     margin-top: 1rem;
+    //     margin: 0;
+    //     @include respond(phone){ display: none; }
+    // }
     
-    .search__box{
-        width: 92%;
-    }
+    // .search__box{
+    //     width: 92%;
+    // }
 
-    .suggestion{
-        width: 92%;
-        // left: -8%;
-    }
+    // .suggestion{
+    //     width: 92%;
+    //     // left: -8%;
+    // }
 
     .search__advanced{display: none !important;}
 }

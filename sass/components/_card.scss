@@ -1,5 +1,5 @@
 .card{
-    width: 43%;
+    // width: 43%;
     border: none !important;
 
     @include respond(phone-port){width: 46%;}
@@ -19,11 +19,7 @@
         margin-bottom: 5rem;
 
         @include respond(phone){
-            height: 58rem;
-        }
-
-        @include respond(iphone){
-            height: 39rem;
+            height: 70vh;
         }
     }
 
@@ -59,7 +55,7 @@
     &__label{
         font-size: 1.4rem;
         vertical-align: bottom;
-        padding: 1.5rem 3rem;
+        padding: 1rem 4rem;
         background-color: $color-primary;
         margin-right: -9px;
         display: inline-block;
@@ -67,6 +63,7 @@
         z-index: 0;
         color: #fff;
         border-radius: 10px 10px 0 0;
+        text-align: center;
 
         @include respond(phone-port){font-size: 1.6rem;}
 
@@ -76,8 +73,8 @@
         }
 
         @include respond(iphone){
-            padding: 1.5rem 3rem;
-            border-radius: 2rem 2rem 0 0;
+            font-size: 2rem;
+            padding: 1rem 5rem;
         }
     }
 
@@ -96,9 +93,6 @@
             width: 5rem;
         }
 
-        @include respond(iphone){
-            width: 4rem;
-        }
     }
 
     &__label:before {
@@ -133,10 +127,6 @@
 
         @include respond(phone){
             height: 11rem;
-        }
-
-        @include respond(iphone){
-            height: 7.5rem;
         }
 
         &:hover{
@@ -195,6 +185,7 @@
 
             @include respond(phone){
                 margin-left: 2rem;
+                font-size: 2.2rem;
             }
         }
     }
@@ -210,11 +201,6 @@
         @include respond(phone){
             width:  4.5rem;
             height: 4.5rem;
-        }
-
-        @include respond(iphone){
-            height: 3.5rem;
-            width: 3.5rem;
         }
     }
 }

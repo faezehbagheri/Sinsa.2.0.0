@@ -21,7 +21,7 @@
     }
 
     &__show{
-        height: 105rem;
+        height: auto;
         padding: 1rem 0;
         opacity: 1;
         margin-top: 12rem;
@@ -135,7 +135,7 @@
                 font-size: 2.4rem;
             }
 
-            @include respond(iphone){padding: 1.5rem;}
+            // @include respond(iphone){padding: 1.5rem;}
         }
 
         @include respond(phone){
@@ -232,10 +232,6 @@
         @include respond(phone-port){
             height: 7rem !important;
             margin-top: 2rem;
-        }
-
-        @include respond(iphone){
-            height: 5rem !important;
         }
     }
 
@@ -495,9 +491,9 @@
             height: 50rem;   
         }
 
-        @include respond(iphone){
-            height: 35rem;
-        }
+        // @include respond(iphone){
+        //     height: 35rem;
+        // }
 
     
         &::-webkit-scrollbar-track{
@@ -527,10 +523,6 @@
             @include respond(phone){
                 padding: 1rem 1.5rem;
                 height: 10rem;
-            }
-
-            @include respond(iphone){
-                height: 7rem;
             }
 
             &:hover{
