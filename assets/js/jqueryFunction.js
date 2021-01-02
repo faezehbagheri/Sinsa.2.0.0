@@ -208,16 +208,16 @@ $(document).ready(function () {
 
     $articleDesktop.owlCarousel({
         rtl:true,
-        loop: true,
+        loop: false,
         responsive: {
             0: {
-                items: 3
+                items: 1
             },
             400: {
-                items: 3
+                items: 2
             },
-            1000: {
-                items: 5
+            600: {
+                items: 3
             }
         }
     });
