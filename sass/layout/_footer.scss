@@ -5,7 +5,8 @@
     background-color: $color-primary;
     position: relative;
         
-    @include respond(phone-port){height: 50rem;}
+    @include respond(lg){height: 65rem;}
+    // @include respond(phone-port){height: 50rem;}
 
     @include respond(phone){
         display: none;
@@ -20,7 +21,7 @@
     }
 
     &__about-us{
-        width: 30%;
+        // width: 30%;
     }
 
     &__header{
@@ -53,8 +54,8 @@
     }
 
     &__app{
-        width: 30%;
-        height: 40rem;
+        // width: 30%;
+        height: 35rem;
     }
 
     &__photo{
@@ -78,7 +79,7 @@
 
 
     &__map{
-        width: 30%;
+        // width: 30%;
         background-color: rosybrown;
         position: relative;
     }

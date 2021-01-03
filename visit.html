@@ -1014,11 +1014,10 @@
                 <!-- Buttons -->
                 <div class="tab-amodi__buttons col-12 mb-5">
                     <nav class="flex justi-start wrap o-tabs" >
-                        <a data-trigger="tab01" class="flex align-center justi-center col-4 btn-active">توضیحات</a>
-                        <a data-trigger="tab02" class="flex align-center justi-center col-4">بیماری های مرتبط</a>
-                        <a data-trigger="tab03" class="flex align-center justi-center col-4">داروها</a>
-                        <a data-trigger="tab04" class="flex align-center justi-center col-4">تجهیزات یاب</a>
-                        <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a>
+                        <a data-trigger="tab01" class="flex align-center justi-center col-4">مشخصات</a>
+                        <a data-trigger="tab02" class="flex align-center justi-center col-4">سوالات</a>
+                        <a data-trigger="tab03" class="flex align-center justi-center col-4 btn-active">علائم</a>
+                        <a data-trigger="tab04" class="flex align-center justi-center col-4">نتیجه</a>
                         <!-- <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a> -->
                     </nav>
                 </div>
@@ -1111,41 +1110,122 @@
                                 <div class="result__tab flex align-start">
                                     <a class="tab-amodi__label">نتیجه</a>
                                 </div>
-                                <div class="result__item flex align-center justi-between">
-                                    <div class="flex justi-end visit-page" style="position: relative;">
-                                        <div class="result__circle">
-                                            <div class="radialProgressBar progress-75">
-                                                <div class="overlay"> 7 مورد</div>
+                                <div class="result__item flex column align-center justi-between" id="item-1">
+                                    <div class="flex wrap align-center justi-between" style="width: 100%;">
+                                        <div class="visit-page flex justi-start col-4 col-sm-3 col-lg-4 col-xl-3 p-0" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="radialProgressBar progress-75">
+                                                    <div class="overlay"> 6 مورد</div>
+                                                </div>
+                                                <!-- <div class="bar" id="bar1"></div> -->
                                             </div>
-                                            <!-- <div class="bar" id="bar1"></div> -->
-                                        </div>
-                                    </div>                                        
-                                    <a href="#">سردرد ناشی از کم خوابی</a>
-                                    <i class="fas fa-angle-right"></i>
+                                        </div> 
+                                        <a href="#" class="col-6 p-0" style="margin-left: auto">سردرد ناشی از کم خوابی</a>
+                                        <button class="flex align-center col-5 col-sm-3 col-lg-5 col-xl-3 mr-auto" onclick="reademore('#item-1')">خواندن بیشتر<i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                    <div class="result__readmore">
+                                        <h2>علائم مرتبط</h2>
+                                        <ol class="flex wrap">
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                        </ol>
+                                        <p> سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                            می‌توان به علائمی
+                                            مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد.</p>
+                                    </div>
                                 </div>
-                                <div class="result__item flex align-center justi-between">
-                                    <div class="flex justi-end visit-page" style="position: relative;">
-                                        <div class="result__circle">
-                                            <div class="radialProgressBar progress-50">
-                                                <div class="overlay"> %50</div>
+                                <div class="result__item flex column align-center justi-between" id="item-2">
+                                    <div class="flex wrap align-center justi-between" style="width: 100%;">
+                                        <div class="visit-page flex justi-start col-4 col-sm-3 col-lg-4 col-xl-3 p-0" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="radialProgressBar progress-50">
+                                                    <div class="overlay"> 6 مورد</div>
+                                                </div>
+                                                <!-- <div class="bar" id="bar1"></div> -->
                                             </div>
-                                            <!-- <div class="bar" id="bar2"></div> -->
-                                        </div>
+                                        </div> 
+                                        <a href="#" class="col-6 p-0" style="margin-left: auto">سردرد ناشی از استرس</a>
+                                        <button class="flex align-center col-5 col-sm-3 col-lg-5 col-xl-3 mr-auto" onclick="reademore('#item-2')">خواندن بیشتر<i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></button>
                                     </div>
-                                    <a href="#">سردر ناشی از استرس</a>
-                                    <i class="fas fa-angle-right"></i>
-                                </div>                                    
-                                <div class="result__item flex align-center justi-between">
-                                    <div class="flex justi-end visit-page" style="position: relative;">
-                                        <div class="result__circle">
-                                            <div class="radialProgressBar progress-25">
-                                                <div class="overlay"> %25</div>
+                                    <div class="result__readmore">
+                                        <h2>علائم مرتبط</h2>
+                                        <ol class="flex wrap">
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                        </ol>
+                                        <p> سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                            می‌توان به علائمی
+                                            مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد.</p>
+                                    </div>
+                                </div>
+                                <div class="result__item flex column align-center justi-between" id="item-3">
+                                    <div class="flex wrap align-center justi-between" style="width: 100%;">
+                                        <div class="visit-page flex justi-start col-4 col-sm-3 col-lg-4 col-xl-3 p-0" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="radialProgressBar progress-25">
+                                                    <div class="overlay"> 1 مورد</div>
+                                                </div>
+                                                <!-- <div class="bar" id="bar1"></div> -->
                                             </div>
-                                            <!-- <div class="bar" id="bar3"></div> -->
-                                        </div>
+                                        </div> 
+                                        <a href="#" class="col-6 p-0" style="margin-left: auto">واریس</a>
+                                        <button class="flex align-center col-5 col-sm-3 col-lg-5 col-xl-3 mr-auto" onclick="reademore('#item-3')">خواندن بیشتر<i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></button>
                                     </div>
-                                    <a href="#">واریس</a>
-                                    <i class="fas fa-angle-right"></i>
+                                    <div class="result__readmore">
+                                        <h2>علائم مرتبط</h2>
+                                        <ol class="flex wrap">
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                            <li>سردرد</li>
+                                        </ol>
+                                        <p> سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                            می‌توان به علائمی
+                                            مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="visit_buttons flex  align-center justi-between">
@@ -1299,8 +1379,8 @@
     <!-- Desktop Footer -->
     <footer class="footer">
         <img src="./assets/img/footer.png" class="footer__background">
-        <div class="footer__main flex  align-center justi-around">
-            <div class="footer__about-us">
+        <div class="footer__main flex wrap align-center justi-around">
+            <div class="footer__about-us col-6 col-xl-4">
                 <h2 class="footer__header" onclick="openOption()">درباره ما</h2>
                 <p class="footer__pragraph">
                     مشاوره تلفنی چیست؟<br>
@@ -1313,14 +1393,14 @@
                 </div>
                 <h3 class="footer__header-secondary">تلفن</h3><span class="footer__span">021 - 22601162</span>
             </div>
-            <div class="footer__app flex column align-center justi-around">
+            <div class="footer__app flex row flex-xl-column align-center justi-around col-12 col-xl-4 order-3 order-xl-2">
                 <div class="footer__img flex  justi-center align-center">
                     <img src="./assets/img/apple androide.png" class="footer__photo">
                     <img src="./assets/img/pic footer.png" class="footer__photo">
                 </div>
                 <button class="footer__btn">دانلود اپلیکیشن</button>
             </div>
-            <div class="footer__map">
+            <div class="footer__map col-6 col-xl-4 order-2 order-xl-3">
                 <img src="./assets/img/Subtraction 2.png" class="footer__map-photo">
             </div>
         </div>

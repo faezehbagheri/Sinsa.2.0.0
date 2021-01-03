@@ -136,8 +136,13 @@
         cursor: pointer;
         
         @include respond(big-desktop){width: 108%;}
+
+        @include respond(md){
+            width: 100%;
+            border-radius: 1rem;
+        }
         
-        @include respond(phone-port){width: 102%;}
+        // @include respond(phone-port){width: 102%;}
 
         @include respond(phone){
             width: 100%;
@@ -161,10 +166,12 @@
     &__title{
         text-align: right;
         padding-right: 1.8rem;
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 200;
         color: $color-gray-light;
         transition: all .5s;
+
+        i{margin-left: 1rem;}
 
         
         @include respond(big-desktop){
@@ -176,10 +183,12 @@
         @include respond(phone){
             text-align: right;
             padding-right: 4rem;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 200;
             color: $color-primary;
             transition: all .5s;
+
+            i{font-size: 3.5rem;}
         }
 
         @include respond(iphone){
@@ -308,10 +317,10 @@
             text-decoration: none;
             color: black;
 
-            @include respond(phone){font-size: 2.4rem;}
+            @include respond(phone){font-size: 2.8rem;}
 
             i{
-                font-size: 2.5rem;
+                font-size: 3rem;
                 color: $color-gray-light;
                 margin-left: 1.5rem;
             }
@@ -324,8 +333,8 @@
             color: $color-gray;
 
             @include respond(phone){
-                font-size: 2.1rem;
-                line-height: 5.5rem;
+                font-size: 2.5rem;
+                line-height: 6rem;
             }
 
             // @include respond(iphone){

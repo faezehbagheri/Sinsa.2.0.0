@@ -9,9 +9,11 @@
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
-    <link rel="stylesheet" href="/assets/css/select2.css">
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
+    <link rel="stylesheet" href="/assets/css/select2.css"> -->
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -420,302 +422,10 @@
                 <span class="mobile-header__text">مشاهده فیلتر</span>
             </div>
         </div>
-        <!-- سرچ -->
-        <div class="mobile-header__search" id="mobile-search">
-            <div class="search">
-                <form class="search__form flex column justi-center align-center">
-                    <!-- این قسمت تغییر کرده است -->
-                    <div class="tab-amodi u-margin-top-medium">
-                        <div class="tab-amodi__container flex column align-end">
-                            <nav class="tab-amodi__multipleTabs flex align-end wrap showTab">
-                                <a data-trigger="mobile-tab-01" class="tab-amodi__label active">جستجو</a>
-                                <a data-trigger="mobile-tab-02" class="tab-amodi__label ">علائم</a>
-                                <a data-trigger="mobile-tab-04" class="tab-amodi__label ">مکان یاب</a>
-                                <a data-trigger="mobile-tab-05" class="tab-amodi__label ">تداخلات دارویی</a>
-                            </nav>
-                            <div class="search tabcontent" id="mobile-tab-01">
-                                <form class="search__form flex column justi-center align-end">
-                                    <div class="search__box flex justi-center align-center ">
-                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                                        <div class="search__search-container flex  align-center justi-around">
-                                            <i class="fas fa-search search__right-icon"></i>
-                                            <input type="text" class="search__input"
-                                                placeholder="بیماری مورد نظر را جستجو کنید">
-                                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="search tabcontent" id="mobile-tab-02">
-                                <form class="search__form flex column justi-center align-end">
-                                    <div class="search__box flex justi-center align-center ">
-                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                                        <div class="search__search-container flex  align-center justi-around">
-                                            <i class="fas fa-search search__right-icon"></i>
-                                            <input type="text" class="search__input" placeholder="علائم مورد نظر را جستجو کنید">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="search tabcontent" id="mobile-tab-03">
-                                <form class="search__form flex column justi-center align-end">
-                                    <div class="search__box flex justi-center align-center ">
-                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                                        <div class="search__search-container flex  align-center">
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-pills search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="drug">
-                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-pills search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="drug">
-                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-capsules search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="drug">
-                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <button class="search__plus-btn"><i class="fas fa-plus"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="search tabcontent" id="mobile-tab-04">
-                                <form class="search__form flex column justi-center align-end">
-                                    <div class="search__box flex justi-center align-center ">
-                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                                        <div class="search__search-container flex  align-center">
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-list search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" id="myselect" name="category">
-                                                        <option value="" disabled selected> دسته بندی </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-map search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="country">
-                                                        <option value="" disabled selected> استان </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="city">
-                                                        <option value="" disabled selected> شهر </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-map search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="mahale">
-                                                        <option value="" disabled selected> محله </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="search__tadakholat flex  align-center">
-                                                <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                                                <div class="container">
-                                                    <select class="select2" name="specialty">
-                                                        <option value="" disabled selected> تخصص </option>
-                                                        <option value=""> آپروتینین </option>
-                                                        <option value="">آتراکوریوم</option>
-                                                        <option value=""> آتروپین </option>
-                                                        <option value=""> آتورواستاتین </option>
-                                                        <option value=""> آتنولول</option>
-                                                        <option value=""> آزاتیوپرین</option>
-                                                        <option value=""> آزیترومایسین</option>
-                                                        <option value=""> آلبندازول</option>
-                                                        <option value=""> آلپرازولام</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="search tabcontent" id="mobile-tab-05">
-                                <form class="search__form flex column justi-center align-end">
-                                    <div class="search__box flex justi-center align-center ">
-                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                                        <div class="search__search-container flex  align-center justi-around">
-                                            <i class="fas fa-search search__right-icon"></i>
-                                            <div class="container big-select">
-                                                <select class="select2  js-states form-control" id="multiple" name="drug[]" multiple="multiple" placeholder="selected">
-                                                    <option value="" disabled selected> نام داروی مورد نظر </option>
-                                                    <option value=""> آپروتینین </option>
-                                                    <option value="">آتراکوریوم</option>
-                                                    <option value=""> آتروپین </option>
-                                                    <option value=""> آتورواستاتین </option>
-                                                    <option value=""> آتنولول</option>
-                                                    <option value=""> آزاتیوپرین</option>
-                                                    <option value=""> آزیترومایسین</option>
-                                                    <option value=""> آلبندازول</option>
-                                                    <option value=""> آلپرازولام</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- search suggestion -->
-                    <div class="suggestion" >
-                        <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
-                        <div class="suggestion__container flex column align-center justi-center">
-                            <div class="suggestion__recent-search flex column justi-around align-end">
-                                <h3 class="suggestion__header">جستجوهای مشابه</h3>
-                                <div class="flex  justi-start align-center wrap">
-                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
-                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
-                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
-                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
-                                </div>
-                            </div>
-                            <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
-                            <div class="suggestion__result flex ">
-                                <div class="suggestion__icons flex column align-center justi-center">
-                                    <div class="flex column align-center active-icon">
-                                        <i class="fas fa-book"></i>
-                                        <span>مقالات</span>
-                                    </div>
-                                    <div class="flex column align-center">
-                                        <i class="fas fa-pills"></i>
-                                        <span>داروها</span>
-                                    </div>
-                                    <div class="flex column align-center">
-                                        <i class="fas fa-viruses"></i>
-                                        <span>علائم</span>
-                                    </div>
-                                </div>
-                                <div class="suggestion__result-list flex column">
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
-                                        <span>Abdominal Aortic </span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- حذف جستجوی پیشرفته -->
-                    
-                    <!-- انتهای تغییرات -->
-                </form>
-            </div>
-        </div>     
-        <!-- فیلتر  -->
-        <div class="mobile-header__filter flex  align-center">       
-
-        </div>
     </header>
 
    <!-- Right Side Fixed -->
-   <div class="right-side flex column">
+   <div class="right-side d-none d-xl-flex column">
     <div class="flex  justi-around align-center">
         <a href="#" class="right-side__btn right-side__btn-1">
             <img class="right-side__photo" src="./assets/img/chat@2x.png">
@@ -755,10 +465,9 @@
     </div>
 
     <!-- Main -->
-    <main class="illness-main flex  align-start justi-center">
+    <main class="illness-main flex flex-column flex-sm-column-reverse flex-lg-row align-items-center align-items-lg-start justi-center">
         <!-- فیلترها -->
-        <div class="filter flex column align-center">
-
+        <div class="filter flex column align-center col-xl-2 col-lg-3">
             <div class="filter__main-box">
                 <div class="flex  align-center owl-carousel" id="filter">
                     <div class="item  flex column align-center">
@@ -799,7 +508,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- سرچ باکس -->
             <div class="filter__search-box flex  align-center justi-start">
                 <button class="filter__search-btn">
@@ -807,7 +515,6 @@
                 </button>
                 <input type="text" class="filter__input" placeholder="بیماری مورد نظر را جستجو کنید">
             </div>
-            
             <!-- سرچ حروف الفبا -->
             <div class="filter__alphba-search flex column align-center justi-start">
                 <h3>مشاهده ی لیست بیماری ها</h3>
@@ -815,55 +522,306 @@
                     <li>
                         <input type="radio" name="tabs" id="tab1" checked />
                         <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">حروف الفبا</label>
-                        <div id="tab-content1" class="filter__tab-content filter__tab-content--1 flex  align-center justi-around align-content-center wrap" role="tabpanel" aria-labelledby="description" aria-hidden="false">
-                            <a class="flex align-center justi-center" href="#">الف</a><a class="flex align-center justi-center" href="#">ب</a><a class="flex align-center justi-center" href="#">پ</a><a class="flex align-center justi-center" href="#">ت</a>
-                            <a class="flex align-center justi-center" href="#">ث</a><a class="flex align-center justi-center" href="#">ج</a><a class="flex align-center justi-center" href="#">چ</a><a class="flex align-center justi-center" href="#">ح</a>
-                            <a class="flex align-center justi-center" href="#">خ</a><a class="flex align-center justi-center" href="#">د</a><a class="flex align-center justi-center" href="#">ذ</a><a class="flex align-center justi-center" href="#">ر</a>
-                            <a class="flex align-center justi-center" href="#">ز</a><a class="flex align-center justi-center" href="#">ژ</a><a class="flex align-center justi-center" href="#">س</a><a class="flex align-center justi-center" href="#">ش</a>
-                            <a class="flex align-center justi-center" href="#">ص</a><a class="flex align-center justi-center" href="#">ض</a><a class="flex align-center justi-center" href="#">ط</a><a class="flex align-center justi-center" href="#">ظ</a>
-                            <a class="flex align-center justi-center" href="#">ع</a><a class="flex align-center justi-center" href="#">غ</a><a class="flex align-center justi-center" href="#">ف</a><a class="flex align-center justi-center" href="#">ق</a>
-                            <a class="flex align-center justi-center" href="#">ک</a><a class="flex align-center justi-center" href="#">گ</a><a class="flex align-center justi-center" href="#">ل</a><a class="flex align-center justi-center" href="#">م</a>
-                            <a class="flex align-center justi-center" href="#">ن</a><a class="flex align-center justi-center" href="#">و</a><a class="flex align-center justi-center" href="#">ه</a><a class="flex align-center justi-center" href="#">ی</a>
+                        <div id="tab-content1" class="filter__tab-content filter__tab-content--1 flex  align-center justi-start align-content-center wrap" role="tabpanel" aria-labelledby="description" aria-hidden="false">
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">الف</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ب</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">پ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ت</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ث</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ج</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">چ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ح</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">خ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">د</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ذ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ر</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ز</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ژ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">س</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ش</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ص</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ض</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ط</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ظ</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ع</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">غ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ف</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ق</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ک</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">گ</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ل</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">م</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ن</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">و</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ه</a><a class="flex align-center justi-center col-lg-3 col-2 col-sm-1" href="#">ی</a>
                         </div>
                     </li>
                     
                     <li>
                         <input type="radio" name="tabs" id="tab2" />
                         <label for="tab2"role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">حروف انگلیسی</label>
-                        <div id="tab-content2" class="filter__tab-content flex align-center justi-center align-content-center wrap" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-                            <a class="flex align-center justi-center" href="#">A</a><a class="flex align-center justi-center" href="#">B</a><a class="flex align-center justi-center" href="#">C</a><a class="flex align-center justi-center" href="#">D</a>
-                            <a class="flex align-center justi-center" href="#">E</a><a class="flex align-center justi-center" href="#">F</a><a class="flex align-center justi-center" href="#">G</a><a class="flex align-center justi-center" href="#">H</a>
-                            <a class="flex align-center justi-center" href="#">I</a><a class="flex align-center justi-center" href="#">J</a><a class="flex align-center justi-center" href="#">K</a><a class="flex align-center justi-center" href="#">L</a>
-                            <a class="flex align-center justi-center" href="#">M</a><a class="flex align-center justi-center" href="#">N</a><a class="flex align-center justi-center" href="#">O</a><a class="flex align-center justi-center" href="#">P</a>
-                            <a class="flex align-center justi-center" href="#">Q</a><a class="flex align-center justi-center" href="#">R</a><a class="flex align-center justi-center" href="#">S</a><a class="flex align-center justi-center" href="#">T</a>
-                            <a class="flex align-center justi-center" href="#">U</a><a class="flex align-center justi-center" href="#">V</a><a class="flex align-center justi-center" href="#">W</a><a class="flex align-center justi-center" href="#">X</a>
-                            <a class="flex align-center justi-center" href="#">Y</a><a class="flex align-center justi-center" href="#">Z</a>
+                        <div id="tab-content2" class="filter__tab-content flex r-reverse align-center justi-start align-content-center wrap" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">A</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">B</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">C</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">D</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">E</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">F</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">G</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">H</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">I</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">J</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">K</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">L</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">M</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">N</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">O</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">P</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">Q</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">R</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">S</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">T</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">U</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">V</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">W</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">X</a>
+                            <a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">Y</a><a class="flex align-center justi-center col-lg-3 col-2 col-md-1" href="#">Z</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- درباره بیماری ها -->
-        <div class="tab-amodi flex column align-end">   
-            <!-- سرچ باکس -->
-            <div class="search result-page" style="margin: 0; margin-bottom: 3.5rem;">
-                <form class="search__form flex column justi-center align-center">
-                    <div class="search__box flex justi-center align-center ">
-                        <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
-                        <div class="search__search-container flex  align-center justi-around">
-                            <i class="fas fa-search search__right-icon"></i>
-                            <input type="text" class="search__input"
-                                placeholder="بیماری مورد نظر را جستجو کنید">
-                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
-                        </div>
+        <div class="tab-amodi flex column align-start col-xl-6 col-lg-7 col-12 u-margin-sm-top">   
+            <!-- سرچ اصلی  -->
+            <div class="tab-amodi u-margin-top-medium col-12 mb-2 mb-sm-5 px-0">
+                <div class="tab-amodi__container flex column align-center col-12">
+                    <nav class="tab-amodi__multipleTabs tabs flex align-end wrap owl-carousel pr-5" id="tabs">
+                        <a data-trigger="content01" class="tab-amodi__label main-search active">جستجو</a>
+                        <a data-trigger="content02" class="tab-amodi__label main-search ">علائم</a>
+                        <!-- <a data-trigger="content03" class="tab-amodi__label main-search ">تداخلات قبلی</a> -->
+                        <a data-trigger="content04" class="tab-amodi__label main-search ">مکان یاب</a>
+                        <a data-trigger="content05" class="tab-amodi__label main-search ">تداخلات دارویی</a>
+                    </nav>
+                    <div class="search tab-amodi__tabcontent" id="content01">
+                        <form class="search__form flex column justi-center align-start">
+                            <div class="search__box flex justi-center align-center ">
+                                <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i class="fas fa-search search__right-icon"></i></button>
+                                    <input type="text" class="search__input col-10 col-md-11"
+                                        placeholder="بیماری مورد نظر را جستجو کنید">
+                                    <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                                </div>
+                                <button type="submit" class="search__btn flex align-center justi-center col-sm-2">جستجو</button>
+                            </div>
+                            <!-- hashtag -->
+                            <div class="search__hashtag flex align-center justi-start wrap" style="display: none;">
+                                <a href="#">#کرونا</a>
+                                <a href="#"> #سرطان</a>
+                                <a href="#">#درد</a>
+                                <a href="#">#آنفولانزا</a>
+                                <a href="#">#آنفولانزا</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search tab-amodi__tabcontent" id="content02">
+                        <form class="search__form flex column justi-center align-start">
+                            <div class="search__box flex justi-center align-center ">
+                                <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i class="fas fa-search search__right-icon"></i></button>
+                                    <input type="text" class="search__input col-10 col-md-11" placeholder="علائم مورد نظر را جستجو کنید">
+                                </div>
+                                <button type="submit" class="search__btn flex align-center justi-center col-2">جستجو</button>
+                            </div>
+                            <!-- hashtag -->
+                            <div class="search__hashtag flex align-center justi-start wrap" style="display: none;">
+                                <a href="#">#سردرد</a>
+                                <a href="#">#سرفه خشک</a>
+                                <a href="#">#زردی</a>
+                                <a href="#">#آب ریزش بینی</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search tab-amodi__tabcontent" id="content03">
+                        <form class="search__form flex column justi-center align-start">
+                            <div class="search__box flex justi-center align-center ">
+                                <div class="search__search-container flex align-center">
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-pills search__drug-icon"></i>
+                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="نام داروی مورد نظر"> -->
+                                        <div class="container">
+                                            <select class="select2" name="drug">
+                                                <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-pills search__drug-icon"></i>
+                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="نام داروی مورد نظر"> -->
+                                        <div class="container">
+                                            <select class="select2" name="drug">
+                                                <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-capsules search__drug-icon"></i>
+                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="نام داروی مورد نظر"> -->
+                                        <div class="container">
+                                            <select class="select2" name="drug">
+                                                <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="search__plus-btn"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                            </div>
+                            <!-- hashtag -->
+                            <div class="search__hashtag flex align-center justi-start wrap" style="display: none;">
+                                <a href="#">#کرونا</a>
+                                <a href="#"> #سرطان</a>
+                                <a href="#">#درد</a>
+                                <a href="#">#آنفولانزا</a>
+                                <a href="#">#آنفولانزا</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search tab-amodi__tabcontent" id="content04">
+                        <form class="search__form flex column justi-center align-start">
+                            <div class="search__box flex justi-center align-center ">
+                                <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i class="fas fa-map-marker-alt search__right-icon"></i></button>
+                                    <input type="text" class="search__input  col-10 col-md-11"
+                                        placeholder="بیماری مورد نظر را جستجو کنید">
+                                    <button class="search__advance flex align-center justi-around">جستجوی پیشرفته<img src="/assets/img/advance-icon.png"></button>
+                                </div>
+                                <button type="submit" class="search__btn flex align-center justi-center col-2">جستجو</button>
+                            </div>
+                            <div class="search__box makan-yab flex justi-center align-center " style="margin-top: 1rem;">
+                                <div class="search__search-container flex align-center col-12 col-sm-11">
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-list search__drug-icon"></i>
+                                        <div class="container">
+                                            <select class="select2" id="myselect" name="category">
+                                                <option value="" disabled selected> دسته بندی </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-map search__drug-icon"></i>
+                                        <div class="container">
+                                            <select class="select2" name="country">
+                                                <option value="" disabled selected> استان </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-map-marker-alt search__drug-icon"></i>
+                                        <div class="container">
+                                            <select class="select2" name="city">
+                                                <option value="" disabled selected> شهر </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-map search__drug-icon"></i>
+                                        <div class="container">
+                                            <select class="select2" name="mahale">
+                                                <option value="" disabled selected> محله </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="search__tadakholat flex align-center">
+                                        <i class="fas fa-map-marker-alt search__drug-icon"></i>
+                                        <div class="container">
+                                            <select class="select2" name="specialty">
+                                                <option value="" disabled selected> تخصص </option>
+                                                <option value=""> آپروتینین </option>
+                                                <option value="">آتراکوریوم</option>
+                                                <option value=""> آتروپین </option>
+                                                <option value=""> آتورواستاتین </option>
+                                                <option value=""> آتنولول</option>
+                                                <option value=""> آزاتیوپرین</option>
+                                                <option value=""> آزیترومایسین</option>
+                                                <option value=""> آلبندازول</option>
+                                                <option value=""> آلپرازولام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="search__close-btn flex align-center justi-center">&times;</button>
+                            </div>
+                            <!-- hashtag -->
+                            <div class="search__hashtag flex align-center justi-start wrap" style="display: none;">
+                                <a href="#">#کرونا</a>
+                                <a href="#"> #سرطان</a>
+                                <a href="#">#درد</a>
+                                <a href="#">#آنفولانزا</a>
+                                <a href="#">#آنفولانزا</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search tab-amodi__tabcontent" id="content05">
+                        <form class="search__form flex column justi-center align-start">
+                            <div class="search__box flex justi-center align-center ">
+                                <div class="search__search-container flex align-center justi-around col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i class="fas fa-search search__right-icon"></i></button>
+                                    <div class="container big-select">
+                                        <select class="select2  js-states form-control" id="multiple" name="drug[]" multiple="multiple" placeholder="selected">
+                                            <option value="" disabled selected> نام داروی مورد نظر </option>
+                                            <option value=""> آپروتینین </option>
+                                            <option value="">آتراکوریوم</option>
+                                            <option value=""> آتروپین </option>
+                                            <option value=""> آتورواستاتین </option>
+                                            <option value=""> آتنولول</option>
+                                            <option value=""> آزاتیوپرین</option>
+                                            <option value=""> آزیترومایسین</option>
+                                            <option value=""> آلبندازول</option>
+                                            <option value=""> آلپرازولام</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="search__btn flex align-center justi-center col-2">جستجو</button>
+                            </div>
+                            <!-- hashtag -->
+                            <div class="search__hashtag flex align-center justi-start wrap" style="display: none;">
+                                <a href="#">#سردرد</a>
+                                <a href="#">#سرفه خشک</a>
+                                <a href="#">#زردی</a>
+                                <a href="#">#آب ریزش بینی</a>
+                            </div>
+                        </form>
                     </div>
                     <!-- search suggestion -->
-                    <div class="suggestion" style="display: none;">
-                        <!-- <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i> -->
+                    <div class="suggestion" style="margin-right: -2rem; display: none;">
+                        <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i>
                         <div class="suggestion__container flex column align-center justi-center">
-                            <div class="suggestion__recent-search flex column justi-around align-end">
+                            <div class="suggestion__recent-search flex column justi-around align-start">
                                 <h3 class="suggestion__header">جستجوهای مشابه</h3>
-                                <div class="flex  justi-start align-center wrap">
+                                <div class="flex justi-start align-center wrap">
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
@@ -871,7 +829,7 @@
                                 </div>
                             </div>
                             <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
-                            <div class="suggestion__result flex ">
+                            <div class="suggestion__result flex">
                                 <div class="suggestion__icons flex column align-center justi-center">
                                     <div class="flex column align-center active-icon">
                                         <i class="fas fa-book"></i>
@@ -887,48 +845,58 @@
                                     </div>
                                 </div>
                                 <div class="suggestion__result-list flex column">
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex  justi-between align-center">آپروتینین
+                                    <a href="#" class="flex justi-between align-center">آپروتینین
                                         <span>Abdominal Aortic </span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
+                    
+                    <!-- Buttons -->
+                    <div class="tab-amodi__buttons col-12" style="margin-bottom: 2rem;">
+                        <nav class="flex justi-around wrap btn-tabs" >
+                            <a data-trigger="content01" class="flex align-center justi-center col-5 btn-active"><i class="fas fa-search"></i>جستجو</a>
+                            <a data-trigger="content02" class="flex align-center justi-center col-5"><i class="fas fa-lungs-virus"></i>علائم</a>
+                            <a data-trigger="content05" class="flex align-center justi-center col-5"><i class="fas fa-pills"></i>تداخلات</a>
+                            <a data-trigger="content04" class="flex align-center justi-center col-5"><i class="fas fa-map-marker-alt"></i>مکان یاب</a>
+                        </nav>
+                    </div>
+                </div>
             </div>      
             <div class="tab-amodi__container">
                 <div class="tab-ofoghi__tab">
-                    <div class="tab-ofoghi__container activate flex column align-end" id="box-1">
+                    <div class="tab-ofoghi__container activate flex column align-start" id="box-1">
                         <div class="tab-ofoghi__box" onclick="toggleTab('#box-1')">
                             <div class="tab-ofoghi__header flex  justi-between align-center">
-                                <h2 class="tab-ofoghi__title color-primary-light border-primary-light">کلینیک ها <i class="fas fa-briefcase-medical"></i>
+                                <h2 class="tab-ofoghi__title color-primary-light border-primary-light"> <i class="fas fa-briefcase-medical"></i>کلینیک ها
                                 </h2>
                                 <button class="tab-ofoghi__btn tab-ofoghi__btn-1">
                                     <i class="fas fa-angle-right tab-ofoghi__logo"></i>
@@ -957,10 +925,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-ofoghi__container flex column align-end" id="box-2">
+                    <div class="tab-ofoghi__container flex column align-start" id="box-2">
                         <div class="tab-ofoghi__box" onclick="toggleTab('#box-2')">
                             <div class="tab-ofoghi__header flex  justi-between align-center">
-                                <h2 class="tab-ofoghi__title color-primary border-primary">مقالات <i class="fas fa-book"></i></h2>
+                                <h2 class="tab-ofoghi__title color-primary border-primary"> <i class="fas fa-book"></i>مقالات</h2>
                                 <button class="tab-ofoghi__btn">
                                     <i class="fas fa-angle-right tab-ofoghi__logo"></i>
                                     <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
@@ -1000,10 +968,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-ofoghi__container flex column align-end" id="box-3">
+                    <div class="tab-ofoghi__container flex column align-start" id="box-3">
                         <div class="tab-ofoghi__box" onclick="toggleTab('#box-3')">
                             <div class="tab-ofoghi__header flex  justi-between align-center">
-                                <h2 class="tab-ofoghi__title color-pink border-pink">داروها <i class="fas fa-pills"></i></h2>
+                                <h2 class="tab-ofoghi__title color-pink border-pink"> <i class="fas fa-pills"></i>داروها</h2>
                                 <button class="tab-ofoghi__btn">
                                     <i class="fas fa-angle-right tab-ofoghi__logo"></i>
                                     <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
@@ -1031,10 +999,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-ofoghi__container flex column align-end" id="box-4">
+                    <div class="tab-ofoghi__container flex column align-start" id="box-4">
                         <div class="tab-ofoghi__box" onclick="toggleTab('#box-4')">
                             <div class="tab-ofoghi__header flex  justi-between align-center">
-                                <h2 class="tab-ofoghi__title orange border-orange">نظرات <i class="fas fa-comments"></i></h2>
+                                <h2 class="tab-ofoghi__title orange border-orange"> <i class="fas fa-comments"></i>نظرات</h2>
                                 <button class="tab-ofoghi__btn">
                                     <i class="fas fa-angle-right tab-ofoghi__logo"></i>
                                     <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
@@ -1101,7 +1069,7 @@
 
     <!-- <img src="./assets/img/Artboard-2.png" class="main__bg display"> -->
     <!-- دسته بندی سرویس ها -->
-    <div class="service">
+    <div class="service d-none d-xl-flex">
         <div class="service__left-border">
             <a href="#"><div class="service__logo-box">
                 <i class="fas fa-pills service__icon"></i>
@@ -1163,8 +1131,8 @@
     <!-- Desktop Footer -->
     <footer class="footer">
         <img src="./assets/img/footer.png" class="footer__background">
-        <div class="footer__main flex  align-center justi-around">
-            <div class="footer__about-us">
+        <div class="footer__main flex wrap align-center justi-around">
+            <div class="footer__about-us col-6 col-xl-4">
                 <h2 class="footer__header" onclick="openOption()">درباره ما</h2>
                 <p class="footer__pragraph">
                     مشاوره تلفنی چیست؟<br>
@@ -1177,14 +1145,14 @@
                 </div>
                 <h3 class="footer__header-secondary">تلفن</h3><span class="footer__span">021 - 22601162</span>
             </div>
-            <div class="footer__app flex column align-center justi-around">
+            <div class="footer__app flex row flex-xl-column align-center justi-around col-12 col-xl-4 order-3 order-xl-2">
                 <div class="footer__img flex  justi-center align-center">
                     <img src="./assets/img/apple androide.png" class="footer__photo">
                     <img src="./assets/img/pic footer.png" class="footer__photo">
                 </div>
                 <button class="footer__btn">دانلود اپلیکیشن</button>
             </div>
-            <div class="footer__map">
+            <div class="footer__map col-6 col-xl-4 order-2 order-xl-3">
                 <img src="./assets/img/Subtraction 2.png" class="footer__map-photo">
             </div>
         </div>
@@ -1199,6 +1167,17 @@
             </div>
         </div>
     </footer>
+    
+    
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
 

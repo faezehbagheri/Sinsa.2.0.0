@@ -11,6 +11,8 @@
         &:not(:last-of-type){
             border-bottom: 2px solid $color-secondary-light;
         }
+        
+        i.fa-angle-down{display: none;}
 
         @include respond(phone-port){
             a{font-size: 2.2rem !important;}
@@ -19,21 +21,114 @@
 
         @include respond(phone){
             justify-content: start;
-            padding: 2.5rem 1rem;
+            padding: 3.5rem 1rem;
 
             a{
                 font-size: 2.5rem !important;
-                margin-right: 4rem;
+                // margin-right: 4rem;
+            }
+        }
+    }
+
+    &__readmore{
+        width: 100%; 
+        height: 0;
+        overflow: hidden;
+
+
+        h2{
+            font-size: 1.8rem;
+            color: $color-primary-dark;
+            transform: translateY(-500%);
+            transition: all .3s ease;
+
+            @include respond(phone-port){font-size: 2rem;}
+
+            @include respond(phone){font-size: 2.5rem;}
+        }
+
+        ol{
+            width: 100%;
+            padding: 1rem;
+
+            @include respond(phone-port){
+                padding: 1rem 2rem;
             }
 
-            i{display: none !important;}
+            @include respond(phone){
+                padding: 1rem 2.3rem;
+            }
         }
+
+        li{
+            font-size: 1.6rem;
+            line-height: 4rem;
+            width: 32%;
+            transform: translateY(-400%);
+            transition: all .5s ease;
+            color: $color-gray;
+
+            @include respond(phone-port){
+                font-size: 2rem;
+                line-height: 6rem;
+            }
+
+            @include respond(phone){
+                font-size: 2.5rem;
+                line-height: 8rem;
+            }
+        }
+
+        p{
+            font-size: 1.6rem !important;
+            color: $color-gray !important;
+            transform: translateY(-500%);
+            transition: all .5s ease;
+
+            @include respond(phone-port){font-size: 2rem !important;}
+
+            @include respond(phone){font-size: 2.5rem !important;}
+        }
+    }
+
+    .show-more{
+        height: auto;
+        padding: 2rem;
+
+        h2{
+            transform: translateY(0%);            
+        }
+
+        li{
+            transform: translateY(0%);  
+        }
+
+        p{
+            transform: translateY(0%);  
+        }
+    }
+
+    button{
+        // width: 3rem;
+        height: 3rem;
+        padding: 1px 6px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.4rem;
+        color: $color-gray;
+        // margin-top: 5rem;
+
+        @include respond(phone-port){font-size: 2rem;}
+
+        @include respond(phone){font-size: 2.2rem;}
     }
 
     i{
         font-size: 2.5rem;
         color: $color-primary-dark;
-        margin-left: 6rem;
+        // margin-left: 6rem;
+        margin-right: 1.5rem;
     }
     
     a,
