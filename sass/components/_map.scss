@@ -1,5 +1,9 @@
 .map{
-    height: 81.5rem;
+    // height: 81.5rem;
+    // height: 100%;
+
+    @include respond(md){height: 70rem; margin: 0;}
+    @include respond(phone){height: 80rem; margin: 0;}
 
     &__container {
         margin: auto;
@@ -7,7 +11,7 @@
         border: solid 1px grey;
         height: 100%;
 
-        @include respond(phone){overflow: hidden;}
+        // @include respond(phone){overflow: hidden;}
     }
 
         

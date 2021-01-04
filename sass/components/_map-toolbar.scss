@@ -6,17 +6,34 @@
     position: absolute;
     z-index: 9;
 
+    @include respond(md){height: 8rem;}
+
+    @include respond(phone){
+        height: 12rem;
+    }
+
     &__btn{
-        height: 3rem;
-        width: 10rem;
+        height: 4rem;
+        // width: 10rem;
         background-color: #ffffff;
         border-radius: 3rem;
         border: 1px solid $color-gray;
         font-size: 1.7rem;
         font-family: 'irsans';
         color: $color-gray;
-        margin:0 3rem;
+        // margin:0 3rem;
         transition: all .3s ease;
+
+        @include respond(md){
+            height: 5rem;
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone){
+            height: 8rem;
+            font-size: 2.2rem;
+            border-radius: 4rem;
+        }
 
         &:hover{
             background-color: $color-primary-light;
@@ -28,67 +45,77 @@
             }
         }
 
-        @include respond(big-desktop){
-            height: 4rem;
-            width: 12rem;
-        }
+        // @include respond(big-desktop){
+        //     height: 4rem;
+        //     width: 12rem;
+        // }
     }
 
     &__reset-icon{
         color: $color-gray;
-        margin-left: 1rem;
+        margin-right: 1rem;
         transition: all .3s ease;
     }
 
     &__search{
-        height: 3rem;
-        width: 55%;
-
-        @include respond(big-desktop){
-            height: 4rem;
-        }
+        height: 90%;
+        // width: 55%;
     }
 
     &__search-icon{
         font-size: 2.5rem;
         color: $color-primary-light;
-        margin-left: 5rem;
+        // margin-left: 5rem;
         cursor: pointer;
+
+        @include respond(md){
+            margin-right: 1rem;
+            font-size: 3rem;
+        }
+        
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
     }
 
     &__search-box{
-        height: 3rem;
-        width: 70%;
-        background-color: #ffffff;
+        height: 4rem;
+        width: 0;
+        background-color: white;
         border: 1px solid $color-gray;
         border-radius: 2rem;
-        margin: 3rem;     
-        width: 0;
         opacity: 0;
         transition: all .4s ease-in;
         // display: none;
 
-        @include respond(big-desktop){
-            height: 3.5rem
+        @include respond(md){
+            height: 5rem;
+            border-radius: 2.5rem;
+        }
+
+        @include respond(phone){
+            height: 8rem;
         }
     }
 
     &__show-searchBox{
         opacity: 1;
-        width: 70%;
+        width: 100%;
     }
 
     &__search-input{
-        width:85%;
+        width:90%;
         margin: 2rem;
         height: 90%;
         text-align: right;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         border: none;
         outline: none;
 
+        @include respond(phone){font-size: 2.2rem;}
+
         &::placeholder{
-            font-size: 1.5rem;
+            // font-size: 1.6rem;
             color: $color-gray-light;
             font-weight: 100;
         }
@@ -100,17 +127,11 @@
         color: $color-gray;
     }
 
-    &__filter{
-        width: 10%;
-    }
-
     &__filter-icon{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         color: $color-gray;
         cursor: pointer;
 
-        @include respond(big-desktop){
-            font-size: 2.5rem;
-        }
+        @include respond(phone){font-size: 3rem;}
     }
 }

@@ -119,6 +119,37 @@ $(document).ready(function () {
     var $mobileFilter = $("#mobile-filter");
     var $tabs = $("#tabs");
     var $otabs = $("#o-tabs");
+    var $filterCarousel = $("#filter-carousel");
+
+    /// filterCarousel ///
+    $filterCarousel.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $filterCarousel.owlCarousel({        
+        loop: false,
+        rtl: true,
+        responsive:{
+            0:{
+                items: 1,
+            },
+            800:{
+                items: 3,
+            },
+            1100:{
+                items: 4,
+            },
+            1400:{
+                items: 5,
+            }
+        }
+        
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $filterCarousel.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
 
     /// otabs ///
     $otabs.children().each(function (index) {

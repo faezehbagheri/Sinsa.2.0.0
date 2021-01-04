@@ -49,6 +49,14 @@
     }
 }
 
+.select2-search__field{
+    height: 3.5rem !important;
+    font-size: 1.8rem;
+
+    @include respond(phone){
+        height: 5rem !important;
+    }
+}
 
 .select2-results__options {
     font-size: 14px !important;

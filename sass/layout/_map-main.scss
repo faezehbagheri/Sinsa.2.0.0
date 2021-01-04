@@ -1,8 +1,13 @@
 .map-main{
     width: 100%;
-    height: 90vh;
-    background-color: rgb(223, 231, 255);
+    height: 87vh;
+    overflow: hidden;
+    // background-color: rgb(223, 231, 255);
     position: relative;
 
-    @include respond(big-desktop){height: 87vh;}
+    // @include respond(md){height: 120vh;}
+
+    @include respond(md){ height: auto; }
+
+    // @include respond(big-desktop){height: 87vh;}
 }

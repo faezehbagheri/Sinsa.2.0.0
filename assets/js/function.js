@@ -245,37 +245,34 @@ function initMap() {
 
         document.querySelector(".hospital-details").innerHTML= '';
         var html = `
-        <div class="hospital-details__container flex  align-center justi-around">
-                    <div class="hospital-details__col-1 flex column align-end justi-around">
-                        <p class="hospital-details__name">بیمارستان %name%</p>
-                        <div class="hospital-details__full-width flex  align-center justi-between">
-                            <span class="hospital-details__type">بیمارستان %type%</span>
-                            <div class=" flex  align-center ">
-                                <i class="fas fa-clock hospital-details__clock-icon"></i>
-                                <span class="hospital-details__time">%time1%</span>
-                                <span class="hospital-details__time">%time2%</span>
-                            </div>
-                        </div>
-                        <div class="flex  align-start">
-                            <i class="fas fa-map-marker-alt hospital-details__location-icon"></i>
-                            <span class="hospital-details__address">%address%</span>
+        <div class="hospital-details__container flex align-center justi-around">
+                <div class="flex column justi-around col-5 h-100">
+                    <h2 class="hospital-details__name">%name%</h2>
+                    <div class="flex flex-column flex-xl-row align-start justi-between">
+                        <h3 class="hospital-details__type">%type%</h3>
+                        <div class=" flex  align-center ">
+                            <i class="fas fa-clock"></i>
+                            <span>%time1%</span>
+                            <span>%time2%</span>
                         </div>
                     </div>
-                    <div class="hospital-details__col-2 flex column align-center justi-around">
-                        <div>
-                            <i class="far fa-star hospital-details__star-icon"></i>
-                            <i class="far fa-star hospital-details__star-icon"></i>
-                            <i class="far fa-star hospital-details__star-icon"></i>
-                            <i class="far fa-star hospital-details__star-icon"></i>
-                            <i class="far fa-star hospital-details__star-icon"></i>
-                        </div>
-                        <div>
-                            <span class="hospital-details__phone">%phone%</span>
-                            <i class="fas fa-phone hospital-details__phone-icon"></i>
-                        </div>
-                        <button class="hospital-details__btn">دریافت مشاوره</button>
+                    <div class="flex align-start">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="hospital-details__address">%address%</p>
                     </div>
                 </div>
+                <div class="flex column align-center justi-around col-5 h-100">
+                    <div>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p><i class="fas fa-phone"></i>%phone%</p>
+                    <button>دریافت مشاوره</button>
+                </div>
+            </div>
         `
         html = html.replace('%name%' , data[num].name);
         html = html.replace('%type%' , data[num].type);
