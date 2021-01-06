@@ -32,6 +32,7 @@
         font-size: 5rem;
         color: #ffffff;
         margin-top: 25rem;
+        text-align: center;
         
         @include respond(phone-port){margin-top: 15rem;}
         

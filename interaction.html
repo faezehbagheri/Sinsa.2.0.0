@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" id="view" content="user-scalable=no, width=device-width minimum-scale=1, maximum-scale=1" />
+
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
-    <script src="/assets/js/progressbar.min.js"></script>
-    
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
-    <link rel="stylesheet" href="/assets/css/select2.css"> -->
-        
+
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script> -->
+
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
 
@@ -24,139 +26,141 @@
     <script src="./assets/js/function.js"></script>
     <script src="./assets/js/jqueryFunction.js"></script>
     <script src="./assets/js/searchFunction.js"></script>
+    <script src="./assets/js/pushMenu.js"></script>
 
     <title>Sinsa</title>
 </head>
 
 <body id="body">
 
-
-    <!-- منو موبایل -->
-    <nav class="mobile-menu flex column justi-around align-end " id="menu">
-        <div class="mobile-menu__content">
-            <div class="mobile-menu__header">
-                <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+    <!-- هدر موبایل -->
+    <div class="mobile-header">
+        <nav class="navbar navbar-default p-0" role="navigation">        
+            <div class="mobile-header__head flex  justi-between align-center">
+                <!-- <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a> -->
+                <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon"></i>
+                </button>
+                <h2 class="heading-primary">بیماری ها</h2>
+                <div class="flex column align-center"  onclick="openMobileFilter()">
+                    <i class="fas fa-filter mobile-header__icon"></i>
+                    <span class="mobile-header__text">مشاهده فیلتر</span>
+                </div>
             </div>
-            <div class="mobile-menu__nav">
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item flex  justi-start align-center">
-                        <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('2')">
-                        <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"
-                                id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                id="down-icon-2"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-2">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('3')">
-                        <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"
-                                id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                id="down-icon-3"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-3">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('4')">
-                        <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon"
-                                id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                id="down-icon-4"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('5')">
-                        <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"
-                                id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                id="down-icon-5"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-5">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item flex  justi-start align-center">
-                        <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('6')">
-                        <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"
-                                id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                id="down-icon-6"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-6">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Header -->
-    <header class="mobile-header">
-        <!-- هدر -->
-        <div class="mobile-header__head flex  justi-between align-center">
-            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
-            <h2 class="heading-primary">بیماری ها</h2>
-            <div class="flex column align-center"  onclick="openMobileFilter()">
-                <i class="fas fa-filter mobile-header__icon"></i>
-                <span class="mobile-header__text">مشاهده فیلتر</span>
-            </div>
-        </div>
-    </header>
+            <div class="navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
+                id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+                <div class="mobile-menu__header">
+                    <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+                </div>
+                <div class="mobile-menu__nav">
+                    <ul class="mobile-menu__list flex column align-start">
+                        <li class="mobile-menu__item flex  justi-start align-center">
+                            <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('2')">
+                            <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-2"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('3')">
+                            <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-3"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('4')">
+                            <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-4"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('5')">
+                            <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-5"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item flex  justi-start align-center">
+                            <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('6')">
+                            <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-6"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>     
+        </nav>
+    </div>
 
     <!-- Desktop Nav -->
     <nav class="navigation flex  justi-around">

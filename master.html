@@ -3,16 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" id="view" content="user-scalable=no, width=device-width minimum-scale=1, maximum-scale=1" />
+
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
 
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
-    <link rel="stylesheet" href="/assets/css/select2.css"> -->
-        
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script> -->
+
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -22,130 +26,141 @@
     <script src="./assets/js/function.js"></script>
     <script src="./assets/js/jqueryFunction.js"></script>
     <script src="./assets/js/searchFunction.js"></script>
+    <script src="./assets/js/pushMenu.js"></script>
 
     <title>Sinsa</title>
 </head>
 
 <body id="body">
 
-    
-    <!-- منو موبایل -->
-    <nav class="mobile-menu flex column justi-around align-end " id="menu">
-        <div class="mobile-menu__content">
-            <div class="mobile-menu__header">
-                <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+    <!-- هدر موبایل -->
+    <div class="mobile-header">
+        <nav class="navbar navbar-default p-0" role="navigation">        
+            <div class="mobile-header__head flex  justi-between align-center">
+                <!-- <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a> -->
+                <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon"></i>
+                </button>
+                <h2 class="heading-primary">بیماری ها</h2>
+                <div class="flex column align-center"  onclick="openMobileFilter()">
+                    <i class="fas fa-filter mobile-header__icon"></i>
+                    <span class="mobile-header__text">مشاهده فیلتر</span>
+                </div>
             </div>
-            <div class="mobile-menu__nav">
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item flex  justi-start align-center">                        
-                        <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('2')">
-                        <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-2"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-2">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('3')">
-                        <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-3"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-3">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('4')">
-                        <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-4"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>                    
-                    <li class="mobile-menu__item" onclick="openSubMenu('5')">
-                        <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-5"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-5">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item flex  justi-start align-center">
-                        <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
-                    </li>
-                    <li class="mobile-menu__item" onclick="openSubMenu('6')">
-                        <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-6"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-6">
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                            </li>
-                            <li class="mobile-menu__sub-item flex  justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Header -->
-    <header class="mobile-header">
-        <!-- هدر -->
-        <div class="mobile-header__head flex  justi-between align-center">
-            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
-            <h2 class="heading-primary">بیماری ها</h2>
-            <div class="flex column align-center"  onclick="openMobileFilter()">
-                <i class="fas fa-filter mobile-header__icon"></i>
-                <span class="mobile-header__text">مشاهده فیلتر</span>
-            </div>
-        </div>
-    </header>
-
+            <div class="navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
+                id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+                <div class="mobile-menu__header">
+                    <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+                </div>
+                <div class="mobile-menu__nav">
+                    <ul class="mobile-menu__list flex column align-start">
+                        <li class="mobile-menu__item flex  justi-start align-center">
+                            <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('2')">
+                            <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-2"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('3')">
+                            <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-3"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('4')">
+                            <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-4"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('5')">
+                            <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-5"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu__item flex  justi-start align-center">
+                            <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+                        </li>
+                        <li class="mobile-menu__item" onclick="openSubMenu('6')">
+                            <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"
+                                    id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                                    id="down-icon-6"></i></span>
+                            <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                                </li>
+                                <li class="mobile-menu__sub-item flex  justi-start align-center">
+                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>     
+        </nav>
+    </div>
     
     <!-- Desktop Nav -->
     <nav class="navigation flex  justi-around">
@@ -652,328 +667,3 @@
 
 </body>
 </html>
-
-
-<!-- 
-
-############################## سه شنبه 99-09-11 / ساعت 12:00 ##############################
-باقری
-
-کد قبلی:
-قسمت سرچ موبایل هدر
-<div class="search__box flex justi-center align-center ">
-    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-    <div class="search__search-container flex  align-center justi-around">
-        <i class="fas fa-search search__right-icon"></i>
-        <input type="text" class="search__input">
-        <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
-    </div>
-</div>  
-
-کد فعلی:
-<div class="tab-amodi u-margin-top-medium">
-    <div class="tab-amodi__container flex column align-end">
-        <nav class="tab-amodi__mobile-multipleTabs flex align-end showTab">
-            <a data-trigger="mobile-tab-01" class="tab-amodi__label active">جستجو</a>
-            <a data-trigger="mobile-tab-02" class="tab-amodi__label ">علائم</a>
-            <a data-trigger="mobile-tab-04" class="tab-amodi__label ">مکان یاب</a>
-            <a data-trigger="mobile-tab-05" class="tab-amodi__label ">تداخلات دارویی</a>
-        </nav>
-        <div class="search tabcontent" id="mobile-tab-01">
-            <form class="search__form flex column justi-center align-end">
-                <div class="search__box flex justi-center align-center ">
-                    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                    <div class="search__search-container flex  align-center justi-around">
-                        <i class="fas fa-search search__right-icon"></i>
-                        <input type="text" class="search__input"
-                            placeholder="بیماری مورد نظر را جستجو کنید">
-                        <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="search tabcontent" id="mobile-tab-02">
-            <form class="search__form flex column justi-center align-end">
-                <div class="search__box flex justi-center align-center ">
-                    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                    <div class="search__search-container flex  align-center justi-around">
-                        <i class="fas fa-search search__right-icon"></i>
-                        <input type="text" class="search__input" placeholder="علائم مورد نظر را جستجو کنید">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="search tabcontent" id="mobile-tab-03">
-            <form class="search__form flex column justi-center align-end">
-                <div class="search__box flex justi-center align-center ">
-                    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                    <div class="search__search-container flex  align-center">
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-pills search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="drug">
-                                    <option value="" disabled selected> نام داروی مورد نظر </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-pills search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="drug">
-                                    <option value="" disabled selected> نام داروی مورد نظر </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-capsules search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="drug">
-                                    <option value="" disabled selected> نام داروی مورد نظر </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button class="search__plus-btn"><i class="fas fa-plus"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="search tabcontent" id="mobile-tab-04">
-            <form class="search__form flex column justi-center align-end">
-                <div class="search__box flex justi-center align-center ">
-                    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                    <div class="search__search-container flex  align-center">
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-list search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" id="myselect" name="category">
-                                    <option value="" disabled selected> دسته بندی </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-map search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="country">
-                                    <option value="" disabled selected> استان </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="city">
-                                    <option value="" disabled selected> شهر </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-map search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="mahale">
-                                    <option value="" disabled selected> محله </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search__tadakholat flex  align-center">
-                            <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                            <div class="container">
-                                <select class="select2" name="specialty">
-                                    <option value="" disabled selected> تخصص </option>
-                                    <option value=""> آپروتینین </option>
-                                    <option value="">آتراکوریوم</option>
-                                    <option value=""> آتروپین </option>
-                                    <option value=""> آتورواستاتین </option>
-                                    <option value=""> آتنولول</option>
-                                    <option value=""> آزاتیوپرین</option>
-                                    <option value=""> آزیترومایسین</option>
-                                    <option value=""> آلبندازول</option>
-                                    <option value=""> آلپرازولام</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="search tabcontent" id="mobile-tab-05">
-            <form class="search__form flex column justi-center align-end">
-                <div class="search__box flex justi-center align-center ">
-                    <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                    <div class="search__search-container flex  align-center justi-around">
-                        <i class="fas fa-search search__right-icon"></i>
-                        <div class="container big-select">
-                            <select class="select2  js-states form-control" id="multiple" name="drug[]" multiple="multiple" placeholder="selected">
-                                <option value="" disabled selected> نام داروی مورد نظر </option>
-                                <option value=""> آپروتینین </option>
-                                <option value="">آتراکوریوم</option>
-                                <option value=""> آتروپین </option>
-                                <option value=""> آتورواستاتین </option>
-                                <option value=""> آتنولول</option>
-                                <option value=""> آزاتیوپرین</option>
-                                <option value=""> آزیترومایسین</option>
-                                <option value=""> آلبندازول</option>
-                                <option value=""> آلپرازولام</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>   
- -->
-
-
-
-
- <!-- 
-############################## سه شنبه 99-09-11 / ساعت 15:00 ##############################
-باقری
-
-کدی که اضافه شده:
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
-    <link rel="stylesheet" href="/assets/css/select2.css">
-  -->
-
-<!-- 
-############################## سه شنبه 99-09-11 / ساعت 16:15 ##############################
-باقری
-
-توضیحات:
-تغییرات در قسمت موبایل هدر، هدر 
-
-کد قبلی:
-<div class="mobile-header__head flex  justi-between align-center">
-<a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
-<h2 class="heading-primary">بیماری ها</h2>
-<i class="fas fa-filter mobile-header__icon"></i>
-</div>
-
-کد فعلی:
-<div class="mobile-header__head flex  justi-between align-center">
-<a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
-<h2 class="heading-primary">بیماری ها</h2>
-<div class="flex column align-center" onclick="openMobileFilter()">
-    <i class="fas fa-filter mobile-header__icon"></i>
-    <span class="mobile-header__text">مشاهده فیلتر</span>
-</div>
-</div>
-
--->
-
-
-<!-- 
-############################## سه شنبه 99-09-11 / ساعت 16:15 ##############################
-باقری
-
-کد قبلی:
-<nav class="mobile-bottom-menu flex  justi-around align-center">
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-folder mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">آرشیو</span>
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-globe-americas mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">اخبار</span>
-        </div></a>
-        <a href="#"><div>
-            <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-bell mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">تقویم</span>
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-home mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">خانه</span>
-        </div></a>
-    </nav>
-
-کد فعلی:
-    <nav class="mobile-bottom-menu flex  justi-around align-center">
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-home mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">خانه</span>
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-lungs-virus mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">علائم</span>
-        </div></a>
-        <a href="#"><div>
-            <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-pills mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">تداخلات</span>
-        </div></a>
-        <a href="#"><div class="flex column justi-around align-center">
-            <i class="fas fa-map-marker-alt mobile-bottom-menu__icon"></i>
-            <span class="mobile-bottom-menu__span">مکان یاب</span>
-        </div></a>
-    </nav>
-
--->
