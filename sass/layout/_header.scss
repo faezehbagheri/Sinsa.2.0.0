@@ -38,7 +38,7 @@
         
         @include respond(iphone-port){font-size: 4rem;}
     
-        @include respond(phone){margin-top: 25rem;}
+        @include respond(phone){margin-top: 18rem;}
         @include respond(iphone){margin-top: 15rem;}
     }   
 

@@ -3886,6 +3886,38 @@ body-model-widget .body-model-popover {
           @media only screen and (max-width: 30em) and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
             .search .makan-yab .search__search-container div.search__tadakholat .container .select2-selection__rendered {
               line-height: 4rem; } }
+  .search .order-drug {
+    height: auto; }
+    @media only screen and (max-width: 30em) {
+      .search .order-drug {
+        height: auto; }
+        .search .order-drug .search__search-container {
+          justify-content: center; }
+        .search .order-drug div.search__info-input {
+          height: 9rem !important;
+          justify-content: center;
+          padding: 1rem 0;
+          border: none; }
+          .search .order-drug div.search__info-input:not(:last-of-type) {
+            border-bottom: 1px solid #6DC2BE; }
+        .search .order-drug i {
+          font-size: 3rem !important;
+          margin: 0 1rem; }
+        .search .order-drug button {
+          height: 9rem !important;
+          font-size: 2.5rem !important;
+          background-color: #B4D3D1 !important; }
+        .search .order-drug i {
+          color: #B4D3D1 !important; } }
+    .search .order-drug button {
+      height: 5rem;
+      border: none;
+      background-color: #90C73D;
+      color: white;
+      font-size: 1.6rem; }
+    .search .order-drug i {
+      font-size: 2rem;
+      color: #90C73D; }
   .search__advance {
     height: 100%;
     width: 23rem;
@@ -3952,7 +3984,7 @@ body-model-widget .body-model-popover {
     border: none;
     outline: none;
     background-color: #fff;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: right;
     direction: rtl;
     color: #707070;
@@ -4023,6 +4055,35 @@ body-model-widget .body-model-popover {
     height: 100%; }
     .search__tadakholat:not(:last-of-type) {
       border-left: 1px solid #49838B; }
+  .search__info-input {
+    border-left: 1px solid #707070; }
+    .search__info-input:not(:last-of-type) {
+      border-bottom: 1px solid #707070; }
+    .search__info-input input {
+      margin-right: 1rem;
+      height: 5rem;
+      flex: 1; }
+      @media only screen and (max-width: 30em) {
+        .search__info-input input {
+          font-size: 2.2rem; } }
+  .search .inputfile {
+    width: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .search .inputfile + label {
+    margin: 0 1rem;
+    flex: 1;
+    font-size: 1.4rem;
+    color: #707070;
+    font-weight: 100;
+    display: inline-block;
+    cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .search .inputfile + label {
+        font-size: 2.2rem;
+        height: 5rem; } }
   .search__tadakhol-input {
     width: 90%;
     text-align: right;
@@ -4036,7 +4097,10 @@ body-model-widget .body-model-popover {
       color: #A0A0A0; }
   .search__drug-icon {
     font-size: 2rem;
-    color: #B4D3D1; }
+    color: #90C73D; }
+    @media only screen and (max-width: 30em) {
+      .search__drug-icon {
+        color: #B4D3D1; } }
   .search__plus-btn {
     background-color: transparent;
     border: 3px solid #90C73D;
@@ -5520,7 +5584,7 @@ body-model-widget .body-model-popover {
         font-size: 4rem; } }
     @media only screen and (max-width: 30em) {
       .header__label {
-        margin-top: 25rem; } }
+        margin-top: 18rem; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .header__label {
         margin-top: 15rem; } }

@@ -188,7 +188,7 @@ $(document).ready(function () {
                 items: 2,
             },
             600:{
-                items: 4,
+                items: 3,
             }
         }
         

@@ -164,6 +164,55 @@
         }
     }
 
+    .order-drug{
+        height: auto;
+        @include respond(phone){
+            height: auto;
+            // .search__close-btn{display: none;}
+
+            .search__search-container{
+                justify-content: center;
+            }
+            div.search__info-input{
+                height: 9rem !important;
+                justify-content: center;
+                padding: 1rem 0;
+                // margin-top: 1rem;
+                border: none;
+
+                &:not(:last-of-type){
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+
+            i{
+                font-size: 3rem !important;
+                margin: 0 1rem;
+            }
+
+            button{
+                height: 9rem !important;
+                font-size: 2.5rem !important;
+                background-color: $color-secondary-light !important;
+            }
+
+            i{color: $color-secondary-light !important;}
+        }
+        
+        button{
+            height: 5rem;
+            border: none;
+            background-color: $color-primary-light;
+            color: white;
+            font-size: 1.6rem;
+        }
+        
+        i{
+            font-size: 2rem;
+            color: $color-primary-light;
+        }
+    }
+
     &__advance{
         height: 100%;
         width: 23rem;
@@ -246,7 +295,7 @@
         border: none;
         outline: none;
         background-color: #fff;
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: right;
         direction: rtl;
         color: $color-gray;
@@ -331,6 +380,42 @@
             border-left: 1px solid $color-primary-dark;
         }
     }
+
+    &__info-input{
+        // min-height: 5rem;
+        border-left: 1px solid $color-gray;
+        
+        &:not(:last-of-type){
+            border-bottom: 1px solid $color-gray;
+        }
+
+        input{
+            margin-right: 1rem;
+            height: 5rem;
+            flex: 1;
+            @include respond(phone){font-size: 2.2rem;}
+        }
+    }
+    .inputfile {
+        width: 0.1px;
+        // height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .inputfile + label {
+        margin: 0 1rem;
+        flex: 1;
+        font-size: 1.4rem;
+        color: $color-gray;
+        font-weight: 100;
+        display: inline-block;
+        cursor: pointer;
+        @include respond(phone){font-size: 2.2rem; height: 5rem;}
+    }
+    
     
     &__tadakhol-input{
         width: 90%;
@@ -349,8 +434,12 @@
 
     &__drug-icon{
         font-size: 2rem;
-        color: $color-secondary-light;
+        color: $color-primary-light;
         // margin-left: 1rem;
+
+        @include respond(phone){
+            color: $color-secondary-light;
+        }
     }
 
     &__plus-btn{
