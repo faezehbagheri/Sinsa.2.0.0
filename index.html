@@ -46,7 +46,7 @@
                     data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <i class="fas fa-bars mobile-header__icon"></i>
                 </button>
-                <h2 class="heading-primary">بیماری ها</h2>
+                <h2 class="heading-primary">SinSa</h2>
                 <i class="fas fa-ellipsis-v mobile-header__icon"></i>
             </div>
             <div class="navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
@@ -163,48 +163,51 @@
         </nav>
     </div>
 
-    <!-- Desktop Nav Bootstrap-->
-    <!-- <div class="navigation col-12">
-        <nav class=" navbar navbar-expand-lg navbar-toggleable bg-light flex justi-around">
-            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- نویگیشن -->
+    <nav class="navigation navbar navbar-expand-md navbar-dark bg-light navbar-toggleable d-flex justify-content-center">
+        <div class="col-12 col-lg-10 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center">
+            <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand col-2" href="#">
-                <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Logo Icon@2x.png" class="navigation__logo">
             </a>
-            <div class="collapse navbar-collapse col-10 align-self-start" style="z-index: 99999999999; position: relative;" id="navbarContent">
-                <ul class="navbar-nav flex justify-content-around col-7" >
-                    <li class="nav-item navigation__item active">
-                        <a class="nav-link" href="#">صفحه اصلی</a>
+            <div class="collapse navbar-collapse bg-light"  id="navbarSupportedContent" style="height: 6.5rem;">
+                <ul class="navbar-nav h-100">
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">صفحه نخست</a>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">بررسی علائم بیماری</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">بررسی علائم بیماری</a>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">تداخلات دارویی</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">تداخلات دارویی</a>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">بیماری</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">بیماری ها</a>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">دارو</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">داروها</a>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">تغذیه</a>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> تغذیه</a>
+                        <ul class="dropdown-menu bg-light" style="width: 20rem;height: auto;">
+                          <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link" href="#">نقشه مراکز درمانی</a>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">نقشه مراکز درمانی</a>
                     </li>
                 </ul>
-                <div class="col-3">
-                    <button class="navigation__btn">ورود / ثبت نام</button>
-                </div>
             </div>
-        </nav>
-    </div> -->
+        </div>
+    </nav>
 
     <!-- Desktop Nav -->
-    <nav class="navigation flex justi-around">
+    <!-- <nav class="navigation flex justi-around">
         <div class="navigation__list flex justi-between">
             <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
             <div>
@@ -229,7 +232,7 @@
         <div>
             <button class="navigation__btn">ورود / ثبت نام</button>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Desktop Header -->
     <header class="header homepage d-flex align-items-start justify-content-center">
@@ -651,7 +654,6 @@
             <div class="date-box__bottom-right-circle"></div>
         </div> -->
     </header>
-
 
     <!--  Main -->
     <main class="main flex column align-center justi-start">
@@ -1106,8 +1108,8 @@
     <nav class="mobile-bottom-menu flex  justi-around align-center">
         <a href="#">
             <div class="flex column justi-around align-center">
-                <i class="fas fa-home mobile-bottom-menu__icon"></i>
-                <span class="mobile-bottom-menu__span">خانه</span>
+                <i class="fas fa-search mobile-bottom-menu__icon"></i>
+                <span class="mobile-bottom-menu__span">جستجو</span>
             </div>
         </a>
         <a href="#">
@@ -1118,7 +1120,8 @@
         </a>
         <a href="#">
             <div>
-                <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
+                <img src="./assets/img/bottom-mnue.png" class="mobile-bottom-menu__photo">
+                <!-- <i class="fas fa-home mobile-bottom-menu__home-icon"></i> -->
             </div>
         </a>
         <a href="#">
@@ -1215,17 +1218,4 @@
 
 
 </body>
-<script>
-    var activeTab = $(".tabs").find('a.active').data('trigger');
-    $('#' + activeTab).show();
-
-    $('.tabs>a').on('click', function () {
-        var tabId = $(this).data('trigger');
-        $('#' + tabId).show();
-        $('.tab-amodi__tabcontent:not(#' + tabId + ')').hide();
-        $(this).addClass('active');
-        $(this).siblings('a').removeClass('active');
-    });
-</script>
-
 </html>

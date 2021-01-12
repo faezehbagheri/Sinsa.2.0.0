@@ -1,14 +1,15 @@
 .mobile-bottom-menu{
     display: none;
+    height: 10vh;
+    width: 100%;
+    background-color: $color-primary;
+    position: fixed;
+    top: 100%;
+    z-index: 99999;
+    transform: translateY(-100%);
 
     @include respond(phone){
         display: flex;
-        height: 10vh;
-        width: 100%;
-        background-color: $color-primary;
-        position: fixed;
-        top: 90%;
-        z-index: 99999;
     }
 
     a{
@@ -16,16 +17,28 @@
     }
 
     &__icon{
-        font-size: 4.5rem;
-        color: #99D4D1;
+        font-size: 4rem;
+        color: white;
 
         @include respond(iphone){
             font-size: 4rem;
         }
     }
 
+    &__home-icon{
+        font-size: 4rem;
+        // border: 2px solid white;
+        color: white;
+        // top: -150%;
+        position: relative;
+        top: -3px;
+        background-color: rgba($color: white, $alpha: .3);
+        padding: 3.5rem 3.2rem;
+        border-radius: 100%;
+    }
+
     &__span{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         color: #fff;
         margin-top: 1rem;
 
@@ -35,18 +48,18 @@
     }
 
     &__photo{
-        position: absolute;
-        height: 15rem;
-        top: -20%;
-        left: 53%;
-        transform: translate(-50% , -20%);
+        position: relative;
+        height: 17rem;
+        top: -18%;
+        left: 50%;
+        transform: translate(-50% , -18%);
 
         @include respond(phone-small){            
             height: 17rem;  
         }
 
         @include respond(iphone){
-            height: 12rem;
+            height: 15rem;
         }
     }
 }
