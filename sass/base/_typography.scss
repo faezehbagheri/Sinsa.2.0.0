@@ -31,12 +31,12 @@ input{
 }
 
 .active{
-    color: $color-primary-light !important;
+    color: var(--color-primary-light) !important;
 }
 
 .active-item{
-    background-color: rgba($color: $color-primary-light, $alpha: .5);
-    border: 1px solid $color-primary-light !important;
+    background-color: rgba($color: var(--color-primary-light), $alpha: .5);
+    border: 1px solid var(--color-primary-light) !important;
 }
 
 .heading-primary{
@@ -55,13 +55,13 @@ input{
 .heading-secondary{
     font-size: 1.8rem;
     font-weight: 100;
-    color: $color-pink;
+    color: var(--color-pink);
     margin: 2rem 0;
     
 
     @include respond(phone){
         font-size: 3rem;
-        color: $color-primary;
+        color: var(--color-primary);
         margin-right: 3rem;
         margin-bottom: 0;
     }

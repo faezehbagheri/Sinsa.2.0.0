@@ -17,7 +17,7 @@
         // margin-left: 2rem;
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 2px 5px $color-gray;
+        box-shadow: 0 2px 5px var(--color-gray);
 
         
         @include respond(big-desktop){ height: 40vh; }
@@ -33,7 +33,7 @@
 
     &__que{
         height: 5rem;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
     }
 
     &__header{
@@ -57,7 +57,7 @@
 
     &__pragraph{
         font-size: 1.3rem;
-        color: $color-gray;
+        color: var(--color-gray);
         text-align: right;
         padding:3rem;
         
@@ -68,7 +68,7 @@
     &__link:link,
     &__link:active{
         font-size: 1.5rem;
-        color: $color-primary-light;
+        color: var(--color-primary-light);
         text-decoration: none;
         padding:0 3rem;
 
@@ -85,7 +85,7 @@
         border: none;
         outline: none;
         border-radius: 1rem;
-        box-shadow: 0 1px 6px $color-gray;
+        box-shadow: 0 1px 6px var(--color-gray);
         text-align: right;
         padding-right: 1rem;
         font-size: 1.2rem;
@@ -110,7 +110,7 @@
         border: none;
         outline: none;
         border-radius: 1rem;
-        box-shadow: 0 1px 6px $color-gray;
+        box-shadow: 0 1px 6px var(--color-gray);
         text-align: right;
         padding-right: 1rem;
         font-size: 1.2rem;
@@ -134,7 +134,7 @@
         border: none;
         outline: none;
         border-radius: 1rem;
-        box-shadow: 0 1px 6px $color-gray;
+        box-shadow: 0 1px 6px var(--color-gray);
         text-align: right;
         padding-right: 1rem;
         font-size: 1.2rem;
@@ -155,7 +155,7 @@
         border: none;
         outline: none;
         border-radius: 1rem;
-        box-shadow: 0 1px 6px $color-gray;
+        box-shadow: 0 1px 6px var(--color-gray);
         text-align: right;
         padding-right: 1rem;
         font-size: 1.2rem;
@@ -179,10 +179,10 @@
         border-radius: 5rem;
         border: none;
         outline: none;
-        background-color: $color-primary-light;
+        background-color: var(--color-primary-light);
         color: #fff;
         font-size: 1.6rem;
-        box-shadow: 0 2px 5px $color-primary-light;
+        box-shadow: 0 2px 5px var(--color-primary-light);
         cursor: pointer;
     }
 }

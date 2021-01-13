@@ -1,9 +1,10 @@
 .footer{
-    height: 58rem;
+    height: 50rem;
     width: 100%;
-    margin-top: 12rem;
-    background-color: $color-primary;
+    // margin-top: 12rem;
+    background-color: var(--color-primary);
     position: relative;
+    padding: 2rem 0 0;
         
     @include respond(lg){height: 65rem;}
     // @include respond(phone-port){height: 50rem;}
@@ -18,11 +19,9 @@
         margin-top: -8rem;
         // position: absolute;
         z-index: 9;
+        display: none;
     }
 
-    &__about-us{
-        // width: 30%;
-    }
 
     &__header{
         font-size: 2rem;
@@ -69,7 +68,7 @@
         border-radius: 5rem;
         border: none;
         outline: none;
-        background-color: $color-primary-light;
+        background-color: var(--color-primary-light);
         color: #ffffff;
         font-size: 1.8rem;
         box-shadow: 0 2px 5px #ffffff;
@@ -85,20 +84,21 @@
     }
 
     &__map-photo{
-        height: 50vh;
+        height: 45vh;
         width: 80%;
         position: absolute;
-        top: 20%;
+        // top: 20%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
     }
 
     &__bottom{
-        height: 10rem;
+        height: 5rem !important;
         width: 100%;
         position: absolute;
         top: 100%;
         transform: translateY(-100%);
+        background-color: white;
     }
 
     &__bottom-background{
@@ -112,7 +112,7 @@
         width: 6rem;
         position: absolute;
         right: 5%;
-        top: 40%;
+        top: 15%;
         z-index: 999;
     }
 
@@ -126,7 +126,7 @@
 
     &__icon{
         font-size: 2.5rem;
-        color: $color-primary-dark;
+        color: var(--color-primary);
         margin-left: 3.5rem;
         position: relative;
         z-index: 99999;

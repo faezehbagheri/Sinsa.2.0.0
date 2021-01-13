@@ -14,7 +14,7 @@
         border-radius: 3rem;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 2px 5px $color-gray-light;
+        box-shadow: 0 2px 5px var(--color-gray-light);
 
         @include respond(phone-small){
             height: 30rem;
@@ -40,7 +40,7 @@
 
     &__heading-primary{
         font-size: 2.5rem;
-        color: $color-pink;
+        color: var(--color-pink);
 
         
         @include respond(phone-small){font-size: 2.3rem;}
@@ -48,7 +48,7 @@
 
     &__heading-secondary{
         font-size: 2rem;
-        color: $color-gray;
+        color: var(--color-gray);
         
         @include respond(phone-small){font-size: 1.8rem;}
     }
@@ -89,7 +89,7 @@
         background-color: rgba($color: #fff, $alpha: .6);
         height: 16rem;
         font-size: 1.8rem;
-        color: $color-gray;
+        color: var(--color-gray);
         padding: 1.2rem;
 
         

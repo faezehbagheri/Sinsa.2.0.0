@@ -28,7 +28,7 @@
 
         i{
             font-size: 4rem;
-            color: $color-primary;
+            color: var(--color-primary);
         }
     }
 
@@ -70,7 +70,7 @@
             width: 2.5rem;
         }
         &::-webkit-scrollbar-thumb {
-            // background: $color-yellow-light;
+            // background: var(--color-yellow)-light;
             // height: 100%; 
             border-top-right-radius: 5rem;
             border-bottom-right-radius: 5rem;

@@ -49,7 +49,7 @@ button{
 }
 
 .outline-green{
-    border: 1px solid $color-primary-light;
+    border: 1px solid var(--color-primary-light);
     border-radius: 3rem;
 }
 
@@ -58,21 +58,21 @@ input{
 }
 
 
-.red{color:$red !important;}
-.blue{color:$blue !important;}
-.green{color:$green !important;}
-.yellow{color:$yellow !important;}
+.red{color:var(--red)  !important;}
+.blue{color:var(--blue)  !important;}
+.green{color:var(--green)  !important;}
+.yellow{color:var(--yellow)  !important;}
 .white{color: white !important;}
-.orange{color:$orange !important;}
-.color-primary-dark{color: $color-primary-dark !important;}
-.color-primary{color: $color-primary !important;}
-.color-primary-light{color: $color-primary-light !important;}
-.color-pink{color: $color-pink !important;}
+.orange{color:var(--orange)  !important;}
+.color-primary-dark{color: var(--color-primary) !important;}
+.color-primary{color: var(--color-primary) !important;}
+.color-primary-light{color: var(--color-primary-light) !important;}
+.color-pink{color: var(--color-pink) !important;}
 
-.border-orange{border-color: $orange !important;}
-.border-primary{border-color: $color-primary !important;}
-.border-primary-light{border-color: $color-primary-light !important;}
-.border-pink{border-color: $color-pink !important;}
+.border-orange{border-color: var(--orange)  !important;}
+.border-primary{border-color: var(--color-primary) !important;}
+.border-primary-light{border-color: var(--color-primary-light) !important;}
+.border-pink{border-color: var(--color-pink) !important;}
 
 .bg-white{background-color: white !important;}
 .border-bottom-white{border-bottom:1px solid white !important;}

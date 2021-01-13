@@ -15,7 +15,7 @@
         height: 40vh;
         width: 4rem;
         @include centerABS;
-        border-left: 2px solid $color-gray-light;
+        border-left: 2px solid var(--color-gray-light);
 
         @include respond(big-desktop){
             height: 35rem
@@ -32,7 +32,7 @@
         width:  6rem;
         background-color: #fff;
         border-radius: 100%;
-        border: 1px solid $color-gray-light;
+        border: 1px solid var(--color-gray-light);
         margin-top: 2rem;
         position: relative;
         left: -30%;
@@ -49,7 +49,7 @@
     &__circle{
         height: 3rem;
         width:  3rem;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         border-radius: 100%;
         border: 5px solid #d9d9d9;
         margin-top: 3rem;
@@ -65,7 +65,7 @@
 
     &__icon{
         font-size: 3rem;
-        color: $color-gray;
+        color: var(--color-gray);
         @include centerABS;
         
         @include respond(big-desktop){font-size: 3.5rem;}

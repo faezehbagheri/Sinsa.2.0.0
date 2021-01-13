@@ -107,7 +107,7 @@
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
-        border: 1px solid $color-gray;
+        border: 1px solid var(--color-gray);
 
         // @include respond(big-desktop){
         //     height: 11rem;
@@ -133,7 +133,7 @@
     &__name{
         font-size: 2rem;
         font-weight: 700;
-        color: $color-pink;
+        color: var(--color-pink);
         margin-top: 1rem;
 
         @include respond(phone-port){font-size: 2.5rem;}
@@ -146,7 +146,7 @@
     &__specialty{
         font-size: 1.6rem;
         font-weight: 500;
-        color: $color-primary;
+        color: var(--color-primary);
 
         @include respond(phone-port){font-size: 2rem;}
     
@@ -156,7 +156,7 @@
 
         i{
             font-size: 3rem;
-            color: $color-primary-light;
+            color: var(--color-primary-light);
             position: absolute;
             left: 15%;
         }
@@ -164,7 +164,7 @@
 
     &__percentage{
         display: inline-block;
-        background-color: $color-primary-dark;
+        background-color: var(--color-primary);
         // width: 4rem;
         // height: 2rem;
         padding: 2px 1rem;
@@ -189,7 +189,7 @@
     &__comment{
         font-size: 1.4rem;
         margin-right: 1rem;
-        color: $color-gray;
+        color: var(--color-gray);
 
         @include respond(phone-port){
             font-size: 1.9rem;
@@ -202,7 +202,7 @@
     }
 
     &__consulting{
-        color: $color-gray;
+        color: var(--color-gray);
         margin-top: 1rem;
         font-size: 1.3rem;
 
@@ -218,7 +218,7 @@
 
     &__star{
         font-size: 1.8rem;
-        color: $color-yellow;
+        color: var(--color-yellow);
         margin-top: 1rem;
 
         @include respond(phone-port){font-size: 2.2rem;}
@@ -230,7 +230,7 @@
 
     &__link{
         padding: 1rem 1.5em;
-        background-color: $color-primary-light;
+        background-color: var(--color-primary-light);
         color: white;
         font-size: 1.5rem;
         border-radius: 3rem;
@@ -238,7 +238,7 @@
         outline: none;
         position: relative;
         top: 7%;
-        box-shadow: 0 2px 4px $color-primary-light;
+        box-shadow: 0 2px 4px var(--color-primary-light);
         font-family: 'irsans';
         cursor: pointer;
         text-align: center;
@@ -270,7 +270,7 @@
         
         i{
             font-size: 1.8rem;
-            color:  $color-primary-dark;
+            color:  var(--color-primary);
             margin-left: 1rem;
 
             @include respond(phone-port){font-size: 2.2rem;}
@@ -282,7 +282,7 @@
         span{
             font-size: 1.8rem;
             font-weight: 100;
-            color: $color-gray;
+            color: var(--color-gray);
 
             @include respond(phone-port){font-size: 2rem;}
     
@@ -295,7 +295,7 @@
         p{
             font-size: 1.3rem;
             font-weight: 100;
-            color: $color-gray;
+            color: var(--color-gray);
 
             @include respond(phone-port){font-size: 1.8rem;}
     

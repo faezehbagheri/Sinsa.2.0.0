@@ -12,13 +12,13 @@
         }
         
         svg:hover path {
-            fill: $color-primary-light;
+            fill: var(--color-primary-light);
         }
 
         svg {
             position: absolute;
             left: 50%;
-            fill: $color-primary;
+            fill: var(--color-primary);
         }
 
         svg#head {

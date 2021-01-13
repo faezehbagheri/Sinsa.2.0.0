@@ -1,7 +1,7 @@
 .search-advanced{
     height: 9vh;
     width: 65vw;
-    background-color: rgba($color: $color-black, $alpha: .3);
+    background-color: rgba($color: black, $alpha: .3);
     border-radius: 6rem;
     margin-top: -2rem;
     display: none;
@@ -27,7 +27,7 @@
         a:link,
         a:visited{
             text-decoration: none;
-            color: $color-gray;
+            color: var(--color-gray);
         }
         
         @include respond(big-desktop){ width: 15rem;}

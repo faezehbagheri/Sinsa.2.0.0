@@ -1,7 +1,7 @@
 .hospital-list{
     height: 81rem;
     background-color: rgba($color: #000000, $alpha: .2);
-    border-left:2px solid $color-gray;
+    border-left:2px solid var(--color-gray);
     z-index: 99;
 
     // @include respond(phone-port){height:30rem;}
@@ -21,7 +21,7 @@
             width: 85%;
             background-color: #ffffff;
             border-radius: 3rem;
-            box-shadow: 1px 2px 5px $color-gray;
+            box-shadow: 1px 2px 5px var(--color-gray);
         }
 
         input{
@@ -36,7 +36,7 @@
         i{
             font-size: 2rem;
             margin-left: 1rem;
-            color: $color-gray;
+            color: var(--color-gray);
         }
     }
     
@@ -59,7 +59,7 @@
         padding: 2rem ;
         width: 85%;
         background-color: #fff;
-        border: 2px solid $color-gray;
+        border: 2px solid var(--color-gray);
         border-radius: 1.5rem;
         margin-top: 2rem;
         transition: all .7s ease;
@@ -68,7 +68,7 @@
         h2{
             font-size: 1.6rem;
             font-weight: bold;
-            color: $color-pink;
+            color: var(--color-pink);
             transition: all .4s ease;
 
             @include respond(phone){ font-size: 2.4rem; margin-top: 1rem;}
@@ -76,7 +76,7 @@
     
         h3{
             font-size: 1.5rem;
-            color: $color-primary-dark;
+            color: var(--color-primary);
             transition: all .4s ease;
 
             @include respond(phone){ font-size: 2.2rem;
@@ -85,7 +85,7 @@
     
         p{
             font-size: 1.4rem;
-            color: $color-gray;
+            color: var(--color-gray);
 
             @include respond(phone){ font-size: 2.2rem; margin-top: 1rem;}
         }
@@ -102,7 +102,7 @@
 
     &__location-icon{
         font-size: 2rem;
-        color: $color-primary;
+        color: var(--color-primary);
         margin: .6rem;
         transform: translateY(-400%);
         transition: all .4s ease;
@@ -131,24 +131,24 @@
 
 .item-active{
     // height: 28rem;
-    border: 3px solid $color-primary-light;
+    border: 3px solid var(--color-primary-light);
     h2{
         font-size: 1.8rem;
-        color: $color-primary-light;
+        color: var(--color-primary-light);
 
         @include respond(phone){ font-size: 2.6rem; margin-top: 1rem;}
     }
 
     h3{
         font-size: 1.7rem;
-        color: $color-pink;
+        color: var(--color-pink);
 
         @include respond(phone){ font-size: 2.4rem;
         margin-top: 1rem;}
     }
 
     i{
-        color: $color-pink;
+        color: var(--color-pink);
     }
     // margin-top: 3rem;
 

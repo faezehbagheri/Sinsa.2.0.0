@@ -12,7 +12,7 @@
         height: 20rem;
         border-radius: 2.5rem;
         background-color: white;
-        box-shadow: 1px 1px 6px $color-gray-light;
+        box-shadow: 1px 1px 6px var(--color-gray-light);
         margin-top: 5rem;
 
         @include respond(phone-port){height: 25rem;}
@@ -31,7 +31,7 @@
             height: 12rem;
             width:  12rem;
             border-radius: 100%;
-            border: 1px solid $color-gray;
+            border: 1px solid var(--color-gray);
             @include centerABS();
 
             // @include respond(phone-port){
@@ -51,7 +51,7 @@
         h2{
             font-size: 2rem;
             font-weight: 700;
-            color: $color-pink;
+            color: var(--color-pink);
             margin-left: 4rem;
 
             @include respond(phone-port){font-size: 2.5rem;}
@@ -59,14 +59,14 @@
 
         h3{
             font-size: 1.7rem;
-            color:  $color-primary;
+            color:  var(--color-primary);
 
             @include respond(phone-port){font-size: 2.2rem;}
         }
 
         span{
             font-size: 1.3rem;
-            color: $color-gray;
+            color: var(--color-gray);
             margin: 5px;
 
             @include respond(phone-port){font-size: 1.8rem;}
@@ -74,7 +74,7 @@
 
         i{
             font-size: 1.5rem;
-            color: $color-primary;
+            color: var(--color-primary);
 
             @include respond(phone-port){font-size: 2.5rem;}
         }
@@ -87,7 +87,7 @@
 
         i{
             font-size: 2rem;
-            color: $color-yellow;
+            color: var(--color-yellow);
             margin-top: 1rem;
 
             // @include respond(big-desktop){font-size: 2.5rem;}
@@ -100,7 +100,7 @@
             padding: 3px 1.2rem;
             border-radius: 3rem;
             text-align: center;
-            background-color: $color-primary;
+            background-color: var(--color-primary);
             font-size: 1.3rem;
             color: white;
             
@@ -114,7 +114,7 @@
         }
         p{
             font-size: 1.3rem;
-            color: $color-gray;
+            color: var(--color-gray);
             margin-left: 1.5rem;
             margin-right: 5px;
 
@@ -131,8 +131,8 @@
         outline: none;
         font-size: 1.5rem;
         color: white;
-        background-color: $color-primary-light;
-        box-shadow: 1px 1px 5px $color-primary-light;
+        background-color: var(--color-primary-light);
+        box-shadow: 1px 1px 5px var(--color-primary-light);
         position: absolute;
         top: 65%;
         cursor: pointer;
@@ -173,7 +173,7 @@
 
         i{
             font-size: 2rem;
-            color: $color-primary-light;
+            color: var(--color-primary-light);
             margin:0 1.5rem;
 
             @include respond(phone-port){font-size: 2.5rem;}
@@ -181,7 +181,7 @@
 
         p{
             font-size: 1.4rem;
-            color: $color-gray;
+            color: var(--color-gray);
             margin-bottom: -2rem;
             transition: all .5s ease;
 

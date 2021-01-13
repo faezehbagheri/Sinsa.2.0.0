@@ -33,7 +33,7 @@
 
         span{
             font-size: 1.3rem;
-            color: $color-yellow;
+            color: var(--color-yellow);
             position: absolute;
             left:30%;
             top: 70%;
@@ -67,7 +67,7 @@
 
         h2{
             font-size: 1.8rem;
-            color: $color-primary;
+            color: var(--color-primary);
         }
 
         p{
@@ -79,7 +79,7 @@
 
         span{
             font-size: 1.3rem;
-            color: $color-yellow;
+            color: var(--color-yellow);
             position: absolute;
             left:5%;
             top: 89%;
@@ -91,7 +91,7 @@
             border-radius: 2rem;
             border: none;
             outline: none;
-            background-color: $color-primary-light;
+            background-color: var(--color-primary-light);
             color: #fff;
             font-size: 1.7rem;
             margin-top: 1rem;

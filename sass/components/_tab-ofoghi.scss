@@ -6,7 +6,7 @@
         width: 100%;
         background-color: #fff;
         border-radius: 2rem;
-        box-shadow: -1px 0 5px $color-gray-light;
+        box-shadow: -1px 0 5px var(--color-gray-light);
         position: relative;
         height: auto;
         z-index: 99;
@@ -21,9 +21,9 @@
     }
 
     &__new-tab{
-        background-color: $color-secondary-light;
+        background-color: var(--color-primary-light);
         border-radius: 2rem;
-        box-shadow: -1px 0 5px $color-gray-light;
+        box-shadow: -1px 0 5px var(--color-gray-light);
         position: relative;
         height: auto;
     }
@@ -34,7 +34,7 @@
         margin: 1.5rem;
         background-color: #fff;
         border-radius: 2rem;
-        box-shadow: 0 0 6px $color-gray-light;
+        box-shadow: 0 0 6px var(--color-gray-light);
     }
     
     &__dropdown{
@@ -50,11 +50,11 @@
         h3{
             font-size: 2rem;
             font-weight: 500;
-            color: $color-primary;
+            color: var(--color-primary);
             cursor: pointer;
             width: 100%;
             height: 7rem;
-            border-bottom: 2px solid $color-primary;
+            border-bottom: 2px solid var(--color-primary);
             transition: width .2s ease,
                         font-size 1s ease;
         
@@ -75,10 +75,10 @@
 
         i{
             font-size: 1.4rem;
-            color: $color-pink;
+            color: var(--color-pink);
             border-radius: 100%;
-            // border: 2px solid $color-primary;
-            background-color: $color-gray-lighter;
+            // border: 2px solid var(--color-primary);
+            background-color: var(--color-gray-lighter);
             padding: 7px 8px;
             margin-left: 2rem;
             transition: all 1s ease;
@@ -90,14 +90,14 @@
         }
 
         i.minus{
-            background-color: $color-primary-light;
+            background-color: var(--color-primary-light);
             color: white;
             display: none;
         }
 
         span{
             font-size: 1.6rem;
-            color: $color-gray;
+            color: var(--color-gray);
             height: 0;
             overflow: hidden;
             transition: all 1s ease;
@@ -120,7 +120,7 @@
     // &__border-bottom{
     //     height: 0px;
     //     width: 100%;
-    //     background-color: $color-primary;
+    //     background-color: var(--color-primary);
 
     //     &:not(:last-of-type){
     //         height: 0px;
@@ -132,7 +132,7 @@
         background-color: #fff;
         margin-top: 2rem;
         border-radius: 1rem 0 0 1rem;
-        box-shadow: -2px 2px 8px $color-gray-light;
+        box-shadow: -2px 2px 8px var(--color-gray-light);
         cursor: pointer;
         
         @include respond(big-desktop){width: 108%;}
@@ -149,7 +149,7 @@
             background-color: #fff;
             margin-top: 1rem;
             border-radius: 1rem;
-            box-shadow: -2px 2px 8px $color-gray-light;
+            box-shadow: -2px 2px 8px var(--color-gray-light);
         }
     }
 
@@ -168,7 +168,7 @@
         padding-right: 1.8rem;
         font-size: 2rem;
         font-weight: 200;
-        color: $color-gray-light;
+        color: var(--color-gray-light);
         transition: all .5s;
 
         i{margin-left: 1rem;}
@@ -185,7 +185,7 @@
             padding-right: 4rem;
             font-size: 2.8rem;
             font-weight: 200;
-            color: $color-primary;
+            color: var(--color-primary);
             transition: all .5s;
 
             i{font-size: 3.5rem;}
@@ -277,7 +277,7 @@
         text-align: justify;
         font-size: 1.5rem;
         padding: 2.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         line-height: 5rem;
         // opacity: 0;
         // display: none;
@@ -312,7 +312,7 @@
             font-size: 1.8rem;
             font-weight: 500;
             padding: 1rem;
-            border-bottom: 2px solid $color-gray;
+            border-bottom: 2px solid var(--color-gray);
             width: 40%;
             text-decoration: none;
             color: black;
@@ -321,7 +321,7 @@
 
             i{
                 font-size: 3rem;
-                color: $color-gray-light;
+                color: var(--color-gray-light);
                 margin-left: 1.5rem;
             }
         }
@@ -330,7 +330,7 @@
             line-height: 4rem;
             margin: 1rem 3.5rem 0 0;
             text-align: justify;
-            color: $color-gray;
+            color: var(--color-gray);
 
             @include respond(phone){
                 font-size: 2.5rem;
@@ -347,9 +347,9 @@
 
     h3{
         width: 55%;
-        color: $color-gray;
+        color: var(--color-gray);
         font-size: 2.2rem;
-        border-bottom: 2px solid $color-primary !important;
+        border-bottom: 2px solid var(--color-primary) !important;
         
         @include respond(phone-port){font-size: 2.5rem;}
 
@@ -420,14 +420,14 @@
     }
     
     & button{
-        background-color: $color-primary-light !important;
+        background-color: var(--color-primary-light) !important;
     }
     
     
 
     // &>:first-child{
     //     @include respond(phone){
-    //         background-color: $color-primary !important;  
+    //         background-color: var(--color-primary) !important;  
     //     }      
     // }
 
@@ -439,14 +439,14 @@
     //         text-align: right;
     //         font-size: 1.5rem;
     //         padding: 2.5rem;
-    //         color: $color-gray;
+    //         color: var(--color-gray);
     //         line-height: 5rem;
 
     //         @include respond(phone){
     //             text-align: right;
     //             font-size: 2.2rem;
     //             padding: 2.5rem;
-    //             color: $color-gray;
+    //             color: var(--color-gray);
     //             line-height: 5rem;
     //         }
     //     }
@@ -468,9 +468,9 @@
     // & h2{
     //     width: 50%;
     //     font-size: 2rem;
-    //     color: $color-primary;
+    //     color: var(--color-primary);
     //     padding: 2rem;
-    //     border-bottom: 3px solid $color-primary;
+    //     border-bottom: 3px solid var(--color-primary);
         
     //     @include respond(big-desktop){
     //         font-size: 2.2rem;
@@ -491,14 +491,14 @@
     //     text-align: right;
     //     font-size: 1.7rem;
     //     padding: 2.5rem;
-    //     color: $color-gray;
+    //     color: var(--color-gray);
     //     line-height: 5rem;
         
     //     @include respond(phone){
     //         text-align: right;
     //         font-size: 2.2rem;
     //         padding: 2.5rem;
-    //         // color: $color-primary;
+    //         // color: var(--color-primary);
     //         line-height: 5rem;
     //     }
     // }

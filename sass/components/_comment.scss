@@ -44,19 +44,19 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 1px solid $color-gray;
+        border: 1px solid var(--color-gray);
     }
 
 
     &__name{
         font-size: 1.8rem;
-        color: $color-primary;
+        color: var(--color-primary);
     }
 
     &__comment{
         padding: 1.8rem;
         font-size: 1.3rem;
-        color: $color-gray;
+        color: var(--color-gray);
         text-align: right;
     }
 
@@ -69,7 +69,7 @@
     &__icon{
         font-size: 1.7rem;
         margin-left: 5px;
-        color: $color-gray;
+        color: var(--color-gray);
     }
 
     &__img{
@@ -80,7 +80,7 @@
     &__arrow-icon{        
         font-size: 4rem;
         margin: 2.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
     }
     
 }

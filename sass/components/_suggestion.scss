@@ -33,7 +33,7 @@
 
     &__icons{
         width: 12%;
-        border-left: 2px solid rgba($color: $color-gray-light, $alpha: .3);
+        border-left: 2px solid rgba($color: var(--color-gray-light), $alpha: .3);
 
         @include respond(phone-port){width: 15%;}
 
@@ -49,7 +49,7 @@
 
         i{
             font-size: 1.9rem;
-            color: $color-gray;
+            color: var(--color-gray);
         
             @include respond(phone-port){font-size: 2.5rem;}
 
@@ -58,7 +58,7 @@
 
         span{
             font-size: 1.2rem;
-            color: $color-gray;
+            color: var(--color-gray);
         
             @include respond(phone-port){font-size: 1.5rem;}
 
@@ -89,7 +89,7 @@
         a:link,
         a:visited{
             font-size: 1.6rem;
-            color: $color-gray;            
+            color: var(--color-gray);            
             padding: 1.3rem 1.5rem;
         
             @include respond(phone-port){
@@ -112,13 +112,13 @@
             }
 
             &:not(:last-of-type){
-                border-bottom: 2px solid rgba($color: $color-gray-light, $alpha: .3);
+                border-bottom: 2px solid rgba($color: var(--color-gray-light), $alpha: .3);
             }
         }
 
         span{
             font-size: 1.6rem;
-            color: $color-primary;
+            color: var(--color-primary);
         
             @include respond(phone-port){font-size: 1.8rem;}
 
@@ -162,7 +162,7 @@
 
     &__close{
         font-size:2.5rem;
-        color: $color-primary-dark;
+        color: var(--color-primary);
         position: absolute;
         left: 5%;
         top: 2%;
@@ -215,7 +215,7 @@
 
     &__recent-search{
         width: 100%;
-        border-bottom: 1px solid $color-gray-lighter;
+        border-bottom: 1px solid var(--color-gray-lighter);
         margin: 1rem;
         margin-top: 0;
 
@@ -226,7 +226,7 @@
             margin-left: 1rem;
             text-align: center;
             font-size: 1.4rem;
-            color: $color-gray;
+            color: var(--color-gray);
             margin-bottom: 1rem;
         
             @include respond(phone-port){
@@ -244,7 +244,7 @@
     &__related-words{
         margin: .7rem 2.5rem;
         position: relative;
-        border-bottom: 2px solid $color-primary-dark;
+        border-bottom: 2px solid var(--color-primary);
 
         &--items{
             width: 90%;
@@ -266,12 +266,12 @@
 
     &__article{
         position: relative;
-        border-bottom: 2px solid $color-primary-dark;
+        border-bottom: 2px solid var(--color-primary);
         margin: .7rem 2.5rem;
 
         &--icon{
             font-size: 3rem;
-            color: $color-primary;
+            color: var(--color-primary);
             margin: 0  5%;
 
             @include respond(phone){
@@ -294,12 +294,12 @@
 
     &__hospital{
         position: relative;
-        border-bottom: 2px solid $color-primary-dark;
+        border-bottom: 2px solid var(--color-primary);
         margin: .7rem 2.5rem;
 
         &--icon{
             font-size: 3rem;
-            color: $color-pink;
+            color: var(--color-pink);
             margin: 0  5%;
 
             @include respond(phone){
@@ -328,7 +328,7 @@
 
         &--icon{
             font-size: 3rem;
-            color: $color-primary-light;
+            color: var(--color-primary-light);
             margin: 0  5%;
         }
 
@@ -352,7 +352,7 @@
 
     i{
         font-size: 2.7rem !important;
-        color: $color-primary-light !important;
+        color: var(--color-primary-light) !important;
 
         @include respond(phone-port){font-size: 3.5rem !important;}
 
@@ -361,7 +361,7 @@
     }
     span{
         font-size: 1.6rem !important;
-        color: $color-primary-light !important;
+        color: var(--color-primary-light) !important;
 
         @include respond(phone-port){font-size: 2rem !important;}
         

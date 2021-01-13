@@ -28,7 +28,7 @@
         // width: 100%;
         height: 8rem;
         padding-bottom: 1.5rem;
-        border-bottom: 2px solid $color-gray-light;
+        border-bottom: 2px solid var(--color-gray-light);
     
         @include respond(phone){
             display: none !important;
@@ -36,10 +36,10 @@
 
         span{
             font-size: 1.2rem;
-            color: $color-gray-light;
+            color: var(--color-gray-light);
             i{
                 font-size: 8px;
-                color: $color-primary-light;
+                color: var(--color-primary-light);
                 margin: 1rem;
             }
         }
@@ -48,7 +48,7 @@
     &__filter-icon{
         font-size: 1.8rem;
         margin: 1rem;
-        color: $color-gray-light;
+        color: var(--color-gray-light);
 
         @include respond(phone-port){font-size: 2.2rem;}
     }
@@ -58,7 +58,7 @@
         // width: 35rem;
         border-radius: 3rem;
         background-color: white;
-        box-shadow: 0 1px 5px $color-gray-light;
+        box-shadow: 0 1px 5px var(--color-gray-light);
 
         input{
             width: 90%;
@@ -68,13 +68,13 @@
             font-size: 1.6rem;
 
             &::placeholder{
-                color: $color-gray-light;
+                color: var(--color-gray-light);
             }
         }
 
         i{
             font-size: 2.5rem;
-            color: $color-gray-light;
+            color: var(--color-gray-light);
             margin: 1rem;
         }
     }
@@ -84,13 +84,13 @@
         i{
             font-size: 2.5rem;
             margin: 5px;
-            color: $color-gray;
+            color: var(--color-gray);
             cursor: pointer;
         }
     }
 
     &__type-active{
-        color: $color-primary-light !important;
+        color: var(--color-primary-light) !important;
     }
 
     &__header{
@@ -106,7 +106,7 @@
         width: 100%;
         background-color: #fff;
         border-radius: 2.5rem;
-        box-shadow: 1px 1px 5px $color-gray-light;
+        box-shadow: 1px 1px 5px var(--color-gray-light);
         margin-bottom: 3rem;
 
         @include respond(big-desktop){height: 16rem;}
@@ -117,13 +117,13 @@
         width:  8rem;
         border-radius: 100%;
         background-color: #fff;
-        border: 2px solid $color-gray-light;
+        border: 2px solid var(--color-gray-light);
         position: relative;
     }
 
     &__icon{
         font-size: 4rem;
-        color: $color-gray;
+        color: var(--color-gray);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -137,13 +137,13 @@
 
     &__active{
         div{            
-            border: 2px solid $color-primary-light;
+            border: 2px solid var(--color-primary-light);
         }
         i{
-            color: $color-primary-light;
+            color: var(--color-primary-light);
         }
         span{
-            color: $color-primary-light;
+            color: var(--color-primary-light);
         }
     }
 

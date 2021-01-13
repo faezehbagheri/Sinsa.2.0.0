@@ -1,6 +1,6 @@
 .navigation{
     height: 7rem !important;
-    box-shadow: 0 2px 5px rgba($color: $color-gray, $alpha: .5);
+    box-shadow: 0 2px 5px rgba($color: var(--color-gray), $alpha: .5);
     // width: 100%;
     // background-image: url(../../assets/img/artboard.png);
     // background-repeat: no-repeat;
@@ -16,13 +16,25 @@
     }
     a{
         color: black !important;
+        border-bottom: 2px solid transparent;
         font-size: 1.6rem;
         margin: 0 1.5rem;
+        padding: 2.2rem;
+        text-align: center;
+        min-width: 10rem;
+        transition: all .3s ease;
     }
+
+    a:hover{
+        border-bottom: 2px solid var(--color-primary-light);
+        transform: scale(1.08);
+    }
+
+    a.navbar-brand{border: none !important; transform: scale(1) !important;}
 
     a.dropdown-item{
         margin: 0;
-        &:hover{background-color: $color-primary !important;}
+        &:hover{background-color: var(--color-primary) !important;}
     }
 
     &__logo{
@@ -66,7 +78,7 @@
 
 //         &:hover{
 //             transform: scale(1.1);
-//             color: $color-primary-light;
+//             color: var(--color-primary-light);
 //             z-index: -10;
 //             cursor: pointer;
 
@@ -87,7 +99,7 @@
 //         font-family: 'irsans';
 //         margin-top: -1rem;
 //         border-radius: 1rem;
-//         border: 2px solid $color-primary;
+//         border: 2px solid var(--color-primary);
 //         background-color: transparent;
 //         outline: none;
 //         cursor: pointer;
@@ -153,7 +165,7 @@
 //     &__sub-link:visited{
 //         text-decoration: none;
 //         font-size: 1.4rem;
-//         color: $color-gray;
+//         color: var(--color-gray);
 //         cursor: pointer;
 //     }
 

@@ -11,7 +11,7 @@
         height: 94%;
         background-color: #fff;
         border-radius: 2rem;
-        box-shadow: 0 0 6px $color-gray-light;
+        box-shadow: 0 0 6px var(--color-gray-light);
         @include centerABS();
         overflow-y: scroll;
                 
@@ -30,7 +30,7 @@
         font-size: 1.5rem;
         text-align: center;
         padding: 2rem;
-        border-bottom: 2px solid $color-gray-light;
+        border-bottom: 2px solid var(--color-gray-light);
 
         @include respond(phone-port){font-size: 2.3rem;}
 
@@ -60,7 +60,7 @@
         height: 4rem;
         border-radius: 1rem;
         background-color: white;
-        box-shadow: 0 1px 5px $color-gray-light;
+        box-shadow: 0 1px 5px var(--color-gray-light);
         padding: 0 !important;
 
         @include respond(phone-port){
@@ -96,13 +96,13 @@
             }
 
             &::placeholder{
-                color: $color-gray-light;
+                color: var(--color-gray-light);
             }
         }
 
         i{
             font-size: 2rem;
-            color: $color-primary;
+            color: var(--color-primary);
             margin: 1rem;
         }
     }
@@ -110,7 +110,7 @@
     &__option{
         // width: 30rem;
         border-radius: 1rem;
-        box-shadow: 1px 1px 5px $color-gray-light;
+        box-shadow: 1px 1px 5px var(--color-gray-light);
         background-color: white;
         overflow-y: scroll;
         position: absolute;
@@ -154,13 +154,13 @@
             height: 5rem;
             transition: all .3s;
             font-size: 1.4rem;
-            color: $color-gray;
+            color: var(--color-gray);
             background-color: white;
             text-align: right !important;
             cursor: pointer;
 
             &:not(:last-of-type){
-                border-bottom: 1px solid $color-secondary-light;
+                border-bottom: 1px solid var(--color-primary-light);
             }
 
             @include respond(phone-port){
@@ -175,8 +175,8 @@
 
 
             &:hover{
-                background-color: $color-secondary;
-                box-shadow: 1px 1px 5px $color-gray-light;
+                background-color: var(--color-primary);
+                box-shadow: 1px 1px 5px var(--color-gray-light);
                 color: white;
                 font-size: 1.6rem;
 
@@ -189,7 +189,7 @@
 
     &__item-selected{
         font-size: 1.8rem;
-        color: $color-secondary;
+        color: var(--color-primary);
         margin: 1.5rem 1rem;
         cursor: pointer;
 
@@ -219,7 +219,7 @@
         margin-top: 5rem;
         border-radius: 100%;
         background-color: white;
-        box-shadow: 0 1px 5px $color-gray-light;
+        box-shadow: 0 1px 5px var(--color-gray-light);
 
         @include respond(phone-port){
             height: 15rem;
@@ -243,12 +243,12 @@
         a:visited{
             text-decoration: none;
             font-size: 1.6rem;
-            color: $color-gray;
+            color: var(--color-gray);
         }
         
         i{
             font-size: 3rem;
-            color: $color-primary;
+            color: var(--color-primary);
             margin-bottom: 8px;
         }
     }
@@ -279,9 +279,9 @@
     }
 
     &__nxt-btn{
-        background-color: $color-primary-light;
+        background-color: var(--color-primary-light);
         color: white;
-        box-shadow: 1px 2px 5px $color-primary-light;
+        box-shadow: 1px 2px 5px var(--color-primary-light);
 
         i{
             font-size: 2.5rem;
@@ -290,9 +290,9 @@
     }
 
     &__prev-btn{
-        background-color: $color-gray-lighter;
-        color: $color-gray;
-        box-shadow: 1px 2px 5px $color-gray-light;
+        background-color: var(--color-gray-lighter);
+        color: var(--color-gray);
+        box-shadow: 1px 2px 5px var(--color-gray-light);
 
         i{
             font-size: 2.5rem;
@@ -301,7 +301,7 @@
     }
 
     &__svg{
-        color: $color-primary;
+        color: var(--color-primary);
 
         @include respond(phone-port){
             height: 20rem;
@@ -367,14 +367,14 @@
     }
 }  
 .progress-25 {
-    background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, $color-primary-light 50%, #ddd 50%);
-    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(180deg, $color-primary-light 50%, #ddd 50%);
+    background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, var(--color-primary-light) 50%, #ddd 50%);
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(180deg, var(--color-primary-light) 50%, #ddd 50%);
 }  
 .progress-50 {
-    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, $color-yellow 50%, #ddd 50%);
-    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, $color-yellow 50%, #ddd 50%);
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, var(--color-yellow) 50%, #ddd 50%);
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, var(--color-yellow) 50%, #ddd 50%);
 }  
 .progress-75 {
-    background-image: -webkit-linear-gradient(right, $color-pink 50%, transparent 50%), -webkit-linear-gradient(108deg, $color-pink 50%, #ddd 50%);
-    background-image: linear-gradient(0deg, $color-pink 50%, transparent 50%), linear-gradient(-90deg, $color-pink 50%, #ddd 50%);
+    background-image: -webkit-linear-gradient(right, var(--color-pink) 50%, transparent 50%), -webkit-linear-gradient(108deg, var(--color-pink) 50%, #ddd 50%);
+    background-image: linear-gradient(0deg, var(--color-pink) 50%, transparent 50%), linear-gradient(-90deg, var(--color-pink) 50%, #ddd 50%);
 }

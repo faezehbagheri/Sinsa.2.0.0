@@ -32,7 +32,7 @@
         width: 90%;
         background-color: #fff;
         border-radius: 2.5rem;
-        box-shadow: 1px 1px 5px $color-gray-light;
+        box-shadow: 1px 1px 5px var(--color-gray-light);
         margin-bottom: 2rem;
         position: relative;
         
@@ -54,7 +54,7 @@
         height: 8rem;
         width:  8rem;
         border-radius: 100%;background-color: #fff;
-        border: 2px solid $color-primary-light;
+        border: 2px solid var(--color-primary-light);
         position: relative;
         
         @include respond(phone-port){
@@ -71,7 +71,7 @@
 
     &__icon{
         font-size: 4rem;
-        color: $color-gray;
+        color: var(--color-gray);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -102,7 +102,7 @@
             cursor: pointer;
 
             & > * {
-                color: $color-pink;
+                color: var(--color-pink);
                 transform: scale(1.2);
             }
         }
@@ -113,7 +113,7 @@
         width: 90%;
         background-color: #fff;
         border-radius: 2.5rem;
-        box-shadow: 0 2px 5px $color-gray-light;
+        box-shadow: 0 2px 5px var(--color-gray-light);
         margin-bottom: 2rem;
         overflow: hidden;
 
@@ -123,9 +123,9 @@
         
         h2{
             text-align: center;
-            color: $color-gray;
+            color: var(--color-gray);
             // margin: 1rem;
-            background-color: $color-secondary-light;
+            background-color: var(--color-primary-light);
             width: 100%;
             padding: 1rem;
             color: white;
@@ -150,7 +150,7 @@
 
     &__title{
         font-size: 1.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         margin: 1rem auto;
         width: 85%;
     }
@@ -165,7 +165,7 @@
 
         &:hover{
             & > *{
-                color: $color-pink;
+                color: var(--color-pink);
                 cursor: pointer;
                 transform: scale(1.1);
             }
@@ -174,19 +174,19 @@
 
     &__close-icon{
         font-size: 1.8rem;
-        color: $color-primary;
+        color: var(--color-primary);
     }
 
     &__text{
         font-size: 1.5rem;
-        color: $color-primary;
+        color: var(--color-primary);
         padding-right: 1rem;
     }
 
     &__picked{
         // height: 10vh;
         overflow-y: scroll;
-        border-top: 1px solid $color-gray;
+        border-top: 1px solid var(--color-gray);
         // display: none;
 
         
@@ -218,7 +218,7 @@
     &__lable{
         font-size: 1.5rem;
         padding-right: .5rem;
-        color: $color-gray;
+        color: var(--color-gray);
     }
 
     &__checkbox{
@@ -230,7 +230,7 @@
         width: 90%;
         border-radius: 5rem;
         position: relative;
-        box-shadow: 1px 1px 4px $color-gray-light;
+        box-shadow: 1px 1px 4px var(--color-gray-light);
         margin: 1rem auto;
         background-color: #fff;
 
@@ -262,7 +262,7 @@
     }
 
     &__search-btn{
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         width: 20%;
         height: 100%;
         border-radius: 0 5rem 5rem 0;
@@ -274,7 +274,7 @@
 
     &__search-icon{
         font-size: 2rem;
-        color: $color-gray !important;
+        color: var(--color-gray) !important;
         @include centerABS();
         color: #fff;
 
@@ -289,7 +289,7 @@
         // overflow: hidden;
         background-color: #fff;
         border-radius: 2rem;
-        box-shadow: 1px 1px 5px $color-gray-light;
+        box-shadow: 1px 1px 5px var(--color-gray-light);
         margin-bottom: 5rem;
 
         // @include respond(phone-port){
@@ -301,7 +301,7 @@
         // }
 
         & h3{
-            color: $color-gray;
+            color: var(--color-gray);
             padding: 1.5rem;
             font-size: 1.3rem;
         
@@ -346,7 +346,7 @@
             background: #fff;
             cursor: pointer;
             transition: all .3s ease;
-            color: $color-gray;
+            color: var(--color-gray);
             outline: none;
             margin-bottom: 0 !important;
 
@@ -357,7 +357,7 @@
         } 
         
         [id^="tab"]:checked + label { 
-            background: $color-gray-lighter;
+            background: var(--color-gray-lighter);
             font-size: 1.3rem;
 
             @include respond(phone-port){
@@ -379,7 +379,7 @@
         padding: 1.5rem 1rem;
         position: relative;
         right: -100%; 
-        background: $color-gray-lighter;
+        background: var(--color-gray-lighter);
 
         &--1{
             right: 0%;
@@ -400,13 +400,13 @@
             // margin: 5px;
             height: 4.3rem;
             background-color: #fff;
-            box-shadow: 1px 3px 5px $color-gray-light;
+            box-shadow: 1px 3px 5px var(--color-gray-light);
             border-radius: 1rem;
-            border: 1px solid $color-primary;
+            border: 1px solid var(--color-primary);
             outline: none;
             cursor: pointer;
             font-size: 1.6rem;
-            color: $color-gray;
+            color: var(--color-gray);
             text-decoration: none;
             text-align: center;
             transition: all .3s ease;
@@ -427,7 +427,7 @@
 
             &:hover{
                 transform: scale(1.2);
-                background-color: $color-primary-light;
+                background-color: var(--color-primary-light);
                 color: white;
                 border: 1px solid white;
                 z-index: 99;
@@ -445,7 +445,7 @@
         height: 4rem;
         width: 12rem;
         border-radius: 3rem;
-        background-color: $color-gray;
+        background-color: var(--color-gray);
         border: none;
         outline: none;
         font-size: 1.5rem;
@@ -464,16 +464,16 @@
         width: 12rem;
         border-radius: 3rem;
         background-color: #fff;
-        border: 1px solid $color-gray;
+        border: 1px solid var(--color-gray);
         outline: none;
         font-size: 1.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         font-family: 'irsans';
     }
 
     &__reset-icon{
         font-size: 2.1rem;
-        color: $color-gray;
+        color: var(--color-gray);
         margin-left: 1rem;
     }
 
@@ -518,7 +518,7 @@
         li{
             // margin: 6px;
             width: 100%;
-            border-bottom: 1px solid $color-secondary-light;
+            border-bottom: 1px solid var(--color-primary-light);
             padding: 0 1.5rem;
             height: 5rem;
             transition: all .3s;
@@ -531,8 +531,8 @@
             }
 
             &:hover{
-                background-color: $color-primary-light;
-                box-shadow: 1px 1px 5px $color-gray-light;
+                background-color: var(--color-primary-light);
+                box-shadow: 1px 1px 5px var(--color-gray-light);
 
                 i{color: white;}
 
@@ -552,7 +552,7 @@
         a:visited{
             text-decoration: none;
             font-size: 1.4rem;
-            color: $color-gray;
+            color: var(--color-gray);
             text-align: right;
             transition: all .3s;
 
@@ -566,7 +566,7 @@
 
         i{
             font-size: 1.4rem;
-            color: $color-primary-dark;
+            color: var(--color-primary);
 
             @include respond(phone-port){font-size: 2rem;}
 
@@ -581,7 +581,7 @@
     }
     
     .owl-prev{
-        color:$color-gray !important;
+        color:var(--color-gray) !important;
         text-align: center;
         padding:1rem;
         position: absolute;
@@ -596,7 +596,7 @@
         }
     }
     .owl-next{
-        color:$color-gray !important;
+        color:var(--color-gray) !important;
         text-align: center;
         padding:1rem;
         position: absolute;
@@ -645,12 +645,12 @@
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-    border: 1px solid $color-gray;
+    border: 1px solid var(--color-gray);
 }
 
 
 .checkbox-label input:checked ~ .checkbox-custom {
-    background-color: $color-primary-light;
+    background-color: var(--color-primary-light);
     border-radius: 5px;
     -webkit-transform: rotate(0deg) scale(1);
     -ms-transform: rotate(0deg) scale(1);

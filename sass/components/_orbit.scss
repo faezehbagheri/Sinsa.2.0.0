@@ -27,13 +27,13 @@
             top: 20%;
             left: 51%;
             transform: translate(-50%, -50%);
-            background-color: $color-primary;
+            background-color: var(--color-primary);
             border-radius: 100%;
             margin-top: 10rem;
-            border: 2px solid $color-gray;
+            border: 2px solid var(--color-gray);
             box-shadow:
              0 0 0 1.8rem #EEF1EF, 
-            0 0 0 2rem $color-gray;
+            0 0 0 2rem var(--color-gray);
 
             @include respond(big-desktop){top: 30%;}
         }
@@ -53,11 +53,11 @@
         width: 10rem;
         position: relative;
         border-radius: 100%;
-        background-color: $color-primary;
-        border: 2px solid $color-gray;
+        background-color: var(--color-primary);
+        border: 2px solid var(--color-gray);
         box-shadow:
             0 0 0 7px #EEF1EF, 
-            0 0 0 9px $color-gray;
+            0 0 0 9px var(--color-gray);
     }
 
     &__position-1{
@@ -170,7 +170,7 @@
         width: 17rem;
         font-size: 1.8rem;
         font-weight: bold;
-        color: $color-pink;
+        color: var(--color-pink);
         text-align: center;
         border-bottom: 3px solid #707070;
     }

@@ -17,10 +17,10 @@
         // width: 10rem;
         background-color: #ffffff;
         border-radius: 3rem;
-        border: 1px solid $color-gray;
+        border: 1px solid var(--color-gray);
         font-size: 1.7rem;
         font-family: 'irsans';
-        color: $color-gray;
+        color: var(--color-gray);
         // margin:0 3rem;
         transition: all .3s ease;
 
@@ -36,7 +36,7 @@
         }
 
         &:hover{
-            background-color: $color-primary-light;
+            background-color: var(--color-primary-light);
             border: none;
             color: #fff;
 
@@ -52,7 +52,7 @@
     }
 
     &__reset-icon{
-        color: $color-gray;
+        color: var(--color-gray);
         margin-right: 1rem;
         transition: all .3s ease;
     }
@@ -64,7 +64,7 @@
 
     &__search-icon{
         font-size: 2.5rem;
-        color: $color-primary-light;
+        color: var(--color-primary-light);
         // margin-left: 5rem;
         cursor: pointer;
 
@@ -82,7 +82,7 @@
         height: 4rem;
         width: 0;
         background-color: white;
-        border: 1px solid $color-gray;
+        border: 1px solid var(--color-gray);
         border-radius: 2rem;
         opacity: 0;
         transition: all .4s ease-in;
@@ -116,7 +116,7 @@
 
         &::placeholder{
             // font-size: 1.6rem;
-            color: $color-gray-light;
+            color: var(--color-gray-light);
             font-weight: 100;
         }
     }
@@ -124,12 +124,12 @@
     &__arrow-icon{
         font-size: 2rem;
         margin: 2rem;
-        color: $color-gray;
+        color: var(--color-gray);
     }
 
     &__filter-icon{
         font-size: 2.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         cursor: pointer;
 
         @include respond(phone){font-size: 3rem;}

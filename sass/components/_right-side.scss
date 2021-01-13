@@ -12,8 +12,8 @@
         height: 6rem;
         width: 6rem;
         border-radius: 100%;
-        background-color: rgba($color: $color-white, $alpha: .3);
-        border: 2px solid $color-gray-light;
+        background-color: rgba($color: white, $alpha: .3);
+        border: 2px solid var(--color-gray-light);
         outline: none;
         position: relative;
         cursor: pointer;
@@ -34,12 +34,12 @@
         &:hover{
             box-shadow:
             0 0 0 2px #ffffff, 
-            0 0 0 4px $color-gray-light;
+            0 0 0 4px var(--color-gray-light);
             
             @include respond(big-desktop){
                 box-shadow:
                     0 0 0 4px #ffffff, 
-                    0 0 0 6px $color-gray-light;
+                    0 0 0 6px var(--color-gray-light);
             }
         }
     }
@@ -59,9 +59,9 @@
         display: inline-block;
         width: 13rem;
         font-size: 1.5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         text-align: center;
-        border-bottom: 2px solid $color-gray-light;
+        border-bottom: 2px solid var(--color-gray-light);
         margin-bottom: 4rem;
         
         @include respond(big-desktop){
@@ -74,7 +74,7 @@
         height: 1rem;
         width: 1rem;
         border-radius: 100%;
-        background-color: $color-gray-light;
+        background-color: var(--color-gray-light);
         margin-bottom: 1.2rem;
     }
 

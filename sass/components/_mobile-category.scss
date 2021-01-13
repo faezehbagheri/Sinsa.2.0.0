@@ -3,7 +3,7 @@
     &__header{
         font-size: 3rem;
         text-align: right;
-        color: $color-gray-light;
+        color: var(--color-gray-light);
         padding-right: 3rem;
         font-weight: 300;
     }
@@ -12,10 +12,10 @@
         font-size: 3rem;
         text-align: center;
         // padding: 1rem 3rem;
-        color: $color-gray;
+        color: var(--color-gray);
         height: 8rem;
         border-radius: 7rem;
-        border: 2px solid $color-primary;
+        border: 2px solid var(--color-primary);
         background-color: #ffffff;
 
         @include respond(phone-small){font-size: 2.4rem;}
@@ -24,11 +24,11 @@
     &__btn{
         height: 8rem;
         width: 60%;
-        background-color: $color-primary-light;
+        background-color: var(--color-primary-light);
         border-radius: 8rem;
         border: none;
         outline: none;
-        box-shadow: 1px 2px 5px $color-primary-light;
+        box-shadow: 1px 2px 5px var(--color-primary-light);
         color: #ffffff;
         font-size: 3rem;
         font-weight: 200;
@@ -41,7 +41,7 @@
 
     &__icon{
         font-size: 5rem;
-        color: $color-gray;
+        color: var(--color-gray);
         background-color: #ffffff;
         border-radius: 100%;
         position: absolute;

@@ -9,7 +9,7 @@
         width: 100%;
         padding: 1.5rem 1rem;
         &:not(:last-of-type){
-            border-bottom: 2px solid $color-secondary-light;
+            border-bottom: 2px solid var(--color-primary-light);
         }
         
         i.fa-angle-down{display: none;}
@@ -38,7 +38,7 @@
 
         h2{
             font-size: 1.8rem;
-            color: $color-primary-dark;
+            color: var(--color-primary);
             transform: translateY(-500%);
             transition: all .3s ease;
 
@@ -66,7 +66,7 @@
             width: 32%;
             transform: translateY(-400%);
             transition: all .5s ease;
-            color: $color-gray;
+            color: var(--color-gray);
 
             @include respond(phone-port){
                 font-size: 2rem;
@@ -81,7 +81,7 @@
 
         p{
             font-size: 1.6rem !important;
-            color: $color-gray !important;
+            color: var(--color-gray) !important;
             transform: translateY(-500%);
             transition: all .5s ease;
 
@@ -116,7 +116,7 @@
         background-color: transparent;
         border: none;
         font-size: 1.4rem;
-        color: $color-gray;
+        color: var(--color-gray);
         // margin-top: 5rem;
 
         @include respond(phone-port){font-size: 2rem;}
@@ -126,7 +126,7 @@
 
     i{
         font-size: 2.5rem;
-        color: $color-primary-dark;
+        color: var(--color-primary);
         // margin-left: 6rem;
         margin-right: 1.5rem;
     }
@@ -136,7 +136,7 @@
     a:visited{
         font-size: 1.6rem;
         text-decoration: none;
-        color: $color-gray;
+        color: var(--color-gray);
         // width: 65%;
         text-align: right;
 
@@ -144,13 +144,13 @@
     }
 
     &__tab{
-        border-bottom: 2px solid $color-gray-light;
+        border-bottom: 2px solid var(--color-gray-light);
         margin-top: 3rem;
         width: 100%;
 
         a{
             // width: 16%;
-            background-color: $color-secondary-light;
+            background-color: var(--color-primary-light);
             color: white !important;
             padding:1rem 5rem;
 
@@ -173,18 +173,18 @@
 
             &::after,
             &::before{
-                background-color: $color-secondary-light;
-                border-color:  $color-secondary-light;
+                background-color: var(--color-primary-light);
+                border-color:  var(--color-primary-light);
 
                 @include respond(phone){width: 5rem;}
             }
 
             &:hover{
-                background-color: $color-secondary-light;
+                background-color: var(--color-primary-light);
                 &::after,
                 &::before{
-                    background-color: $color-secondary-light;
-                    border-color:  $color-secondary-light;
+                    background-color: var(--color-primary-light);
+                    border-color:  var(--color-primary-light);
                 }
     
 
@@ -195,9 +195,9 @@
     h3{
         font-size: 1.6rem;
         font-weight: 500;
-        color: $color-pink;
+        color: var(--color-pink);
         padding: 1rem;
-        border-bottom: 2px solid $color-gray-light;
+        border-bottom: 2px solid var(--color-gray-light);
 
         @include respond(phone-port){font-size: 2.5rem;margin-top: 2rem;}
 
@@ -210,7 +210,7 @@
     p{
         font-size: 1.4rem;
         margin: 1rem 0;
-        color: $color-primary-dark;
+        color: var(--color-primary);
         text-align: justify;
 
         @include respond(phone-port){
@@ -221,14 +221,14 @@
         @include respond(phone){
             font-size: 2.5rem;
             line-height: 6rem;
-            color: $color-gray;
+            color: var(--color-gray);
         }
     }
 
     &__circle{
         width: 10.5rem;
         height:10.5rem;
-        border: 2px dashed $color-gray;
+        border: 2px dashed var(--color-gray);
         border-radius: 100%;
         position: relative;
 
@@ -251,10 +251,10 @@
         width: 100px;
         left: 33%;
         top: -5%;
-        border-top: 1px solid $color-gray;
+        border-top: 1px solid var(--color-gray);
         font-size: 1.6rem;
         text-align: right;
-        color: $color-gray;
+        color: var(--color-gray);
 
         @include respond(phone-port){font-size: 2.2rem;}
 
@@ -274,7 +274,7 @@
         // width: 50%;
         left: -14px;
         transform: skew(-30deg, 0deg);
-        border-left: 1px solid $color-gray;
+        border-left: 1px solid var(--color-gray);
         border-radius: 10px 0 0 0;
     }
       
@@ -285,10 +285,10 @@
         width: 100px;
         left: 33%;
         top: 95%;
-        border-bottom: 1px solid $color-gray;
+        border-bottom: 1px solid var(--color-gray);
         font-size: 1.6rem;
         text-align: right;
-        color: $color-gray;
+        color: var(--color-gray);
 
         @include respond(phone-port){font-size: 2.2rem;}
 
@@ -308,7 +308,7 @@
         // width: 50%;
         left: -10px;
         transform: skew(30deg, 0deg);
-        border-left: 1px solid $color-gray;
+        border-left: 1px solid var(--color-gray);
         border-radius:  0 0 0 10px;
         // transform: rotate(0deg);
     } 
