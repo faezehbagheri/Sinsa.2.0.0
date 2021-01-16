@@ -300,18 +300,14 @@
         }
     }
 
-    &__svg{
+    &__img{
         color: var(--color-primary);
+        height: 20rem;
+        width: 20rem;
 
         @include respond(phone-port){
-            height: 20rem;
-            width: 20rem;
-            margin-top: 5rem;
-        }
-
-        @include respond(phone){
-            width:  18rem;
-            height: 18rem;
+            height: 25rem;
+            width: 25rem;
             margin-top: 5rem;
         }
     }

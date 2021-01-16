@@ -97,14 +97,10 @@
     }
 
     &__header{
+        padding: 8px 0;
         
-        &:hover{
-            cursor: pointer;
-
-            & > * {
-                color: var(--color-pink);
-                transform: scale(1.2);
-            }
+        @include respond(phone){
+            padding: 1.5rem 0;
         }
     }
 
@@ -125,9 +121,10 @@
             text-align: center;
             color: var(--color-gray);
             // margin: 1rem;
+            font-size: 1.7rem;
             background-color: var(--color-primary-light);
             width: 100%;
-            padding: 1rem;
+            padding: 1.8rem 1rem;
             color: white;
 
             @include respond(phone-port){
@@ -149,10 +146,12 @@
     }
 
     &__title{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: var(--color-gray);
         margin: 1rem auto;
         width: 85%;
+
+        @include respond(phone){font-size: 2.5rem;}
     }
 
     &__arrow-icon{
@@ -205,6 +204,8 @@
         overflow-y: scroll;
         // display: none;
 
+        @include respond(phone){height: 25rem;}
+
         
         &::-webkit-scrollbar {
             width: 1rem;
@@ -219,6 +220,8 @@
         font-size: 1.5rem;
         padding-right: .5rem;
         color: var(--color-gray);
+
+        @include respond(phone){font-size: 2.5rem; margin: 1.8rem;}
     }
 
     &__checkbox{
@@ -451,12 +454,18 @@
         font-size: 1.5rem;
         color: #fff;
         font-family: 'irsans';
+
+        @include respond(phone){
+            height: 6rem; 
+            font-size: 2.5rem;
+            width: 18rem;
+        }
     }
 
     &__filter-icon{
         font-size: 2.1rem;
         color: #fff;
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     &__reset-btn{
@@ -469,12 +478,18 @@
         font-size: 1.5rem;
         color: var(--color-gray);
         font-family: 'irsans';
+
+        @include respond(phone){
+            height: 6rem; 
+            font-size: 2.5rem;
+            width: 18rem;
+        }
     }
 
     &__reset-icon{
         font-size: 2.1rem;
         color: var(--color-gray);
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     &__btn{

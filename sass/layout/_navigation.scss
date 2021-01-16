@@ -1,6 +1,6 @@
 .navigation{
-    height: 7rem !important;
-    box-shadow: 0 2px 5px rgba($color: var(--color-gray), $alpha: .5);
+    // height: 7rem !important;
+    box-shadow: 0 5px 5px rgba($color: var(--color-gray), $alpha: .5);
     // width: 100%;
     // background-image: url(../../assets/img/artboard.png);
     // background-repeat: no-repeat;
@@ -14,19 +14,28 @@
     @include respond(phone){
         display: none;
     }
+
+    li:hover{
+        border-bottom: 2px solid var(--color-primary-light);
+
+    }
+
+    .dropdown-item:hover{
+        transform: scale(1) !important;
+    }
+    .dropdown-menu li:hover{border: none;}
     a{
         color: black !important;
         border-bottom: 2px solid transparent;
         font-size: 1.6rem;
         margin: 0 1.5rem;
-        padding: 2.2rem;
+        // padding: 2.2rem;
         text-align: center;
         min-width: 10rem;
         transition: all .3s ease;
     }
 
     a:hover{
-        border-bottom: 2px solid var(--color-primary-light);
         transform: scale(1.08);
     }
 

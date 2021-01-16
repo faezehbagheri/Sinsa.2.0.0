@@ -1,4 +1,5 @@
 $(document).ready(function () {  
+    
 
     // $("#body:not(.suggestion)").on('click' , function(){
     //     $('.suggestion').hide();

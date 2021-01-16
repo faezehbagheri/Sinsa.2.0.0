@@ -8,7 +8,7 @@
     transition: all .6s;
     display: none;
 
-    @include respond(phone){ display: inline; }
+    @include respond(phone-port){ display: inline; }
 
     &:target{
         opacity: 1;
@@ -33,12 +33,17 @@
     }
 
     &__logo{
-        height: 12rem;
-        width:  12rem;
         position: absolute;
         top: 45%;
         left: 75%;
         transform: translate(-50% , -50%);
+        height: 8rem;
+        width: 8rem;
+
+        @include respond(phone){
+        height: 12rem;
+        width:  12rem;
+        }
     }
 
     &__content{
@@ -51,12 +56,16 @@
     }
 
     &__header{
-        height: 24rem;
+        height: 14rem;
         width: 100%;
         position: relative;
         background-image: url(../../assets/img/mobile-menu.png);
         background-size: cover;
         background-position: center;
+
+        @include respond(phone){
+            height: 24rem;
+        }
     }
 
 
@@ -84,13 +93,15 @@
     }
 
     &__item{
-        margin: 3rem 2.5rem;
+        margin: 1.5rem 2.5rem;
         direction: ltr; 
         text-align: right;
         
         &::marker{
             content: '';
         }
+        
+        @include respond(phone){margin: 3rem 2.5rem;}
     }
 
     &__icon{
@@ -102,12 +113,15 @@
     &__link:visited,
     &__link{
         text-decoration: none;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 400;
         padding-right: 1rem;
-        background-image: linear-gradient(to right bottom, #3FAF2C, #4f73eb);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: black;
+        // background-image: linear-gradient(to right bottom, #3FAF2C, #4f73eb);
+        // -webkit-background-clip: text;
+        // color: transparent;
+
+        @include respond(phone){font-size: 2.8rem;}
     }
 
     &__margin{
@@ -115,12 +129,18 @@
     }
 
     &__icon{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        color: var(--color-primary);
+        
+        @include respond(phone){font-size: 3rem;}
     }
 
     &__down-icon{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        color: var(--color-primary);
         display: none;
+        
+        @include respond(phone){font-size: 3rem;}
     }
 
     &__sub-list{
@@ -131,7 +151,7 @@
     }   
 
     &__sub-item{
-        margin: 1rem 2.5rem;
+        margin: 1rem 2.5rem 0 0;
         direction: rtl;
     }
 
@@ -139,18 +159,20 @@
     &__sub-link:visited,
     &__sub-link{
         text-decoration: none;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 400;
         padding-right: 3rem;
-        background-image: linear-gradient(to bottom, #3FAF2C, #4f73eb);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: black;
         margin: 1.5rem;
+        
+        @include respond(phone){
+            font-size: 2.8rem;
+        }
     }
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1767px) {
     .cbp-spmenu {
       background: #f8f8f8;
       position: fixed;

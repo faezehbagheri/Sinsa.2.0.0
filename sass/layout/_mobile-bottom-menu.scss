@@ -51,8 +51,8 @@
         position: relative;
         height: 17rem;
         top: -18%;
-        left: 50%;
-        transform: translate(-50% , -18%);
+        // left: 50%;
+        transform: translateY( -18%);
 
         @include respond(phone-small){            
             height: 17rem;  

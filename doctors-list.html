@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" id="view" content="user-scalable=no, width=device-width minimum-scale=1, maximum-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/bootstrap-multiselect.js"></script>
 
     <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script> -->
@@ -20,6 +22,7 @@
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-multiselect.css">
 
     <link href="./assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -67,127 +70,131 @@
                     <i class="fas fa-filter mobile-header__icon"></i>
                     <span class="mobile-header__text">مشاهده فیلتر</span>
                 </div>
-            </div>
-            <div class="navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
-                id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
-                <div class="mobile-menu__header">
-                    <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
-                </div>
-                <div class="mobile-menu__nav">
-                    <ul class="mobile-menu__list flex column align-start">
-                        <li class="mobile-menu__item flex  justi-start align-center">
-                            <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
-                        </li>
-                        <li class="mobile-menu__item" onclick="openSubMenu('2')">
-                            <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"
-                                    id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                    id="down-icon-2"></i></span>
-                            <ul class="mobile-menu__sub-list" id="sub-menu-2">
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-menu__item" onclick="openSubMenu('3')">
-                            <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"
-                                    id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                    id="down-icon-3"></i></span>
-                            <ul class="mobile-menu__sub-list" id="sub-menu-3">
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-menu__item" onclick="openSubMenu('4')">
-                            <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon"
-                                    id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                    id="down-icon-4"></i></span>
-                            <ul class="mobile-menu__sub-list" id="sub-menu-4">
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-menu__item" onclick="openSubMenu('5')">
-                            <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"
-                                    id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                    id="down-icon-5"></i></span>
-                            <ul class="mobile-menu__sub-list" id="sub-menu-5">
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-menu__item flex  justi-start align-center">
-                            <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
-                        </li>
-                        <li class="mobile-menu__item" onclick="openSubMenu('6')">
-                            <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"
-                                    id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon"
-                                    id="down-icon-6"></i></span>
-                            <ul class="mobile-menu__sub-list" id="sub-menu-6">
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
-                                </li>
-                                <li class="mobile-menu__sub-item flex  justi-start align-center">
-                                    <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>     
+            </div>    
         </nav>
     </div>
-
+    
+    <!-- نویگیشن موبایل -->
+    <div class="navbar-collapse d-block d-md-none cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
+    id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+    <div class="mobile-menu__header">
+        <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+    </div>
+    <div class="mobile-menu__nav">
+        <ul class="mobile-menu__list flex column align-start">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+            </li>
+            <li class="mobile-menu__item" onclick="openSubMenu('2')">
+                <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"
+                        id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                        id="down-icon-2"></i></span>
+                <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item" onclick="openSubMenu('3')">
+                <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"
+                        id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                        id="down-icon-3"></i></span>
+                <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item" onclick="openSubMenu('4')">
+                <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon"
+                        id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                        id="down-icon-4"></i></span>
+                <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item" onclick="openSubMenu('5')">
+                <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"
+                        id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                        id="down-icon-5"></i></span>
+                <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+            </li>
+            <li class="mobile-menu__item" onclick="openSubMenu('6')">
+                <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"
+                        id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon"
+                        id="down-icon-6"></i></span>
+                <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                    </li>
+                    <li class="mobile-menu__sub-item flex  justi-start align-center">
+                        <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div> 
+    
     <!-- نویگیشن -->
     <nav class="navigation navbar navbar-expand-md navbar-dark bg-light navbar-toggleable d-flex justify-content-center">
         <div class="col-12 col-lg-10 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center">
-            <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
+            <button type="button" class="navbar-toggler toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon m-1 color-primary"></i>
+                </button>
             <a class="navbar-brand" href="#">
                 <img src="assets/img/Logo Icon@2x.png" class="navigation__logo">
             </a>
@@ -211,7 +218,7 @@
                     <li class="nav-item dropdown d-flex align-items-center">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> تغذیه</a>
                         <ul class="dropdown-menu bg-light" style="width: 20rem;height: auto;">
-                        <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                          <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
                             <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
                             <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
                             <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
@@ -310,19 +317,19 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('1')">
+                <div class="filter__header">
                     <h3 class="filter__title flex align-center justi-center">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>دسته بندی تخصص ها
+                        دسته بندی تخصص ها
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-1"></div>
+                <div class="filter__picked"></div>
                 <div class="filter__search-box flex  align-center justi-start" style="height: 3rem;">
                     <button class="filter__search-btn" style="background-color: inherit;">
                         <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
                     </button>
                     <input type="text" class="filter__input" placeholder="جستجو">
                 </div>
-                <div class="filter__optios filter__optios-1">
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="takhasos" value="قلب و عروق">
@@ -369,19 +376,19 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('2')">
+                <div class="filter__header">
                     <h3 class="filter__title flex align-center justi-center">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>شهر
+                        شهر
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-2"></div>
+                <div class="filter__picked"></div>
                 <div class="filter__search-box flex  align-center justi-start" style="height: 3rem;">
                     <button class="filter__search-btn" style="background-color: inherit;">
                         <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
                     </button>
                     <input type="text" class="filter__input" placeholder="جستجو">
                 </div>
-                <div class="filter__optios filter__optios-2">
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="shahr" value="تهران">
@@ -428,19 +435,19 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('3')">
+                <div class="filter__header">
                     <h3 class="filter__title flex align-center justi-center">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>محله
+                        محله
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-3"></div>
+                <div class="filter__picked"></div>
                 <div class="filter__search-box flex  align-center justi-start" style="height: 3rem;">
                     <button class="filter__search-btn" style="background-color: inherit;">
                         <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
                     </button>
                     <input type="text" class="filter__input" placeholder="جستجو">
                 </div>
-                <div class="filter__optios filter__optios-3">
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="mahale" value="تجریش">
@@ -487,19 +494,19 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('4')">
+                <div class="filter__header">
                     <h3 class="filter__title flex align-center justi-center">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>بیمه
+                        بیمه
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-4"></div>
+                <div class="filter__picked"></div>
                 <div class="filter__search-box flex  align-center justi-start" style="height: 3rem;">
                     <button class="filter__search-btn" style="background-color: inherit;">
                         <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
                     </button>
                     <input type="text" class="filter__input" placeholder="جستجو">
                 </div>
-                <div class="filter__optios filter__optios-4">
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="bime" value="بیمه تامین اجتماعی">
@@ -546,13 +553,13 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('5')">
+                <div class="filter__header">
                     <h3 class="filter__title flex align-center justi-center">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>جنسیت
+                        جنسیت
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-5"></div>
-                <div class="filter__optios filter__optios-5">
+                <div class="filter__picked"></div>
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="jensiat" value="زن">
@@ -570,13 +577,13 @@
                 </div>
             </div>
             <div class="filter__box">
-                <div class="filter__header" onclick="openOption('6')">
-                    <h3 class="filter__title flex align-center justi-center"><i
-                            class="fas fa-angle-down filter__arrow-icon"></i>نوع مشاوره
+                <div class="filter__header">
+                    <h3 class="filter__title flex align-center justi-center">
+                        نوع مشاوره
                     </h3>
                 </div>
-                <div class="filter__picked filter__picked-6"></div>
-                <div class="filter__optios filter__optios-6">
+                <div class="filter__picked"></div>
+                <div class="filter__optios">
                     <div class="filter__checkbox flex  align-center">
                         <label class="checkbox-label flex ">
                             <input type="checkbox" name="moshavere" value="حضوری">
@@ -610,7 +617,7 @@
             </div>
         </div>
         <!-- پزشکان -->
-        <div class="doctors__main flex column align-start col-xl-6 col-lg-7 col-12 u-margin-sm-top ">  
+        <div class="doctors__main flex column align-start col-xl-6 col-lg-7 col-12">  
             <div class="doctors__filter-header d-none d-sm-flex align-center justi-around col-12">
                 <span class="col-1"><i class="fas fa-circle"></i>آنلاین</span>
                 <div class="flex align-center justi-center col-9">
