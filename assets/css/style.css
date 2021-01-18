@@ -3445,8 +3445,7 @@ body-model-widget .body-model-popover {
 
 .result {
   width: 90%;
-  direction: rtl;
-  margin-bottom: 8rem; }
+  direction: rtl; }
   .result .min-height {
     min-height: 20rem; }
   .result__item {
@@ -5213,6 +5212,7 @@ body-model-widget .body-model-popover {
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem;
+    color: var(--color-gray);
     border-bottom: 2px solid var(--color-gray-light); }
     @media only screen and (max-width: 51em) {
       .visit__header {
@@ -5380,7 +5380,7 @@ body-model-widget .body-model-popover {
       margin-bottom: 8px; }
   .visit_buttons {
     width: 80%;
-    margin-top: 3rem; }
+    margin-top: 8rem; }
     .visit_buttons button {
       width: 14rem;
       height: 5rem;
@@ -5420,6 +5420,46 @@ body-model-widget .body-model-popover {
         height: 25rem;
         width: 25rem;
         margin-top: 5rem; } }
+  .visit__counter {
+    margin: 4rem 0; }
+    .visit__counter button {
+      height: 5rem;
+      width: 6rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 5px var(--color-gray);
+      border: none;
+      outline: none;
+      background-color: white;
+      vertical-align: top;
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 0 -5px;
+      transition: all .2s ease; }
+      .visit__counter button:hover {
+        color: var(--color-primary);
+        font-size: 2.5rem; }
+      @media only screen and (max-width: 30em) {
+        .visit__counter button {
+          height: 6.5rem;
+          width: 8rem;
+          font-size: 3rem;
+          margin: -2px 0; }
+          .visit__counter button:hover {
+            font-size: 3.5rem; } }
+    .visit__counter span {
+      box-shadow: 0 0 5px var(--color-gray);
+      height: 6rem;
+      border-radius: 1.2rem;
+      background-color: white;
+      position: relative;
+      z-index: 999;
+      font-size: 2.8rem;
+      width: 15rem; }
+      @media only screen and (max-width: 30em) {
+        .visit__counter span {
+          height: 9rem;
+          width: 22rem;
+          font-size: 3.2rem; } }
 
 .radialProgressBar {
   border-radius: 50%;
@@ -5477,6 +5517,47 @@ body-model-widget .body-model-popover {
 .progress-75 {
   background-image: -webkit-linear-gradient(right, var(--color-pink) 50%, transparent 50%), -webkit-linear-gradient(108deg, var(--color-pink) 50%, #ddd 50%);
   background-image: linear-gradient(0deg, var(--color-pink) 50%, transparent 50%), linear-gradient(-90deg, var(--color-pink) 50%, #ddd 50%); }
+
+.form__instruction {
+  font-size: 22px; }
+
+.form__answer {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 5px var(--color-gray);
+  margin: 20px 1% 20px 0;
+  vertical-align: top;
+  font-size: 1.8rem;
+  text-align: center; }
+  @media only screen and (max-width: 30em) {
+    .form__answer {
+      font-size: 2.3rem;
+      height: 7rem; } }
+
+label {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .1s ease; }
+  label i {
+    font-size: 2.8rem; }
+
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute; }
+
+input[type="radio"]:active ~ label {
+  opacity: 1; }
+
+input[type="radio"]:checked ~ label {
+  opacity: 1;
+  color: var(--color-primary); }
 
 .footer {
   height: 50rem;

@@ -875,8 +875,8 @@
             <div class="tab-amodi__container col-12">
                 <nav class="tab-amodi__multipleTabs flex flex-row o-tabs col-12 owl-carousel " id="o-tabs">
                     <a data-trigger="tab01" class="tab-amodi__label">مشخصات</a>
-                    <a data-trigger="tab02" class="tab-amodi__label">سوالات</a>
-                    <a data-trigger="tab03" class="tab-amodi__label tab-active">بررسی تداخلات دارویی</a>
+                    <a data-trigger="tab02" class="tab-amodi__label tab-active">سوالات</a>
+                    <a data-trigger="tab03" class="tab-amodi__label">بررسی تداخلات دارویی</a>
                     <a data-trigger="tab04" class="tab-amodi__label ">نتیجه</a>
                 </nav>
                 <!-- Buttons -->
@@ -889,17 +889,124 @@
                         <!-- <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a> -->
                     </nav>
                 </div>
+                <!-- مشخصات -->
                 <div id="tab01" class="tab-amodi__tab">
                     <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
                         <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
-                            
+                            <h3 class="visit__header">مشخصات خود را برای تشخیص بهتر وارد کنید</h3>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">جنسیت</h3>
+                                <div class="form">                                        
+                                    <form class="d-flex justify-content-between col-12">
+                                        <p class="form__answer d-flex align-items-center col-5"> 
+                                            <input type="radio" name="match" id="match_1" value="zan" checked> 
+                                            <label for="match_1">
+                                                <i class="fas fa-female"></i>
+                                                زن
+                                            </label> 
+                                        </p>                                                
+                                        <p class="form__answer d-flex align-items-center col-5"> 
+                                            <input type="radio" name="match" id="match_2" value="mard"> 
+                                            <label for="match_2">
+                                                <i class="fas fa-male"></i>
+                                                مرد
+                                            </label> 
+                                        </p>                                           
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">سن</h3>
+                                <div class="visit__counter d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                                    <button class="">+</button>
+                                    <span class="d-flex align-items-center justify-content-center">18</span>
+                                    <button class="">-</button>
+                                </div>
+                            </div>
+                            <div class="visit_buttons flex  align-center justi-between">
+                                <button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
+                                <button class="visit__nxt-btn flex align-center justi-center">بعدی<i class="fas fa-angle-left"></i></button>
+                            </div>
                         </div>
                     </div> 
                 </div>
+                <!-- سوالات -->
                 <div id="tab02" class="tab-amodi__tab">
                     <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
                         <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
-                            
+                            <h3 class="visit__header">مشخصات خود را برای تشخیص بهتر وارد کنید</h3>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">آیا شما اضافه وزن یا کاهش وزن دارید؟</h3>
+                                <form class="d-flex justify-content-between col-12">
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="bale_1" value="bale" checked> 
+                                        <label for="bale_1">بله</label> 
+                                    </p>                                                
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="kheyr_1" value="kheyr"> 
+                                        <label for="kheyr_1">خیر</label> 
+                                    </p>                                                   
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="nmidanm_1" value="nmidanm"> 
+                                        <label for="nmidanm_1">نمیدانم</label> 
+                                    </p>                                          
+                                </form>
+                            </div>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">آیا شما سیگار میکشید؟</h3>
+                                <form class="d-flex justify-content-between col-12">
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="bale_2" value="bale" checked> 
+                                        <label for="bale_2">بله</label> 
+                                    </p>                                                
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="kheyr_2" value="kheyr"> 
+                                        <label for="kheyr_2">خیر</label> 
+                                    </p>                                                   
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="nmidanm_2" value="nmidanm"> 
+                                        <label for="nmidanm_2">نمیدانم</label> 
+                                    </p>                                          
+                                </form>
+                            </div>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">آیا شما در 7 ماه اخیر جراحی داشته اید ؟</h3>
+                                <form class="d-flex justify-content-between col-12">
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="bale_3" value="bale" checked> 
+                                        <label for="bale_3">بله</label> 
+                                    </p>                                                
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="kheyr_3" value="kheyr"> 
+                                        <label for="kheyr_3">خیر</label> 
+                                    </p>                                                   
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="nmidanm_3" value="nmidanm"> 
+                                        <label for="nmidanm_3">نمیدانم</label> 
+                                    </p>                                          
+                                </form>
+                            </div>
+                            <div class="col-12 col-sm-7 mt-5">
+                                <h3 class="visit__header w-100">آیا شما بیماری کلسترول دارید ؟</h3>
+                                <form class="d-flex justify-content-between col-12">
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="bale_4" value="bale" checked> 
+                                        <label for="bale_4">بله</label> 
+                                    </p>                                                
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="kheyr_4" value="kheyr"> 
+                                        <label for="kheyr_4">خیر</label> 
+                                    </p>                                                   
+                                    <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
+                                        <input type="radio" name="match" id="nmidanm_4" value="nmidanm"> 
+                                        <label for="nmidanm_4">نمیدانم</label> 
+                                    </p>                                          
+                                </form>
+                            </div>
+                            <div class="visit_buttons flex  align-center justi-between">
+                                <button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
+                                <button class="visit__nxt-btn flex align-center justi-center">بعدی<i class="fas fa-angle-left"></i></button>
+                            </div>
                         </div>
                     </div> 
                 </div> 
@@ -907,7 +1014,7 @@
                 <div id="tab03" class="tab-amodi__tab">
                     <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
                         <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
-                            <h3 class="visit__header">علائم خود را برای تشخیص بهتر وارد کنید</h3>
+                            <h3 class="visit__header w-100">علائم خود را برای تشخیص بهتر وارد کنید</h3>
                             <div class="visit__main wrap flex align-center justi-center">
                                 <div class="flex column justi-center align-center col-lg-8 col-12" style="min-height: 30rem;">
                                     <!-- سرچ باکس -->
