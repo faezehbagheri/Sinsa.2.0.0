@@ -1,6 +1,7 @@
 .card{
     // width: 43%;
     border: none !important;
+    background-color: var(--color-background);
 
     @include respond(phone-port){width: 46%;}
     
@@ -68,13 +69,13 @@
         @include respond(phone-port){font-size: 1.6rem;}
 
         @include respond(phone){
-            padding: 2rem 5rem;
+            // padding: 2rem 5rem;
             font-size: 2.3rem;
         }
 
         @include respond(iphone){
             font-size: 2rem;
-            padding: 1rem 5rem;
+            // padding: 1rem 5rem;
         }
     }
 

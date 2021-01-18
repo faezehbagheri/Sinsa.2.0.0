@@ -1,15 +1,9 @@
 .navigation{
     // height: 7rem !important;
     box-shadow: 0 5px 5px rgba($color: var(--color-gray), $alpha: .5);
-    // width: 100%;
-    // background-image: url(../../assets/img/artboard.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    // padding-top: 2.8rem;
-    // position: absolute;
-    // top: 0%;
-    // z-index: 99;
+    background-color: white !important;
+    border-bottom: 2px solid var(--color-gray-light);
+    z-index: 99;
 
     @include respond(phone){
         display: none;
@@ -20,12 +14,33 @@
 
     }
 
+    a.dropdown-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -9;
+        height: 100%;
+        width: 0;
+        background-color: var(--color-primary-light);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+    }
+
+    a.dropdown-item:hover::before{
+        transform: scaleY(1);
+        width: 100%;
+    }
+
     .dropdown-item:hover{
         transform: scale(1) !important;
     }
+    .dropdown-menu{position: relative; background-color: white !important; border-radius: 1.2rem !important;}
     .dropdown-menu li:hover{border: none;}
     a{
-        color: black !important;
+        color: var(--color-gray) !important;
         border-bottom: 2px solid transparent;
         font-size: 1.6rem;
         margin: 0 1.5rem;
@@ -36,14 +51,19 @@
     }
 
     a:hover{
-        transform: scale(1.08);
+        transform: scale(1.2);
     }
 
     a.navbar-brand{border: none !important; transform: scale(1) !important;}
 
     a.dropdown-item{
-        margin: 0;
-        &:hover{background-color: var(--color-primary) !important;}
+        padding: 1.3rem 2rem !important;
+        margin: 0 !important;
+        font-weight: 500 !important;
+        text-align: right !important;
+        position: relative;
+        z-index: 9999;
+        &:hover{color: white !important; background-color: transparent !important;}
     }
 
     &__logo{
@@ -55,6 +75,25 @@
     .collapse{
         z-index: 999 !important;
     }
+
+    .navbar-nav li:hover > ul.dropdown-menu {
+        display: block !important;
+    }
+    // .dropdown-submenu {
+    //     position:relative;
+    // }
+    // .dropdown-submenu>.dropdown-menu {
+    //     top: 0;
+    //     left: 100%;
+    //     margin-top:-6px;
+    // }
+    
+    // /* rotate caret on hover */
+    // .dropdown-menu > li > a:hover:after {
+    //     text-decoration: underline;
+    //     transform: rotate(-90deg);
+    // } 
+    
     
 }
 //     @include respond(phone){

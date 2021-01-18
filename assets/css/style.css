@@ -18,7 +18,8 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  direction: rtl; }
+  direction: rtl;
+  background-color: var(--color-background); }
 
 a {
   text-decoration: none !important; }
@@ -249,7 +250,8 @@ input::placeholder {
       text-decoration: none; }
 
 .card {
-  border: none !important; }
+  border: none !important;
+  background-color: var(--color-background); }
   @media only screen and (max-width: 51em) {
     .card {
       width: 46%; } }
@@ -307,12 +309,10 @@ input::placeholder {
         font-size: 1.6rem; } }
     @media only screen and (max-width: 30em) {
       .card__label {
-        padding: 2rem 5rem;
         font-size: 2.3rem; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .card__label {
-        font-size: 2rem;
-        padding: 1rem 5rem; } }
+        font-size: 2rem; } }
   .card__label:before, .card__label:after {
     display: block;
     content: " ";
@@ -548,7 +548,7 @@ input::placeholder {
 
 .doctors-page {
   width: 55%;
-  margin-top: -17rem;
+  margin-top: -7rem;
   position: relative; }
   @media only screen and (max-width: 51em) {
     .doctors-page {
@@ -606,7 +606,7 @@ input::placeholder {
       height: 40rem; }
   .doctors-page__main {
     position: relative;
-    background-color: white;
+    background-color: var(--color-background);
     margin-top: -5rem;
     border-radius: 2rem 2rem 0 0;
     width: 100%;
@@ -2117,7 +2117,8 @@ body-model-widget .symptoms-models .symptom-model {
   height: 320px; }
 
 body-model-widget .symptoms-models .model-controls {
-  padding-left: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.5rem;
   margin-top: 16px;
   cursor: pointer;
@@ -2164,7 +2165,7 @@ body-model-widget .body-model-popover {
 
 .rotate-icon {
   font-size: 2rem;
-  margin-right: 1rem; }
+  margin-left: 1rem; }
   @media only screen and (max-width: 30em) {
     .rotate-icon {
       font-size: 2.5rem !important; } }
@@ -2176,8 +2177,7 @@ body-model-widget .body-model-popover {
 
 @media only screen and (max-width: 30em) {
   .model-controls {
-    font-size: 2.5rem !important;
-    margin-right: 3rem; } }
+    font-size: 2.5rem !important; } }
 
 .map-header {
   width: 100%;
@@ -3334,7 +3334,8 @@ body-model-widget .body-model-popover {
     color: #fff;
     margin-right: 1rem; }
   .question__ans {
-    background-color: #fff; }
+    background-color: #fff;
+    height: 100%; }
   .question__pragraph {
     font-size: 1.3rem;
     color: var(--color-gray);
@@ -3444,7 +3445,8 @@ body-model-widget .body-model-popover {
 
 .result {
   width: 90%;
-  direction: rtl; }
+  direction: rtl;
+  margin-bottom: 8rem; }
   .result .min-height {
     min-height: 20rem; }
   .result__item {
@@ -3566,9 +3568,8 @@ body-model-widget .body-model-popover {
           padding: 1rem 3.5rem; } }
       @media only screen and (max-width: 30em) {
         .result__tab a {
-          width: 30%;
-          padding: 1rem 6rem;
-          font-size: 2.2rem;
+          padding: 1.8rem 6rem;
+          font-size: 2.4rem;
           margin-right: 3rem; } }
       @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
         .result__tab a {
@@ -3602,7 +3603,6 @@ body-model-widget .body-model-popover {
   .result p {
     font-size: 1.4rem;
     margin: 1rem 0;
-    color: var(--color-primary);
     text-align: justify; }
     @media only screen and (max-width: 51em) {
       .result p {
@@ -5274,8 +5274,6 @@ body-model-widget .body-model-popover {
     box-shadow: 1px 1px 5px var(--color-gray-light);
     background-color: white;
     overflow-y: scroll;
-    position: absolute;
-    top: 35%;
     transition: all .6s ease;
     z-index: 99;
     padding: 0 !important; }
@@ -6135,18 +6133,39 @@ body-model-widget .body-model-popover {
   background: transparent !important; }
 
 .navigation {
-  box-shadow: 0 5px 5px rgba(var(--color-gray), 0.5); }
+  box-shadow: 0 5px 5px rgba(var(--color-gray), 0.5);
+  background-color: white !important;
+  border-bottom: 2px solid var(--color-gray-light);
+  z-index: 99; }
   @media only screen and (max-width: 30em) {
     .navigation {
       display: none; } }
   .navigation li:hover {
     border-bottom: 2px solid var(--color-primary-light); }
+  .navigation a.dropdown-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -9;
+    height: 100%;
+    width: 0;
+    background-color: var(--color-primary-light);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+  .navigation a.dropdown-item:hover::before {
+    transform: scaleY(1);
+    width: 100%; }
   .navigation .dropdown-item:hover {
     transform: scale(1) !important; }
+  .navigation .dropdown-menu {
+    position: relative;
+    background-color: white !important;
+    border-radius: 1.2rem !important; }
   .navigation .dropdown-menu li:hover {
     border: none; }
   .navigation a {
-    color: black !important;
+    color: var(--color-gray) !important;
     border-bottom: 2px solid transparent;
     font-size: 1.6rem;
     margin: 0 1.5rem;
@@ -6154,16 +6173,24 @@ body-model-widget .body-model-popover {
     min-width: 10rem;
     transition: all .3s ease; }
   .navigation a:hover {
-    transform: scale(1.08); }
+    transform: scale(1.2); }
   .navigation a.navbar-brand {
     border: none !important;
     transform: scale(1) !important; }
   .navigation a.dropdown-item {
-    margin: 0; }
+    padding: 1.3rem 2rem !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+    position: relative;
+    z-index: 9999; }
     .navigation a.dropdown-item:hover {
-      background-color: var(--color-primary) !important; }
+      color: white !important;
+      background-color: transparent !important; }
   .navigation__logo {
     height: 5rem;
     width: 5rem; }
   .navigation .collapse {
     z-index: 999 !important; }
+  .navigation .navbar-nav li:hover > ul.dropdown-menu {
+    display: block !important; }

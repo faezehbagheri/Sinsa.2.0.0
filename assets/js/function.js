@@ -140,11 +140,11 @@ function removeItem(id){
 var showSubMenu=['',true,true,true,true,true,true,true];
 function openSubMenu(num){
     if(showSubMenu[num]){
-        document.querySelector("#sub-menu-"+num).style = "transform: translate(0); height: 35rem";
+        document.querySelector("#sub-menu-"+num).style = "transform: translate(0); height: auto";
         document.querySelector("#left-icon-"+num).style.display= "none";
         document.querySelector("#down-icon-"+num).style= "padding-left: 3rem; display: inline-block; ";
     }else{
-        document.querySelector("#sub-menu-"+num).style = "transform: translate(150%); height: 0";
+        document.querySelector("#sub-menu-"+num).style = "transform: translate(150%); ";
         document.querySelector("#left-icon-"+num).style= "padding-left: 3rem; display: inline-block; ";
         document.querySelector("#down-icon-"+num).style.display= "none";        
     }
