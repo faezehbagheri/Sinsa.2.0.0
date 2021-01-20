@@ -4899,9 +4899,9 @@ body-model-widget .body-model-popover {
 .tab-ofoghi__dropdown {
   margin: 1rem;
   width: 95%; }
-  .tab-ofoghi__dropdown:last-of-type h3 {
+  .tab-ofoghi__dropdown:last-of-type h2 {
     border-bottom: none; }
-  .tab-ofoghi__dropdown h3 {
+  .tab-ofoghi__dropdown h2 {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-primary);
@@ -4911,13 +4911,34 @@ body-model-widget .body-model-popover {
     border-bottom: 2px solid var(--color-primary);
     transition: width .2s ease, font-size 1s ease; }
     @media only screen and (max-width: 51em) {
-      .tab-ofoghi__dropdown h3 {
+      .tab-ofoghi__dropdown h2 {
         font-size: 2.3rem;
         height: 10rem; } }
     @media only screen and (max-width: 30em) {
-      .tab-ofoghi__dropdown h3 {
+      .tab-ofoghi__dropdown h2 {
         font-size: 2.4rem;
         height: 12rem; } }
+  .tab-ofoghi__dropdown h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    width: 40%;
+    padding: 1rem 0;
+    color: var(--color-gray);
+    border-bottom: 2px solid #2461a4; }
+  .tab-ofoghi__dropdown h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 30%;
+    padding: 1rem 0;
+    color: var(--color-gray);
+    border-bottom: 2px solid var(--color-primary); }
+  .tab-ofoghi__dropdown h5 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    width: 20%;
+    padding: 1rem 0;
+    color: var(--color-gray);
+    border-bottom: 2px solid var(--color-primary-light); }
   .tab-ofoghi__dropdown i {
     font-size: 1.4rem;
     color: var(--color-pink);
@@ -5145,16 +5166,16 @@ body-model-widget .body-model-popover {
         font-size: 2.5rem;
         line-height: 6rem; } }
 
-.active-tab h3 {
+.active-tab h2 {
   width: 55%;
   color: var(--color-gray);
   font-size: 2.2rem;
   border-bottom: 2px solid var(--color-primary) !important; }
   @media only screen and (max-width: 51em) {
-    .active-tab h3 {
+    .active-tab h2 {
       font-size: 2.5rem; } }
   @media only screen and (max-width: 30em) {
-    .active-tab h3 {
+    .active-tab h2 {
       font-size: 2.7rem; } }
 
 .active-tab i.plus {

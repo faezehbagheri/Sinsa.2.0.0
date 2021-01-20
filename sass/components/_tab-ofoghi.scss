@@ -42,12 +42,12 @@
         width: 95%;
         
         &:last-of-type{
-            h3{
+            h2{
                 border-bottom: none;
             }
         }
     
-        h3{
+        h2{
             font-size: 2rem;
             font-weight: 500;
             color: var(--color-primary);
@@ -71,6 +71,33 @@
             // @include respond(iphone){
             //     height: 8rem;
             // }
+        }
+
+        h3{
+            font-size: 2.1rem;
+            font-weight: 500;
+            width: 40%;
+            padding: 1rem 0;
+            color: var(--color-gray);
+            border-bottom: 2px solid darken($color: #5494DA, $amount: 20%);
+        }
+
+        h4{
+            font-size: 2rem;
+            font-weight: 500;
+            width: 30%;
+            padding: 1rem 0;
+            color: var(--color-gray);
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        h5{
+            font-size: 1.9rem;
+            font-weight: 500;
+            width: 20%;
+            padding: 1rem 0;
+            color: var(--color-gray);
+            border-bottom: 2px solid var(--color-primary-light);
         }
 
         i{
@@ -345,7 +372,7 @@
 }
 .active-tab{
 
-    h3{
+    h2{
         width: 55%;
         color: var(--color-gray);
         font-size: 2.2rem;
