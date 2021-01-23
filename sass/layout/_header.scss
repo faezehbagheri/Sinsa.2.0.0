@@ -31,16 +31,22 @@
     &__label{
         font-size: 5rem;
         color: #ffffff;
-        margin-top: 15rem;
-        margin-bottom: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         text-align: center;
         
-        @include respond(phone-port){margin-top: 8rem;}
+        @include respond(phone-port){
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
         
         @include respond(iphone-port){font-size: 4rem;}
     
-        @include respond(phone){margin-top: 10rem !important; color: #93c2f5;}
-        @include respond(iphone){margin-top: 15rem;}
+        @include respond(phone){
+            margin-top: 10rem !important; 
+            color: #93c2f5;
+            margin-bottom: 5rem;
+        }
     }   
 
 }

@@ -5578,7 +5578,6 @@ label {
   display: block;
   width: 100%;
   cursor: pointer;
-  opacity: .5;
   transition: all .1s ease; }
   label i {
     font-size: 2.8rem; }
@@ -5716,22 +5715,21 @@ input[type="radio"]:checked ~ label {
   .header__label {
     font-size: 5rem;
     color: #ffffff;
-    margin-top: 15rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     text-align: center; }
     @media only screen and (max-width: 51em) {
       .header__label {
-        margin-top: 8rem; } }
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
     @media only screen and (max-width: 51em) and (-webkit-min-device-pixel-ratio: 2) {
       .header__label {
         font-size: 4rem; } }
     @media only screen and (max-width: 30em) {
       .header__label {
         margin-top: 10rem !important;
-        color: #93c2f5; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .header__label {
-        margin-top: 15rem; } }
+        color: #93c2f5;
+        margin-bottom: 5rem; } }
 
 .illness-main {
   height: auto;
@@ -5754,6 +5752,41 @@ input[type="radio"]:checked ~ label {
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }
+  .illness-main #button {
+    display: inline-block;
+    background-color: var(--color-primary-light);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,  opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000; }
+    @media only screen and (max-width: 30em) {
+      .illness-main #button {
+        bottom: 12rem; } }
+  .illness-main #button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white; }
+    @media only screen and (max-width: 30em) {
+      .illness-main #button i {
+        font-size: 3rem; } }
+  .illness-main #button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary); }
+  .illness-main #button:active {
+    background-color: #555; }
+  .illness-main #button.show {
+    opacity: 1;
+    visibility: visible; }
 
 .main {
   height: auto;
