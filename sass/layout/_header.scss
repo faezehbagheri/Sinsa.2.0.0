@@ -10,12 +10,10 @@
         top:60px;
         z-index: -10;
     }
-    min-height: 90vh;
+    min-height: 92vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include respond(big-desktop){min-height: 100vh;}
     @include respond(phone-port ){min-height: 130vh;}
     
     @include respond(phone){

@@ -1754,6 +1754,62 @@ input::placeholder {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out; }
 
+.form {
+  padding: 3rem; }
+  .form input {
+    height: 4.5rem;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .form input {
+        height: 7rem;
+        font-size: 1.8rem; } }
+  .form input[type='file'] {
+    display: none; }
+  .form label {
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 30em) {
+      .form label {
+        font-size: 2rem;
+        margin-top: 2rem; } }
+  .form textarea {
+    border-radius: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .form textarea {
+        font-size: 1.8rem; } }
+  .form i {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: var(--color-primary); }
+    @media only screen and (max-width: 30em) {
+      .form i {
+        font-size: 2.1rem; } }
+  .form .inputfile {
+    border: 1px solid #ced4da;
+    width: 100%;
+    font-size: 1.6rem; }
+  .form button {
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    background-color: var(--color-primary);
+    color: white; }
+    @media only screen and (max-width: 30em) {
+      .form button {
+        font-size: 2.2rem;
+        padding: 1.5rem 7rem;
+        margin: 2.8rem; } }
+  .form__file-label {
+    font-size: 1rem;
+    cursor: pointer;
+    outline: 0;
+    height: 4.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .form__file-label {
+        height: 7rem; } }
+
 .flex {
   display: flex; }
 
@@ -5692,7 +5748,7 @@ input[type="radio"]:checked ~ label {
     z-index: 99999; }
 
 .header {
-  min-height: 90vh;
+  min-height: 92vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -5700,9 +5756,6 @@ input[type="radio"]:checked ~ label {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png);
     top: 60px;
     z-index: -10; }
-  @media only screen and (min-width: 112.5em) {
-    .header {
-      min-height: 100vh; } }
   @media only screen and (max-width: 51em) {
     .header {
       min-height: 130vh; } }

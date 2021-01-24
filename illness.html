@@ -764,7 +764,8 @@
                     <a data-trigger="tab02" class="tab-amodi__label ">بیماری های مرتبط</a>
                     <a data-trigger="tab03" class="tab-amodi__label ">داروها</a>
                     <a data-trigger="tab04" class="tab-amodi__label ">تجهیزات</a>
-                    <a data-trigger="tab05" class="tab-amodi__label tab-active">علائم بیماری</a>
+                    <a data-trigger="tab05" class="tab-amodi__label ">علائم بیماری</a>
+                    <a data-trigger="tab06" class="tab-amodi__label tab-active">سفارش دارو</a>
                     <!-- <div class="tab-amodi__prev-control"><i class="fas fa-angle-left"></i></div>
                     <div class="tab-amodi__next-control"><i class="fas fa-angle-right"></i></div> -->
                 </nav>
@@ -776,6 +777,7 @@
                         <a data-trigger="tab03" class="flex align-center justi-center col-4">داروها</a>
                         <a data-trigger="tab04" class="flex align-center justi-center col-4">تجهیزات یاب</a>
                         <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a>
+                        <a data-trigger="tab06" class="flex align-center justi-center col-4">سفارش دارو</a>
                         <!-- <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a> -->
                     </nav>
                 </div>
@@ -1396,6 +1398,44 @@
                                         سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد     
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div id="tab06" class="tab-amodi__tab">
+                    <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
+                        <div class="tab-ofoghi__tabs-list flex column align-center">
+                            <div class="px-0 col-xl-11">
+                                <form class="form d-flex flex-wrap justify-content-end">
+                                    <div class="form-group col-md-6 col-lg-12 col-xl-6">
+                                        <label for="name"><i class="fas fa-user"></i>نام</label>
+                                        <input type="text" class="form-control form-control-lg" id="name" placeholder="نام خود را وارد کنید ">
+                                    </div>
+                                    <div class="form-group col-md-6 col-lg-12 col-xl-6">
+                                        <label for="family"><i class="fas fa-users"></i>نام خانوادگی</label>
+                                        <input type="text" class="form-control form-control-lg" id="family" placeholder="نام خانوادگی خود را وارد کنید ">
+                                    </div>
+                                    <div class="form-group col-md-6 col-lg-12 col-xl-6">
+                                        <label for="phone"><i class="fas fa-phone"></i>شماره تلفن</label>
+                                        <input type="text" class="form-control form-control-lg" id="phone" placeholder="شماره تلفن خود را وارد کنید ">
+                                    </div>
+                                    <div class="form-group col-md-6 col-lg-12 col-xl-6">
+                                        <label class="flex" for="file"><i class="fas fa-camera"></i>عکس نسخه را بارگذاری کنید</label>
+                                        <div>
+                                            <label for='input-file' class="form__file-label"></label>
+                                            <input id='input-file' type='file' />
+                                        </div>
+                                    </div>
+                                    <div class="form-group  col-xl-12">
+                                        <label for="address"><i class="fas fa-map-marker-alt"></i>آدرس</label>
+                                        <input type="text" class="form-control form-control-lg" id="address" placeholder="آدرس خود را وارد کنید ">
+                                    </div>
+                                    <div class="form-group  col-xl-12">
+                                        <label for="description"><i class="fas fa-pen-alt"></i>توضیحات</label>
+                                        <textarea rows="5" class="form-control form-control-lg" id="description" placeholder="توضیحات لازم را وارد کنید "></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">سفارش</button>
+                                </form>
                             </div>
                         </div>
                     </div>  
