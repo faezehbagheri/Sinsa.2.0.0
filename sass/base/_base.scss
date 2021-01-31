@@ -58,6 +58,13 @@ input{
     direction: rtl;
 }
 
+#order_msg{
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+
 
 .red{color:var(--red)  !important;}
 .blue{color:var(--blue)  !important;}

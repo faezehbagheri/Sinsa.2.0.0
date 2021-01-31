@@ -47,6 +47,12 @@ button {
 input {
   direction: rtl; }
 
+#order_msg {
+  display: block;
+  font-size: 25px;
+  padding: 10px;
+  color: white; }
+
 .red {
   color: var(--red) !important; }
 
@@ -261,28 +267,29 @@ input::placeholder {
       margin-top: 2rem; } }
   .card__main {
     width: 100%;
-    height: 50rem;
+    height: auto;
     background-color: var(--color-primary-light);
     box-shadow: -1px 0 5px var(--color-gray-light);
     position: relative;
     border-radius: 2rem;
     margin-bottom: 5rem; }
-    @media only screen and (max-width: 30em) {
-      .card__main {
-        height: 70vh; } }
   .card__container {
     width: 94%;
-    height: 94%;
+    max-height: 71rem;
     background-color: #fff;
     border-radius: 2rem;
     box-shadow: 0 0 6px var(--color-gray-light);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden; }
+    margin: 2.5rem auto;
+    overflow-y: auto; }
+    .card__container::-webkit-scrollbar-track {
+      border-radius: 10px;
+      position: absolute; }
+    .card__container::-webkit-scrollbar {
+      width: 6px; }
+    .card__container::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #cccccc; }
   .card__list {
-    overflow-y: scroll;
     height: 100%; }
     .card__list::-webkit-scrollbar-track {
       border-radius: 10px;
@@ -376,7 +383,7 @@ input::placeholder {
         .card li:hover p {
           font-size: 2.5rem; } }
     .card__item:last-of-type, .card li:last-of-type {
-      border-bottom: none; }
+      border-bottom: none !important; }
     .card__item i, .card li i {
       color: var(--color-primary);
       font-size: 1.8rem;
@@ -4338,6 +4345,9 @@ body-model-widget .body-model-popover {
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: var(--color-primary); }
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
+  width: 100% !important; }
 
 .service {
   height: 50vh;
