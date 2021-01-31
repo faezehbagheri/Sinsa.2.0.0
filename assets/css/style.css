@@ -1770,8 +1770,6 @@ input::placeholder {
       .form input {
         height: 7rem;
         font-size: 1.8rem; } }
-  .form input[type='file'] {
-    display: none; }
   .form label {
     font-size: 1.6rem; }
     @media only screen and (max-width: 30em) {
@@ -1809,6 +1807,7 @@ input::placeholder {
   .form__file-label {
     font-size: 1rem;
     cursor: pointer;
+    width: 100%;
     outline: 0;
     height: 4.5rem;
     border: 1px solid #ced4da;
@@ -1816,6 +1815,42 @@ input::placeholder {
     @media only screen and (max-width: 30em) {
       .form__file-label {
         height: 7rem; } }
+  .form .custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px; }
+  .form .custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px; }
+    .form .custom-file-upload label {
+      display: block;
+      margin-bottom: 5px; }
+  .form .file-upload-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%; }
+  .form .file-upload-input {
+    text-align: left;
+    flex: 1;
+    border-radius: 0 1rem 1rem 0;
+    font-size: 16px;
+    border: 1px solid #ced4da !important;
+    float: left;
+    /* IE 9 Fix */ }
+    .form .file-upload-input:hover, .form .file-upload-input:focus {
+      outline: none; }
+  .form .file-upload-button {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin: 0 !important;
+    width: 5rem !important;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 1rem 0 0 1rem; }
 
 .flex {
   display: flex; }
@@ -5624,29 +5659,25 @@ body-model-widget .body-model-popover {
 .form__instruction {
   font-size: 22px; }
 
-.form__answer {
+.form__answer label {
   display: inline-block;
   box-sizing: border-box;
+  width: 100%;
   height: 5rem;
   border-radius: 1.2rem;
   box-shadow: 0 0 5px var(--color-gray);
   margin: 20px 1% 20px 0;
   vertical-align: top;
-  font-size: 1.8rem;
-  text-align: center; }
-  @media only screen and (max-width: 30em) {
-    .form__answer {
-      font-size: 2.3rem;
-      height: 7rem; } }
-
-label {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
+  font-size: 1.8rem !important;
+  text-align: center;
   cursor: pointer;
   transition: all .1s ease; }
-  label i {
-    font-size: 2.8rem; }
+  @media only screen and (max-width: 30em) {
+    .form__answer label {
+      font-size: 2.3rem;
+      height: 7rem; } }
+  .form__answer label i {
+    font-size: 2.8rem !important; }
 
 input[type="radio"] {
   opacity: 0;
@@ -5658,8 +5689,11 @@ input[type="radio"]:active ~ label {
   opacity: 1; }
 
 input[type="radio"]:checked ~ label {
-  opacity: 1;
-  color: var(--color-primary); }
+  color: white;
+  background-color: var(--color-primary);
+  opacity: 1; }
+  input[type="radio"]:checked ~ label i {
+    color: white !important; }
 
 .footer {
   height: 50rem;
