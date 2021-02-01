@@ -495,7 +495,7 @@ $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
     })
     $('#multiple').select2({
         // matcher: oldMatcher(matchStart),
-        maximumSelectionLength: 3,
+        maximumSelectionLength: 10,
         dir: "rtl",
         // placeholder: 'داروی خود را وارد کنید'
       });

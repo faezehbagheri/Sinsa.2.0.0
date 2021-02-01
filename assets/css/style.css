@@ -4381,8 +4381,13 @@ body-model-widget .body-model-popover {
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: var(--color-primary); }
 
-.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
-  width: 100% !important; }
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  overflow-y: auto !important;
+  height: 5rem;
+  padding-top: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+      height: 7rem; } }
 
 .service {
   height: 50vh;
@@ -6384,7 +6389,7 @@ input[type="radio"]:checked ~ label {
   box-shadow: 0 5px 5px rgba(var(--color-gray), 0.5);
   background-color: white !important;
   border-bottom: 2px solid var(--color-gray-light);
-  z-index: 99; }
+  z-index: 999; }
   @media only screen and (max-width: 30em) {
     .navigation {
       display: none; } }

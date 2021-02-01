@@ -126,4 +126,14 @@
     background-color: var(--color-primary);
 }
 
-.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{width:100% !important;}
+.select2-container .select2-selection--multiple .select2-selection__rendered{
+    overflow-y: auto !important;
+    height: 5rem;
+    padding-top: 1rem;
+
+    @include respond(phone){
+        height: 7rem;
+    }
+}
+
+// .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{width:100% !important;}
