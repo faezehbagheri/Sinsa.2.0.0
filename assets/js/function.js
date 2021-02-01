@@ -31,6 +31,9 @@
       $file.attr('tabIndex', -1);
       $button.attr('tabIndex', -1);
 
+      $input.click(function () {
+        $file.focus().click(); // Open dialog
+      });
       $button.click(function () {
         $file.focus().click(); // Open dialog
       });
