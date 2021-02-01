@@ -20,8 +20,8 @@
       // Hide by shifting to the left so we
       // can still trigger events
       $file.css({
-        position: 'absolute',
-        left: '-9999px'
+        // position: 'absolute',
+        // left: '-9999px'
       });
 
       $wrap.insertAfter( $file )

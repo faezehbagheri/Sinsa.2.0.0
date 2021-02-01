@@ -4197,7 +4197,8 @@ body-model-widget .body-model-popover {
     .search__tadakholat:not(:last-of-type) {
       border-left: 1px solid var(--color-primary); }
   .search__info-input {
-    border-left: 1px solid var(--color-gray); }
+    border-left: 1px solid var(--color-gray);
+    padding-left: 0px; }
     .search__info-input:not(:last-of-type) {
       border-bottom: 1px solid var(--color-gray); }
     .search__info-input input {
@@ -4225,6 +4226,17 @@ body-model-widget .body-model-popover {
       .search .inputfile + label {
         font-size: 2.2rem;
         height: 5rem; } }
+  .search .file-upload-input {
+    border: none !important;
+    outline: none; }
+  .search .file-upload-wrapper {
+    flex: 1; }
+  .search .file-upload-button {
+    width: 5rem;
+    font-size: 3rem !important; }
+    @media only screen and (max-width: 30em) {
+      .search .file-upload-button {
+        width: 8rem; } }
   .search__tadakhol-input {
     width: 90%;
     text-align: right;
