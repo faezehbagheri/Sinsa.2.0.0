@@ -70,3 +70,17 @@ input{
 .yellow{
     color: yellow !important;
 }
+
+.alert{
+    font-size: 2rem;
+    width: 60rem;
+    margin: 1rem;
+
+    @include respond(phone){font-size: 2.8rem;}
+}
+
+a.close{
+    font-size: 3rem;
+
+    @include respond(phone){font-size: 4.5rem;}
+}

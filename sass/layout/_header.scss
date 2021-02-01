@@ -14,7 +14,10 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    @include respond(phone-port ){min-height: 130vh;}
+    @include respond(phone-port ){
+        margin-top: 3rem;
+        min-height: 130vh;
+    }
     
     @include respond(phone){
         min-height: 125rem;
@@ -41,7 +44,7 @@
         @include respond(iphone-port){font-size: 4rem;}
     
         @include respond(phone){
-            margin-top: 10rem !important; 
+            margin-top: 5rem !important; 
             color: #93c2f5;
             margin-bottom: 5rem;
         }

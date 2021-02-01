@@ -148,6 +148,20 @@ input::placeholder {
 .yellow {
   color: yellow !important; }
 
+.alert {
+  font-size: 2rem;
+  width: 60rem;
+  margin: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .alert {
+      font-size: 2.8rem; } }
+
+a.close {
+  font-size: 3rem; }
+  @media only screen and (max-width: 30em) {
+    a.close {
+      font-size: 4.5rem; } }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -5825,6 +5839,7 @@ input[type="radio"]:checked ~ label {
     z-index: -10; }
   @media only screen and (max-width: 51em) {
     .header {
+      margin-top: 3rem;
       min-height: 130vh; } }
   @media only screen and (max-width: 30em) {
     .header {
@@ -5847,7 +5862,7 @@ input[type="radio"]:checked ~ label {
         font-size: 4rem; } }
     @media only screen and (max-width: 30em) {
       .header__label {
-        margin-top: 10rem !important;
+        margin-top: 5rem !important;
         color: #93c2f5;
         margin-bottom: 5rem; } }
 
