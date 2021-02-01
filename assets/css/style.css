@@ -1765,11 +1765,12 @@ input::placeholder {
   padding: 3rem; }
   .form input {
     height: 4.5rem;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    font-size: 1.6rem; }
     @media only screen and (max-width: 30em) {
       .form input {
         height: 7rem;
-        font-size: 1.8rem; } }
+        font-size: 2.2rem; } }
   .form label {
     font-size: 1.6rem; }
     @media only screen and (max-width: 30em) {
@@ -1832,10 +1833,9 @@ input::placeholder {
     margin-bottom: 5px;
     width: 100%; }
   .form .file-upload-input {
-    text-align: left;
+    padding-right: 1rem;
     flex: 1;
     border-radius: 0 1rem 1rem 0;
-    font-size: 16px;
     border: 1px solid #ced4da !important;
     float: left;
     /* IE 9 Fix */ }
@@ -4228,7 +4228,13 @@ body-model-widget .body-model-popover {
         height: 5rem; } }
   .search .file-upload-input {
     border: none !important;
-    outline: none; }
+    outline: none;
+    font-size: 1.4rem;
+    text-align: right !important;
+    margin: auto; }
+    @media only screen and (max-width: 30em) {
+      .search .file-upload-input {
+        font-size: 2.2rem !important; } }
   .search .file-upload-wrapper {
     flex: 1; }
   .search .file-upload-button {

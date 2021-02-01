@@ -5,8 +5,9 @@
     input{
         height: 4.5rem;
         border-radius: 1rem;
+        font-size: 1.6rem;
 
-        @include respond(phone){height: 7rem; font-size: 1.8rem;}
+        @include respond(phone){height: 7rem; font-size: 2.2rem;}
     }
 
     label{
@@ -84,10 +85,10 @@
         width: 100%;
     }
     .file-upload-input {
-        text-align: left;
+        padding-right: 1rem;
         flex: 1;
         border-radius: 0 1rem 1rem 0;
-        font-size: 16px;
+        // font-size: 16px;
         border: 1px solid #ced4da !important;
         float: left; /* IE 9 Fix */
         &:hover, &:focus { 

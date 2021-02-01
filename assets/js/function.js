@@ -11,7 +11,7 @@
 
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
           $wrap = $('<div class="file-upload-wrapper d-flex">'),
-          $input = $('<input type="text" class="file-upload-input" />'),
+          $input = $('<input type="text" class="file-upload-input" placeholder="عکس نسخه خود را بارگذاری کنید"/>'),
           // Button that will be used in non-IE browsers
           $button = $('<button type="button" class="file-upload-button">+</button>'),
           // Hack for IE

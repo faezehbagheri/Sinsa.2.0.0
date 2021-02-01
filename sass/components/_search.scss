@@ -420,6 +420,10 @@
     .file-upload-input{
         border: none !important;
         outline: none;
+        font-size: 1.4rem;
+        text-align: right !important;
+        margin: auto;
+        @include respond(phone){font-size: 2.2rem !important;}
     }
 
     .file-upload-wrapper{
