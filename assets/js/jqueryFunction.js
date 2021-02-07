@@ -62,7 +62,7 @@ $(document).ready(function () {
     var activeTab = $(".o-tabs").find('a.tab-active').data('trigger');
     $('#' + activeTab).show();
 
-    $('.o-tabs>a').on('click', function () {
+    $('.o-tabs>a').click(function(){
         var tabId = $(this).data('trigger');
         $('#' + tabId).show();
         $('.tab-amodi__tab:not(#' + tabId + ')').hide();
@@ -71,6 +71,16 @@ $(document).ready(function () {
         $(this).addClass('btn-active');
         $(this).siblings('a').removeClass('btn-active');
     });
+
+    // $('.o-tabs>a').on('click', function () {
+    //     var tabId = $(this).data('trigger');
+    //     $('#' + tabId).show();
+    //     $('.tab-amodi__tab:not(#' + tabId + ')').hide();
+    //     $('.owl-item>a').removeClass('tab-active');
+    //     $(this).addClass('tab-active');
+    //     $(this).addClass('btn-active');
+    //     $(this).siblings('a').removeClass('btn-active');
+    // });
 
     $('.tab-amodi__prev-control').on('click', function () {
         var tabslen = $('.tabs>a').length - 1;

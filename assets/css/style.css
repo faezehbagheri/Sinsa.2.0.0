@@ -19,7 +19,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   direction: rtl;
-  background-color: var(--color-background); }
+  background-color: var(--color-background);
+  text-align: center; }
 
 a {
   text-decoration: none !important; }
@@ -1103,17 +1104,9 @@ a.close {
   @media only screen and (max-width: 30em) {
     .doctors {
       flex-direction: column !important; } }
-  .doctors__main {
-    width: 60%; }
-    @media only screen and (max-width: 30em) {
-      .doctors__main {
-        width: 100%; } }
-    @media only screen and (max-width: 51em) {
-      .doctors__main {
-        width: 81%; } }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .doctors__main {
-        padding-bottom: 10rem; } }
+  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+    .doctors__main {
+      padding-bottom: 10rem; } }
   .doctors__filter-header {
     height: 8rem;
     padding-bottom: 1.5rem;
@@ -3170,7 +3163,6 @@ body-model-widget .body-model-popover {
 
 .personal-card__main {
   height: 30rem;
-  width: 25rem;
   background-color: #ffffff;
   border-radius: 3rem;
   margin-top: 17rem;
@@ -3178,13 +3170,11 @@ body-model-widget .body-model-popover {
   box-shadow: 0 0 1rem #d9d9d9; }
   @media only screen and (max-width: 51em) {
     .personal-card__main {
-      width: 45%;
       height: 35rem;
       justify-content: center;
       margin-top: 18rem !important; } }
   @media only screen and (max-width: 30em) {
     .personal-card__main {
-      width: 95%;
       height: 55rem;
       align-items: flex-end;
       box-shadow: 0 0 5px #cccccc; } }
@@ -5003,6 +4993,10 @@ body-model-widget .body-model-popover {
         .tab-amodi .owl-next span {
           font-size: 7rem; } }
 
+@media only screen and (max-width: 30em) {
+  .tab-amodi h1 {
+    margin-top: 10px; } }
+
 .tab-ofoghi__tab {
   width: 100%;
   background-color: #fff;
@@ -5574,18 +5568,22 @@ body-model-widget .body-model-popover {
           font-size: 2.5rem; } }
   .visit__nxt-btn {
     background-color: var(--color-primary-light);
-    color: white;
     box-shadow: 1px 2px 5px var(--color-primary-light); }
     .visit__nxt-btn i {
       font-size: 2.5rem;
       margin-right: 1rem; }
+    .visit__nxt-btn a, .visit__nxt-btn a:link, .visit__nxt-btn a:visited {
+      color: white !important;
+      width: 100% !important; }
   .visit__prev-btn {
     background-color: var(--color-gray-lighter);
-    color: var(--color-gray);
     box-shadow: 1px 2px 5px var(--color-gray-light); }
     .visit__prev-btn i {
       font-size: 2.5rem;
       margin-left: 1rem; }
+    .visit__prev-btn a, .visit__prev-btn a:link, .visit__prev-btn a:visited {
+      color: var(--color-gray) !important;
+      width: 100% !important; }
   .visit__img {
     color: var(--color-primary);
     height: 20rem;

@@ -1,4 +1,8 @@
-
+function NextPrevBtn(int){
+  document.querySelector("#link-"+int).classList.add("tab-active");
+  document.querySelector(".btn-active").classList.remove("btn-active");
+  document.querySelector("#link-btn-"+int).classList.add("btn-active");
+}
 ;(function($) {
 
   // Browser supports HTML5 multiple file?

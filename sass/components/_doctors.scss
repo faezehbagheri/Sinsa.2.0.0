@@ -13,13 +13,13 @@
 
     
     &__main{
-        width: 60%;
+        // width: 60%;
 
-        @include respond(phone){
-            width: 100%;
-        }
+        // @include respond(phone){
+        //     width: 100%;
+        // }
 
-        @include respond(phone-port){width: 81%;}
+        // @include respond(phone-port){width: 81%;}
 
         @include respond(iphone){padding-bottom: 10rem;}
     }

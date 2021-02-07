@@ -874,18 +874,18 @@
             <!-- تب های افقی -->
             <div class="tab-amodi__container col-12">
                 <nav class="tab-amodi__multipleTabs flex flex-row o-tabs col-12 owl-carousel " id="o-tabs">
-                    <a data-trigger="tab01" class="tab-amodi__label">مشخصات</a>
-                    <a data-trigger="tab02" class="tab-amodi__label tab-active">سوالات</a>
-                    <a data-trigger="tab03" class="tab-amodi__label ">بررسی تداخلات دارویی</a>
-                    <a data-trigger="tab04" class="tab-amodi__label ">نتیجه</a>
+                    <a id="link-1" data-trigger="tab01" class="tab-amodi__label">مشخصات</a>
+                    <a id="link-2" data-trigger="tab02" class="tab-amodi__label tab-active">سوالات</a>
+                    <a id="link-3" data-trigger="tab03" class="tab-amodi__label ">بررسی تداخلات دارویی</a>
+                    <a id="link-4" data-trigger="tab04" class="tab-amodi__label ">نتیجه</a>
                 </nav>
                 <!-- Buttons -->
                 <div class="tab-amodi__buttons col-12 mb-5">
                     <nav class="flex justi-start wrap o-tabs" >
-                        <a data-trigger="tab01" class="flex align-center justi-center col-4">مشخصات</a>
-                        <a data-trigger="tab02" class="flex align-center justi-center col-4">سوالات</a>
-                        <a data-trigger="tab03" class="flex align-center justi-center col-4 btn-active">علائم</a>
-                        <a data-trigger="tab04" class="flex align-center justi-center col-4">نتیجه</a>
+                        <a id="link-btn-1" data-trigger="tab01" class="flex align-center justi-center col-4">مشخصات</a>
+                        <a id="link-btn-2" data-trigger="tab02" class="flex align-center justi-center col-4">سوالات</a>
+                        <a id="link-btn-3" data-trigger="tab03" class="flex align-center justi-center col-4 btn-active">علائم</a>
+                        <a id="link-btn-4" data-trigger="tab04" class="flex align-center justi-center col-4">نتیجه</a>
                         <!-- <a data-trigger="tab05" class="flex align-center justi-center col-4">علائم بیماری</a> -->
                     </nav>
                 </div>
@@ -924,8 +924,7 @@
                                 </div>
                             </div>
                             <div class="visit_buttons flex  align-center justi-between">
-                                <button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
-                                <button class="visit__nxt-btn flex align-center justi-center">بعدی<i class="fas fa-angle-left"></i></button>
+                                <button onclick="NextPrevBtn('2')" class="visit__nxt-btn flex align-center o-tabs justi-center"><a data-trigger="tab02">بعدی<i class="fas fa-angle-left"></i></a></button>
                             </div>
                         </div>
                     </div> 
@@ -1004,8 +1003,8 @@
                                 </form>
                             </div>
                             <div class="visit_buttons flex  align-center justi-between">
-                                <button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
-                                <button class="visit__nxt-btn flex align-center justi-center">بعدی<i class="fas fa-angle-left"></i></button>
+                                <button onclick="NextPrevBtn('1')" class="visit__prev-btn flex align-center justi-center o-tabs"><a data-trigger="tab01"><i class="fas fa-angle-right"></i>بازگشت</a></button>
+                                <button onclick="NextPrevBtn('3')" class="visit__nxt-btn flex align-center o-tabs justi-center"><a data-trigger="tab03">بعدی<i class="fas fa-angle-left"></i></a></button>
                             </div>
                         </div>
                     </div> 
@@ -1205,8 +1204,8 @@
                                 </div>
                             </div>
                             <div class="visit_buttons flex  align-center justi-between">
-                                <button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
-                                <button class="visit__nxt-btn flex align-center justi-center">جزئیات بیشتر<i class="fas fa-angle-left"></i></button>
+                                <button onclick="NextPrevBtn('2')" class="visit__prev-btn flex align-center justi-center o-tabs"><a data-trigger="tab02"><i class="fas fa-angle-right"></i>بازگشت</a></button>
+                                <button onclick="NextPrevBtn('4')" class="visit__nxt-btn flex align-center o-tabs justi-center"><a data-trigger="tab04">جزئیات بیشتر<i class="fas fa-angle-left"></i></a></button>
                             </div>
                         </div>
                     </div> 
@@ -1251,6 +1250,9 @@
                                     <a href="#">واریس</a>
                                     <i class="fas fa-angle-right"></i>
                                 </div>  
+                            </div>
+                            <div class="visit_buttons flex  align-center justi-between">
+                                <button onclick="NextPrevBtn('3')" class="visit__prev-btn flex align-center justi-center o-tabs"><a data-trigger="tab03"><i class="fas fa-angle-right"></i>بازگشت</a></button>
                             </div>
                         </div>
                     </div> 
@@ -1426,66 +1428,123 @@
  ############################## 6-11-1399 #############################
  باقری
  
- کد قبلی:
- قسمت مشخصات:
- <p class="form__answer d-flex align-items-center col-5 px-0"> 
-    <input type="radio" name="match" id="match_2" value="mard"> 
-    <label for="match_2">
-        <i class="fas fa-male"></i>
-        مرد
-    </label> 
-</p> 
+
+کد قبلی:
+<nav class="tab-amodi__multipleTabs flex flex-row o-tabs col-12 owl-carousel " id="o-tabs">
+    <a data-trigger="tab01" class="tab-amodi__label">مشخصات</a>
+    <a data-trigger="tab02" class="tab-amodi__label tab-active">سوالات</a>
+    <a data-trigger="tab03" class="tab-amodi__label ">بررسی تداخلات دارویی</a>
+    <a data-trigger="tab04" class="tab-amodi__label ">نتیجه</a>
+</nav>
 
  کد فعلی:
-<p class="form__answer col-5 px-0"> 
-    <input type="radio" name="match" id="match_2" value="mard"> 
-    <label for="match_2" class="d-flex align-items-center justify-content-center">
-        <i class="fas fa-male"></i>
-        مرد
-    </label> 
-</p> 
- -->
+ <nav class="tab-amodi__multipleTabs flex flex-row o-tabs col-12 owl-carousel " id="o-tabs">
+    <a id="link-1" data-trigger="tab01" class="tab-amodi__label">مشخصات</a>
+    <a id="link-2" data-trigger="tab02" class="tab-amodi__label tab-active">سوالات</a>
+    <a id="link-3" data-trigger="tab03" class="tab-amodi__label ">بررسی تداخلات دارویی</a>
+    <a id="link-4" data-trigger="tab04" class="tab-amodi__label ">نتیجه</a>
+</nav>
+ 
 
-<!-- 
- ############################## 6-11-1399 #############################
- باقری
+ 
+کد قبلی:
+<div class="tab-amodi__buttons col-12 mb-5">
+    <nav class="flex justi-start wrap o-tabs" >
+        <a data-trigger="tab01" class="flex align-center justi-center col-4">مشخصات</a>
+        <a data-trigger="tab02" class="flex align-center justi-center col-4">سوالات</a>
+        <a data-trigger="tab03" class="flex align-center justi-center col-4 btn-active">علائم</a>
+        <a data-trigger="tab04" class="flex align-center justi-center col-4">نتیجه</a>
+    </nav>
+</div>
+
+ کد فعلی:
+<div class="tab-amodi__buttons col-12 mb-5">
+    <nav class="flex justi-start wrap o-tabs" >
+        <a id="link-btn-1" data-trigger="tab01" class="flex align-center justi-center col-4">مشخصات</a>
+        <a id="link-btn-2" data-trigger="tab02" class="flex align-center justi-center col-4">سوالات</a>
+        <a id="link-btn-3" data-trigger="tab03" class="flex align-center justi-center col-4 btn-active">علائم</a>
+        <a id="link-btn-4" data-trigger="tab04" class="flex align-center justi-center col-4">نتیجه</a>
+    </nav>
+</div>
+
+
+کدقبلی:
+<button class="visit__prev-btn flex align-center justi-center"><i class="fas fa-undo"></i>بازگشت</button>
+<button class="visit__nxt-btn flex align-center justi-center">بعدی<i class="fas fa-angle-left"></i></button>
+
+
+کد فعلی:
+<button onclick="NextPrevBtn('1')" class="visit__prev-btn flex align-center justi-center o-tabs"><a data-trigger="tab01"><i class="fas fa-angle-right"></i>بازگشت</a></button>
+<button onclick="NextPrevBtn('3')" class="visit__nxt-btn flex align-center o-tabs justi-center"><a data-trigger="tab03">بعدی<i class="fas fa-angle-left"></i></a></button>
+
+ 
  
  کد قبلی:
- قسمت سوالات:
-<div class="col-12 col-sm-7 mt-5">
-    <h3 class="visit__header w-100">آیا شما اضافه وزن یا کاهش وزن دارید؟</h3>
-    <form class="d-flex justify-content-between col-12">
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
-            <input type="radio" name="match" id="bale_1" value="bale" checked> 
-            <label for="bale_1">بله</label> 
-        </p>                                                
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
-            <input type="radio" name="match" id="kheyr_1" value="kheyr"> 
-            <label for="kheyr_1">خیر</label> 
-        </p>                                                   
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3"> 
-            <input type="radio" name="match" id="nmidanm_1" value="nmidanm"> 
-            <label for="nmidanm_1">نمیدانم</label> 
-        </p>                                          
-    </form>
+<div class="personal-card flex  wrap justi-center col-12">
+ کد فعلی:
+<div class="personal-card flex  wrap justi-start col-12">
+
+  
+ کد قبلی:
+<div class="personal-card__main flex column justi-around align-center">
+    <div class="personal-card__section-1 flex column justi-center align-center w-100">
+        <div class="personal-card__photo-box">
+            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+        </div>
+        <h2 class="personal-card__name">سارا رحیمی</h2>
+        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+    </div>
+    <div class="personal-card__section-2 flex column justi-around align-center w-100">
+        <div class="personal-card__address flex column  align-center">                                
+            <span><i class="fas fa-map-marker-alt"></i>تهران</span>
+            <p>قلهک</p>
+        </div>
+        <div class="flex ">
+            <span class="personal-card__percentage">89%</span>
+            <span class="personal-card__comment">715 نظر</span>
+        </div>
+        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+        <div class="flex personal-card__star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="personal-card__link">دریافت مشاوره</a>
+    </div>
+</div>  
+ کد فعلی:
+<div class="col-12 col-sm-6 col-xl-4">
+    <div class="personal-card__main flex column justi-around align-center">
+        <div class="personal-card__section-1 flex column justi-center align-center w-100">
+            <div class="personal-card__photo-box">
+                <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+            </div>
+            <h2 class="personal-card__name">سارا رحیمی</h2>
+            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+        </div>
+        <div class="personal-card__section-2 flex column justi-around align-center w-100">
+            <div class="personal-card__address flex column  align-center">                                
+                <span><i class="fas fa-map-marker-alt"></i>تهران</span>
+                <p>قلهک</p>
+            </div>
+            <div class="flex ">
+                <span class="personal-card__percentage">89%</span>
+                <span class="personal-card__comment">715 نظر</span>
+            </div>
+            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+            <div class="flex personal-card__star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="personal-card__link">دریافت مشاوره</a>
+        </div>
+    </div>   
 </div>
 
- کد فعلی:
-<div class="col-12 col-sm-7 mt-5">
-    <h3 class="visit__header w-100">آیا شما اضافه وزن یا کاهش وزن دارید؟</h3>
-    <form class="d-flex justify-content-between col-12">
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3 px-0"> 
-            <input type="radio" name="match" id="bale_1" value="bale" checked> 
-            <label for="bale_1" class="d-flex align-items-center justify-content-center">بله</label> 
-        </p>                                                
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3 px-0"> 
-            <input type="radio" name="match" id="kheyr_1" value="kheyr"> 
-            <label for="kheyr_1" class="d-flex align-items-center justify-content-center">خیر</label> 
-        </p>                                                   
-        <p class="form__answer d-flex align-items-center col-4 col-sm-3 px-0"> 
-            <input type="radio" name="match" id="nmidanm_1" value="nmidanm"> 
-            <label for="nmidanm_1" class="d-flex align-items-center justify-content-center">نمیدانم</label> 
-        </p>                                          
-    </form>
-</div>
- --> 
+  
+ -->
