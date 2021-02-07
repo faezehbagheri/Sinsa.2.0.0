@@ -19,8 +19,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   direction: rtl;
-  background-color: var(--color-background);
-  text-align: center; }
+  background-color: var(--color-background); }
 
 a {
   text-decoration: none !important; }
@@ -4321,6 +4320,9 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .container .select2 {
         font-size: 2rem; } }
+  .container .select2-border {
+    border: 1px solid #ced4da !important;
+    border-radius: 1rem; }
   .container .select2-container .select2-selection--single {
     height: 90%;
     position: relative;
