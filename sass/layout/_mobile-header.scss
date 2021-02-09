@@ -9,7 +9,9 @@
     &__head{
         height: 10rem;
         width: 100%;
-        background-color: var(--color-primary);
+        // background-color: var(--color-primary);
+        box-shadow: 0 2px 5px var(--color-box-shadow);
+        background-color: white;
         position: fixed;
         top: 0;
         // left: 0;
@@ -27,8 +29,8 @@
     
     &__icon{
         font-size: 3rem;
-        color: #fff;
-        margin: 1.5rem;
+        color: var(--color-primary);
+        margin: 1.5rem 2.8rem;
     }
 
     &__text{

@@ -6,7 +6,7 @@
     z-index: 999;
 
     @include respond(phone){
-        display: none;
+        display: none !important;
     }
 
     li:hover{

@@ -18,11 +18,12 @@
 </head>
 <style>
     :root{
-        --color-primary : #5494DA;
+        --color-primary : #2062C4;
         --color-primary-light: #88D1F1;
 
         --color-background: #f5f5f5;
         --color-menu: #f2f2f2;
+        --color-box-shadow:rgb(194, 194, 194);
 
         --color-pink:#E43F6F;
         --color-yellow: #F4E36F;
@@ -54,11 +55,8 @@
                     data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <i class="fas fa-bars mobile-header__icon"></i>
                 </button>
-                <h2 class="heading-primary">بیماری ها</h2>
-                <div class="flex column align-center"  onclick="openMobileFilter()">
-                    <i class="fas fa-filter mobile-header__icon"></i>
-                    <span class="mobile-header__text">مشاهده فیلتر</span>
-                </div>
+                <h2 class="heading-primary">ســــین ســــا</h2>
+                <div class="flex column align-center col-2"  onclick="openMobileFilter()"></div>
             </div>    
         </nav>
     </div>
@@ -223,34 +221,35 @@
 
     <!-- Desktop Header -->
     <header class="header homepage d-flex flex-column align-items-center justify-content-start">
-        <div class="alert alert-success alert-dismissible"> 
+
+        <!-- <div class="alert alert-success alert-dismissible"> 
             اطلاعات شما با <strong>موفقیت</strong> ارسال شد
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        </div>
+        </div> -->
+
         <!-- <div class="alert alert-danger alert-dismissible"> 
             اطلاعات شما با <strong>موفقیت</strong> ارسال شد
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         </div> -->
         <div class=" flex column justi-center align-center col-12 col-lg-11 col-xl-8">
             <!-- Search Box -->
+            <img src="assets/img/sinsa-logo.png" class="header__logo">
             <label class="header__label">موتور جستجوی سلامت ایرانیان</label>
             <div class="tab-amodi mb-2 mb-sm-5 col-12 col-sm-11">
                 <div class="tab-amodi__container flex column align-center">
                     <nav class="tab-amodi__multipleTabs tabs flex align-end wrap showTab owl-carousel pr-5" id="tabs">
-                        <a data-trigger="content01" class="tab-amodi__label main-search ">جستجو</a>
+                        <a data-trigger="content01" class="tab-amodi__label main-search active">جستجو</a>
                         <a data-trigger="content02" class="tab-amodi__label main-search ">علائم</a>
                         <a data-trigger="content04" class="tab-amodi__label main-search ">مکان یاب</a>
                         <a data-trigger="content05" class="tab-amodi__label main-search ">تداخلات دارویی</a>
-                        <a data-trigger="content06" class="tab-amodi__label main-search active">سفارشات دارو</a>
+                        <a data-trigger="content06" class="tab-amodi__label main-search ">سفارشات دارو</a>
                     </nav>
                     <div class="search tab-amodi__tabcontent" id="content01">
                         <form class="search__form flex column justi-center align-start">
                             <div class="search__box flex justi-center align-center ">
-                                <div class="search__search-container flex flex-row-reverse flex-sm-row align-center justi-start col-12 col-sm-10">
-                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i
-                                            class="fas fa-search search__right-icon"></i></button>
-                                    <input type="text" class="search__input col-10 col-md-11"
-                                        placeholder="بیماری مورد نظر را جستجو کنید">
+                                <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+                                    <input type="text" class="search__input " placeholder=" جستجو کنید...">
                                 </div>
                                 <button type="submit"
                                     class="search__btn flex align-center justi-center col-sm-2">جستجو</button>
@@ -267,12 +266,10 @@
                     </div>
                     <div class="search tab-amodi__tabcontent" id="content02">
                         <form class="search__form flex column justi-center align-start">
-                            <div class="search__box flex justi-center align-center ">
-                                <div class="search__search-container flex flex-row-reverse flex-sm-row align-center justi-start col-12 col-sm-10">
-                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i
-                                            class="fas fa-search search__right-icon"></i></button>
-                                    <input type="text" class="search__input col-10 col-md-11"
-                                        placeholder="علائم مورد نظر را جستجو کنید">
+                            <div class="search__box flex justi-center align-center ">                               
+                                <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+                                    <input type="text" class="search__input " placeholder="علائم مورد نظر را جستجو کنید">
                                 </div>
                                 <button type="submit"
                                     class="search__btn flex align-center justi-center col-2">جستجو</button>
@@ -362,12 +359,9 @@
                         <form class="search__form flex column justi-center align-start">
                             <div class="search__box flex justi-center align-center ">
                                 <div class="search__search-container flex align-center justi-start col-12 col-sm-10">
-                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i
-                                            class="fas fa-map-marker-alt search__right-icon"></i></button>
-                                    <input type="text" class="search__input  col-10 col-md-11"
-                                        placeholder="بیماری مورد نظر را جستجو کنید">
-                                    <button class="search__advance flex align-center justi-around">جستجوی پیشرفته<img
-                                            src="/assets/img/advance-icon.png"></button>
+                                    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+                                    <input type="text" class="search__input " placeholder=" بیماری مورد نظر را جستجو کنید">
+                                    <button class="search__advance flex align-center justi-around">جستجوی پیشرفته<img src="/assets/img/advance-icon.png"></button>
                                 </div>
                                 <button type="submit"
                                     class="search__btn flex align-center justi-center col-2">جستجو</button>
@@ -468,10 +462,9 @@
                     <div class="search tab-amodi__tabcontent" id="content05">
                         <form class="search__form flex column justi-center align-start">
                             <div class="search__box flex justi-center align-center ">
-                                <div class="search__search-container flex flex-row-reverse flex-sm-row align-center justi-around col-12 col-sm-10">
-                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i
-                                            class="fas fa-search search__right-icon"></i></button>
-                                    <div class="container big-select">
+                                <div class="search__search-container flex  align-center justi-around col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+                                    <div class="container big-select px-0">
                                         <select class="select2  js-states form-control" id="multiple" name="drug[]"
                                             multiple="multiple" placeholder="selected">
                                             <option value="" disabled selected> نام داروی مورد نظر </option>
@@ -502,10 +495,9 @@
                     <div class="search tab-amodi__tabcontent" id="content06">
                         <form class="search__form flex column justi-center align-start">
                             <div class="search__box flex justi-center align-center ">
-                                <div class="search__search-container flex flex-row-reverse flex-sm-row align-center justi-around col-12 col-sm-10">
-                                    <button class="search__link-btn flex align-center justi-center col-2 col-md-1"><i
-                                            class="fas fa-search search__right-icon"></i></button>
-                                    <div class="container big-select">
+                                <div class="search__search-container flex  align-center justi-around col-12 col-sm-10">
+                                    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+                                    <div class="container big-select px-0">
                                         <select class="select2  js-states form-control" id="multiple-drug" name="drug[]"
                                             multiple="multiple" placeholder="selected">
                                             <option value="" disabled selected> نام داروی مورد نظر </option>
@@ -621,18 +613,26 @@
                         </div>
                     </div>
                     <!-- Buttons -->
-                    <div class="tab-amodi__buttons col-12">
+                    <div class="tab-amodi__buttons col-12 px-0">
                         <nav class="flex justi-around wrap btn-tabs">
-                            <a data-trigger="content01" class="flex align-center justi-center col-5"><i
-                                    class="fas fa-search"></i>جستجو</a>
-                            <a data-trigger="content02" class="flex align-center justi-center col-5"><i
-                                    class="fas fa-lungs-virus"></i>علائم</a>
-                            <a data-trigger="content05" class="flex align-center justi-center col-5"><i
-                                    class="fas fa-pills"></i>تداخلات</a>
-                            <a data-trigger="content04" class="flex align-center justi-center col-5"><i
-                                    class="fas fa-map-marker-alt"></i>مکان یاب</a>
-                            <a data-trigger="content06" class="flex align-center justi-center col-11 btn-active"><i
-                                    class="fas fa-pills"></i>سفارش دارو</a>
+                            <!-- <a data-trigger="content01" class="flex align-center justi-center col-5 "><i
+                                    class="fas fa-search"></i>جستجو</a> -->
+                            <a class="flex align-center justi-start col-5" data-trigger="content02">
+                                    <img src="assets/img/alaem-icon.png">
+                                    علائم
+                            </a>
+                            <a class="flex align-center justi-start col-5" data-trigger="content05">
+                                    <img src="assets/img/pills-icon.png">
+                                    تداخلات
+                            </a>
+                            <a class="flex align-center justi-start col-5" data-trigger="content04">
+                                    <img src="assets/img/location-icon.png">
+                                    مکان یاب
+                            </a>
+                            <a class="flex align-center justi-start col-5" data-trigger="content06">
+                                    <img src="assets/img/shop-icon.png">
+                                    سفارشات
+                            </a>
                         </nav>
                     </div>
                 </div>
@@ -662,39 +662,39 @@
     <!-- Mobile Bottom Menu -->
     <nav class="mobile-bottom-menu flex  justi-around align-center">
         <a href="#">
-            <div class="flex column justi-around align-center">
-                <i class="fas fa-search mobile-bottom-menu__icon"></i>
-                <span class="mobile-bottom-menu__span">جستجو</span>
+            <div class="flex column justi-around align-center">                      
+                <img src="assets/img/location-icon.png">
+                <span class="mobile-bottom-menu__span">مکان یاب</span>
             </div>
         </a>
         <a href="#">
             <div class="flex column justi-around align-center">
-                <i class="fas fa-lungs-virus mobile-bottom-menu__icon"></i>
+                <img src="assets/img/alaem-icon.png">
                 <span class="mobile-bottom-menu__span">علائم</span>
             </div>
         </a>
         <a href="#">
             <div>
-                <img src="./assets/img/bottom-mnue.png" class="mobile-bottom-menu__photo">
+                <img src="./assets/img/home-icon.png" class="mobile-bottom-menu__photo">
                 <!-- <i class="fas fa-home mobile-bottom-menu__home-icon"></i> -->
             </div>
         </a>
         <a href="#">
             <div class="flex column justi-around align-center">
-                <i class="fas fa-pills mobile-bottom-menu__icon"></i>
+                <img src="assets/img/pills-icon.png">
                 <span class="mobile-bottom-menu__span">تداخلات</span>
             </div>
         </a>
         <a href="#">
             <div class="flex column justi-around align-center">
-                <i class="fas fa-map-marker-alt mobile-bottom-menu__icon"></i>
+                <img src="assets/img/shop-icon.png">
                 <span class="mobile-bottom-menu__span">مکان یاب</span>
             </div>
         </a>
     </nav>
 
     <!-- Mobile Left Side -->
-    <div class="left-side flex column justi-end">
+    <!-- <div class="left-side flex column justi-end">
         <div class="left-side__box flex column-reverse">
             <button class="left-side__btn ">
                 <i class="fas fa-newspaper left-side__icon left-side__icon-1"></i>
@@ -712,7 +712,7 @@
         <button class="left-side__btn left-side__z-index" onclick="showButton()">
             <i class="fas fa-ellipsis-v left-side__icon"></i>
         </button>
-    </div>
+    </div> -->
 
 
     <!-- CDNs -->
@@ -732,3 +732,109 @@
 
 </body>
 </html>
+
+    
+<!-- 
+ ############################## 19-11-1399 #############################
+ باقری
+ 
+
+
+کد فعلی:
+--color-primary : #2062C4;
+--color-box-shadow:rgb(194, 194, 194);
+***************************************************
+
+ کد فعلی:
+<div class="mobile-header">
+    <nav class="navbar navbar-default p-0" role="navigation">        
+        <div class="mobile-header__head flex  justi-between align-center">
+            <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <i class="fas fa-bars mobile-header__icon"></i>
+            </button>
+            <h2 class="heading-primary">ســــین ســــا</h2>
+            <div class="flex column align-center col-2"  onclick="openMobileFilter()"></div>
+        </div>    
+    </nav>
+</div>
+***************************************************
+
+کد فعلی:
+<img src="assets/img/sinsa-logo.png" class="header__logo">
+<label class="header__label">موتور جستجوی سلامت ایرانیان</label>
+***************************************************
+
+کد فعلی:
+<div class="tab-amodi__buttons col-12 px-0">
+    <nav class="flex justi-around wrap btn-tabs">
+        <div class="col-6 px-3">
+            <a class="flex align-center justi-start" data-trigger="content02">
+                <img src="assets/img/alaem-icon.png">
+                علائم</a>
+        </div>
+        <div class="col-6 px-3">
+            <a class="flex align-center justi-start" data-trigger="content05">
+                <img src="assets/img/pills-icon.png">
+                تداخلات</a>
+        </div>                            
+        <div class="col-6 px-3">
+            <a class="flex align-center justi-start" data-trigger="content04">
+                <img src="assets/img/location-icon.png">
+                مکان یاب</a>
+        </div>                            
+        <div class="col-6 px-3">
+            <a class="flex align-center justi-start" data-trigger="content06">
+                <img src="assets/img/shop-icon.png">
+                سفارشات</a>
+        </div>                            
+    </nav>
+</div>
+****************************************************
+
+کد قبلی:
+<div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+    <button class="search__link-btn flex align-center justi-center"><img src="assets/img/search-icon.png"></button>
+    <input type="text" class="search__input " placeholder=" جستجو کنید...">
+</div>
+
+کد فعلی:
+<div class="search__search-container flex align-center justi-start col-12 col-sm-10">
+    <i class="fas fa-search search__right-icon col-2"></i>
+    
+****************************************************
+
+کد فعلی:
+<nav class="mobile-bottom-menu flex  justi-around align-center">
+    <a href="#">
+        <div class="flex column justi-around align-center">                      
+            <img src="assets/img/location-icon.png">
+            <span class="mobile-bottom-menu__span">مکان یاب</span>
+        </div>
+    </a>
+    <a href="#">
+        <div class="flex column justi-around align-center">
+            <img src="assets/img/alaem-icon.png">
+            <span class="mobile-bottom-menu__span">علائم</span>
+        </div>
+    </a>
+    <a href="#">
+        <div>
+            <img src="./assets/img/home-icon.png" class="mobile-bottom-menu__photo">
+        </div>
+    </a>
+    <a href="#">
+        <div class="flex column justi-around align-center">
+            <img src="assets/img/pills-icon.png">
+            <span class="mobile-bottom-menu__span">تداخلات</span>
+        </div>
+    </a>
+    <a href="#">
+        <div class="flex column justi-around align-center">
+            <img src="assets/img/shop-icon.png">
+            <span class="mobile-bottom-menu__span">مکان یاب</span>
+        </div>
+    </a>
+</nav>
+
+ -->

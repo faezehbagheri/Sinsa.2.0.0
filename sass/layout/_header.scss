@@ -15,12 +15,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include respond(phone-port ){
-        margin-top: 3rem;
-        min-height: 130vh;
+        margin-top: 13rem;
+        // min-height: 130vh;
     }
     
     @include respond(phone){
-        min-height: 125rem;
+        // min-height: 125rem;
+        min-height: 87vh;
         background-image: none !important;
     }
     
@@ -35,6 +36,7 @@
         margin-top: 10rem;
         margin-bottom: 5rem;
         text-align: center;
+        font-weight: 100 !important;
         
         @include respond(phone-port){
             margin-top: 5rem;
@@ -45,10 +47,21 @@
     
         @include respond(phone){
             margin-top: 5rem !important; 
-            color: #93c2f5;
+            color: var(--color-primary);
             margin-bottom: 5rem;
+            font-size: 3.5rem !important;
         }
     }   
+
+    &__logo{
+        height: 5.5rem;
+        margin-top: 2rem;
+        display: none;
+
+        @include respond(phone){
+            display: block;
+        }
+    }
 
 }
 

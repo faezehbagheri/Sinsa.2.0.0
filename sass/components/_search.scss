@@ -29,7 +29,7 @@
         width: 100%;
         border-radius: 4rem;
         padding: 0 2rem;
-        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+        box-shadow: 0 0 8px var(--color-box-shadow);
         
         @include respond(phone-port){
             height: 10rem;
@@ -60,9 +60,10 @@
         background-color: transparent;
         border: none;    
         outline: none !important;    
+        padding: 1.5rem;
 
         @include respond(phone){
-            background-color: var(--color-gray-lighter);
+            // background-color: var(--color-gray-lighter);
             height: 100%;
             text-align: center;
         }
@@ -285,13 +286,14 @@
             // width: 100%;
             height: 100%;
             margin: 0;
-            border: 2px solid var(--color-primary);
+            // border: 2px solid var(--color-primary);
             border-radius: 2rem;
         }
     }
 
     &__input{
         // width: 83%;
+        flex: 1;
         border: none;
         outline: none;
         background-color: #fff;
@@ -303,9 +305,9 @@
         @include respond(phone){font-size: 2.2rem;}
         
         &::placeholder{
-            font-size: 1.4rem;
+            font-size: 2rem !important;
 
-            @include respond(phone){font-size: 2.2rem;}
+            @include respond(phone){font-size: 2.2rem !important;}
             
         }
     }
