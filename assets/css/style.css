@@ -5891,10 +5891,12 @@ input[type="radio"]:checked ~ label {
     .illness-main {
       margin-top: 9rem;
       flex-direction: column !important;
-      align-items: center !important; } }
+      align-items: center !important;
+      margin-bottom: 12rem; } }
   @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
     .illness-main {
-      width: 99%; } }
+      width: 99%;
+      margin-bottom: 14rem; } }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }

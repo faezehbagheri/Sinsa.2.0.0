@@ -14,10 +14,12 @@
         margin-top: 9rem;
         flex-direction: column !important;
         align-items: center !important;
+        margin-bottom: 12rem;
     }
 
     @include respond(iphone){
         width: 99%;
+        margin-bottom: 14rem;
         // margin: 3rem auto;
     }
     
