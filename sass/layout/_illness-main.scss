@@ -11,14 +11,14 @@
 
     @include respond(phone){
         // display: none;
-        margin-top: 2rem;
+        margin-top: 9rem;
         flex-direction: column !important;
         align-items: center !important;
     }
 
     @include respond(iphone){
         width: 99%;
-        margin: 3rem auto;
+        // margin: 3rem auto;
     }
     
     @include respond(big-desktop){height: auto;}

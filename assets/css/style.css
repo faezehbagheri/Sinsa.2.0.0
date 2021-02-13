@@ -4809,6 +4809,7 @@ body-model-widget .body-model-popover {
         display: flex; } }
     .tab-amodi__buttons a, .tab-amodi__buttons a:link, .tab-amodi__buttons a:visited {
       width: 100%;
+      min-width: 98px;
       height: 9rem;
       margin-top: 2rem;
       border-radius: 1.8rem;
@@ -5888,13 +5889,12 @@ input[type="radio"]:checked ~ label {
       align-items: center !important; } }
   @media only screen and (max-width: 30em) {
     .illness-main {
-      margin-top: 2rem;
+      margin-top: 9rem;
       flex-direction: column !important;
       align-items: center !important; } }
   @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
     .illness-main {
-      width: 99%;
-      margin: 3rem auto; } }
+      width: 99%; } }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }
