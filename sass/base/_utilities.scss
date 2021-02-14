@@ -15,3 +15,8 @@
 
 .display-none{display: none !important;}
 .display-inline{display: inline !important;}
+.no_mobile{
+    @include respond(phone){
+        display: none !important;
+    }
+}

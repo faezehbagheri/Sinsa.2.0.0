@@ -195,6 +195,10 @@ a.close {
 .display-inline {
   display: inline !important; }
 
+@media only screen and (max-width: 30em) {
+  .no_mobile {
+    display: none !important; } }
+
 .article {
   width: 99vw;
   transition: all .2s; }
