@@ -1197,14 +1197,12 @@ a.close {
       opacity: 0;
       width: 95%;
       margin: 0 auto;
-      overflow: hidden; } }
+      overflow: hidden;
+      margin: 0; } }
   @media only screen and (max-width: 51em) {
     .filter {
       width: 70%;
       margin-top: 10rem; } }
-  @media only screen and (max-width: 30em) {
-    .filter {
-      margin: 0; } }
   .filter__show {
     height: auto;
     padding: 1rem 0;
@@ -4773,6 +4771,8 @@ body-model-widget .body-model-popover {
       padding: 0 !important; } }
   .tab-amodi .owl-stage {
     padding-top: 5px; }
+  .tab-amodi .owl-carousel {
+    z-index: 0 !important; }
   .tab-amodi h1 {
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -5020,19 +5020,16 @@ body-model-widget .body-model-popover {
   width: 100%; }
 
 .tab-ofoghi__new-tab {
-  background-color: var(--color-primary-light);
   border-radius: 2rem;
-  box-shadow: -1px 0 5px var(--color-gray-light);
+  box-shadow: 0 0 8px var(--color-box-shadow);
   position: relative;
   height: auto; }
 
 .tab-ofoghi__tabs-list {
-  width: 96%;
+  width: 100%;
   height: 100%;
-  margin: 1.5rem;
   background-color: #fff;
-  border-radius: 2rem;
-  box-shadow: 0 0 6px var(--color-gray-light); }
+  border-radius: 2rem; }
 
 .tab-ofoghi__dropdown {
   margin: 1rem;
@@ -5889,7 +5886,7 @@ input[type="radio"]:checked ~ label {
       align-items: center !important; } }
   @media only screen and (max-width: 30em) {
     .illness-main {
-      margin-top: 9rem;
+      margin-top: 0;
       flex-direction: column !important;
       align-items: center !important;
       margin-bottom: 12rem; } }
@@ -6053,6 +6050,8 @@ input[type="radio"]:checked ~ label {
     .mobile-header {
       display: flex;
       flex-direction: column; } }
+  .mobile-header__logo {
+    height: 4.5rem; }
   .mobile-header__head {
     height: 10rem;
     width: 100%;

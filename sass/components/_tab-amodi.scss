@@ -18,13 +18,9 @@
         padding-top: 5px;
     }
 
-    &.search-box{  
-        // width: 90%;  
-        // max-width: 1100px;
-        // @include respond(phone-port){width: 95% !important;}    
-        // @include respond(iphone){width: 100% !important;}
-        
-        // @include respond(iphone-port){width: 95% !important;}
+    
+    .owl-carousel{
+        z-index: 0 !important;
     }
 
     & h1{

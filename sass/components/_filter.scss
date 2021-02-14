@@ -12,13 +12,10 @@
         width: 95%;
         margin: 0 auto;
         overflow: hidden;
+        margin: 0;
     }
         
     @include respond(phone-port){width: 70%; margin-top: 10rem;}
-
-    @include respond(phone){
-        margin: 0;
-    }
 
     &__show{
         height: auto;
