@@ -1452,7 +1452,8 @@ a.close {
           font-size: 2rem; } }
     .filter__tabs [id^="tab"]:checked + label {
       background: var(--color-gray-lighter);
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      color: black; }
       @media only screen and (max-width: 51em) {
         .filter__tabs [id^="tab"]:checked + label {
           font-size: 2.2rem; } }
@@ -3966,7 +3967,7 @@ body-model-widget .body-model-popover {
     margin: 2rem 1rem;
     border: none;
     outline: none;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-btn);
     color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
@@ -4888,18 +4889,18 @@ body-model-widget .body-model-popover {
       .tab-amodi__label {
         font-size: 1.4rem; } }
   .tab-amodi__label.active, .tab-amodi__label.tab-active {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-tab);
     z-index: 1;
     color: #fff !important; }
     @media only screen and (max-width: 30em) {
       .tab-amodi__label.active, .tab-amodi__label.tab-active {
         z-index: 0; } }
     .tab-amodi__label.active::before, .tab-amodi__label.tab-active::before {
-      background-color: var(--color-primary-light);
-      border-left: 1px solid var(--color-primary-light); }
+      background-color: var(--color-tab);
+      border-left: 1px solid var(--color-tab); }
     .tab-amodi__label.active::after, .tab-amodi__label.tab-active::after {
-      background-color: var(--color-primary-light);
-      border-right: 1px solid var(--color-primary-light); }
+      background-color: var(--color-tab);
+      border-right: 1px solid var(--color-tab); }
   .tab-amodi__label:before, .tab-amodi__label:after {
     display: block;
     content: " ";
@@ -5761,7 +5762,7 @@ input[type="radio"]:checked ~ label {
     padding-right: 5rem; }
   .footer__pragraph {
     font-size: 1.6rem;
-    color: #3C424D;
+    color: var(--color-gray-lighter);
     text-align: right;
     padding-right: 5rem; }
   .footer__header-secondary {
@@ -5771,7 +5772,7 @@ input[type="radio"]:checked ~ label {
     padding-right: 5rem; }
   .footer__span {
     font-size: 1.6rem;
-    color: #3C424D;
+    color: var(--color-gray-lighter);
     text-align: right;
     margin-right: 11rem;
     display: block; }

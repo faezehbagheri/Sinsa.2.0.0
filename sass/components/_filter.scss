@@ -359,6 +359,7 @@
         [id^="tab"]:checked + label { 
             background: var(--color-gray-lighter);
             font-size: 1.3rem;
+            color: black;
 
             @include respond(phone-port){
                 font-size: 2.2rem;

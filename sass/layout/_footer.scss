@@ -32,7 +32,7 @@
 
     &__pragraph{
         font-size: 1.6rem;
-        color: #3C424D;
+        color: var(--color-gray-lighter);
         text-align: right;
         padding-right: 5rem;
     }
@@ -46,7 +46,7 @@
 
     &__span{
         font-size: 1.6rem;
-        color: #3C424D;
+        color: var(--color-gray-lighter);
         text-align: right;
         margin-right: 11rem;
         display: block;
