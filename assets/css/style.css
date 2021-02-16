@@ -5737,6 +5737,19 @@ input[type="radio"]:checked ~ label {
   input[type="radio"]:checked ~ label i {
     color: white !important; }
 
+.footer2 {
+  background-color: var(--color-primary);
+  color: blanchedalmond;
+  padding: 2rem 5rem; }
+  .footer2 img {
+    height: 4.5rem;
+    margin-bottom: 2rem; }
+  .footer2 span {
+    font-size: 1.5rem; }
+  .footer2 i {
+    font-size: 2rem;
+    margin: 8px; }
+
 .footer {
   height: 50rem;
   width: 100%;
