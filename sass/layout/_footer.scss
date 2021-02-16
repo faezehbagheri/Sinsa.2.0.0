@@ -2,6 +2,10 @@
     background-color: var(--color-primary);
     color: blanchedalmond;
     padding: 2rem 5rem;
+    
+    @include respond(phone){
+        display: none;
+    }
 
     img{
         height: 4.5rem;
