@@ -4,6 +4,7 @@
     margin-top: 5rem;
     transition: height 1s ease,
                 opacity .2s;
+    width: 100% !important;
 
     @include respond(phone){
         // display: none !important;
