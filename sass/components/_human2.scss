@@ -16,6 +16,7 @@
             margin-left:-1rem;
         }        
         @include respond(phone){
+            display: none;
             width: 30rem;
         }
         // @include respond(iphone){padding-left: 6rem;}

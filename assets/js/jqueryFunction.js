@@ -72,6 +72,18 @@ $(document).ready(function () {
         $(this).siblings('a').removeClass('btn-active');
     });
 
+    $(".visit__symptoms").click(function(){
+        $(this).hide();
+        $(".symptoms-models").show();
+        $(".visit__close-model").show();
+    });
+
+    $(".visit__close-model").click(function(){
+        $(this).hide();
+        $(".symptoms-models").hide();
+        $(".visit__symptoms").show();
+    });
+
     // $('.o-tabs>a').on('click', function () {
     //     var tabId = $(this).data('trigger');
     //     $('#' + tabId).show();

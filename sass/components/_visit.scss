@@ -217,7 +217,7 @@
         width:  12rem;
         height: 12rem;
         margin-right: 1rem;
-        margin-top: 5rem;
+        // margin-top: 5rem;
         border-radius: 100%;
         background-color: white;
         box-shadow: 0 1px 5px var(--color-gray-light);
@@ -359,6 +359,27 @@
                 width: 22rem;
                 font-size: 3.2rem;
             }
+        }
+    }
+
+    &__symptoms{
+        display: none;
+
+        @include respond(phone){
+            display: inline;
+            height: 25rem;
+        }
+    }
+
+    &__close-model{
+        font-size: 2.5rem;
+        color: var(--color-primary);
+        margin: auto;
+        display: none;
+        margin-top: 2rem;
+        padding-left: 6rem;
+        i{
+            margin-left: 1rem;
         }
     }
 

@@ -2231,6 +2231,7 @@ body-model-widget .symptoms-models {
       margin-left: -1rem; } }
   @media only screen and (max-width: 30em) {
     body-model-widget .symptoms-models {
+      display: none;
       width: 30rem; } }
 
 body-model-widget .symptoms-models .symptom-model {
@@ -5525,7 +5526,6 @@ body-model-widget .body-model-popover {
     width: 12rem;
     height: 12rem;
     margin-right: 1rem;
-    margin-top: 5rem;
     border-radius: 100%;
     background-color: white;
     box-shadow: 0 1px 5px var(--color-gray-light); }
@@ -5641,6 +5641,21 @@ body-model-widget .body-model-popover {
           height: 9rem;
           width: 22rem;
           font-size: 3.2rem; } }
+  .visit__symptoms {
+    display: none; }
+    @media only screen and (max-width: 30em) {
+      .visit__symptoms {
+        display: inline;
+        height: 25rem; } }
+  .visit__close-model {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin: auto;
+    display: none;
+    margin-top: 2rem;
+    padding-left: 6rem; }
+    .visit__close-model i {
+      margin-left: 1rem; }
 
 .radialProgressBar {
   border-radius: 50%;
