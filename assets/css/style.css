@@ -4185,7 +4185,6 @@ body-model-widget .body-model-popover {
       .search__hashtag a:hover,
       .search__hashtag a:link:hover,
       .search__hashtag a:visited:hover {
-        color: var(--color-primary-light);
         background-color: rgba(0, 0, 0, 0.6);
         transform: scale(1.07); }
       @media only screen and (max-width: 51em) {
@@ -4797,7 +4796,8 @@ body-model-widget .body-model-popover {
     display: flex;
     flex-flow: row-reverse wrap;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 4rem; }
     @media only screen and (max-width: 51em) {
       .tab-amodi__multipleTabs {
         width: 100%; } }
@@ -5856,7 +5856,6 @@ input[type="radio"]:checked ~ label {
   background-repeat: no-repeat;
   background-size: cover; }
   .header.homepage {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png);
     top: 60px;
     z-index: -10; }
   @media only screen and (max-width: 51em) {
@@ -5870,8 +5869,8 @@ input[type="radio"]:checked ~ label {
     margin: 0 3rem; }
   .header__label {
     font-size: 5rem;
-    color: #ffffff;
-    margin-top: 10rem;
+    color: var(--color-primary);
+    margin-top: 3rem;
     margin-bottom: 5rem;
     text-align: center;
     font-weight: 100 !important; }
@@ -5889,12 +5888,12 @@ input[type="radio"]:checked ~ label {
         margin-bottom: 5rem;
         font-size: 3.5rem !important; } }
   .header__logo {
-    height: 5.5rem;
-    margin-top: 2rem;
-    display: none; }
+    height: 7rem;
+    margin-top: 10rem; }
     @media only screen and (max-width: 30em) {
       .header__logo {
-        display: block; } }
+        height: 5.5rem;
+        margin-top: 2rem; } }
 
 .illness-main {
   height: auto;

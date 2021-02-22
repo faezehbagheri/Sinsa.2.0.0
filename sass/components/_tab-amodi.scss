@@ -47,7 +47,7 @@
         flex-flow: row-reverse wrap;
         position: relative;
         cursor: pointer;
-        // margin-right: 2rem;
+        margin-right: 4rem;
 
         @include respond(phone-port){
             width: 100%;
