@@ -36,8 +36,7 @@ a {
 
 button {
   cursor: pointer;
-  outline: none !important;
-  font-family: Vazir !important; }
+  outline: none !important; }
 
 .outline-green {
   border: 1px solid var(--color-primary-light);
@@ -111,9 +110,6 @@ h1, h2, h3, h4, h5, h6, input, textarea {
 
 h1 {
   font-weight: bold; }
-
-input::placeholder {
-  font-family: Vazir !important; }
 
 .active {
   color: var(--color-primary-light) !important; }

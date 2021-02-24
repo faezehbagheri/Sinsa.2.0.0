@@ -41,11 +41,11 @@ h1 {
 	font-weight: bold;
 }
 
-input{
-    &::placeholder{
-        font-family: Vazir !important;
-    }
-}
+// input{
+//     &::placeholder{
+//         font-family: Vazir !important;
+//     }
+// }
 
 .active{
     color: var(--color-primary-light) !important;
