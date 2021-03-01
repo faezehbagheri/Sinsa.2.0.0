@@ -6039,6 +6039,9 @@ input[type="radio"]:checked ~ label {
   @media only screen and (max-width: 30em) {
     .mobile-bottom-menu {
       display: flex; } }
+  .mobile-bottom-menu i {
+    font-size: 3.3rem;
+    color: var(--color-gray); }
   .mobile-bottom-menu a {
     text-decoration: none; }
   .mobile-bottom-menu__icon {
